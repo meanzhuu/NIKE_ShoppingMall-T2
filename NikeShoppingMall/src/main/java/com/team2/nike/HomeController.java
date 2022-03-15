@@ -25,4 +25,19 @@ public class HomeController {
 	public String home(HttpServletRequest request) {
 		return "home";
 	}
+	
+	
+	@RequestMapping("/navbar.do")
+	public String navbar(HttpServletRequest request) {
+		
+		
+		return "navbar";
+	}
+	
+	@RequestMapping("/footer.do")
+	public String footer(HttpServletRequest request) {
+		
+		
+		return "footer";
+	}
 }
