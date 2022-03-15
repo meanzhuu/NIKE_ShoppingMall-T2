@@ -7,7 +7,7 @@
 4. study와 master를 merge한것을 commit & push
 5. pull request를 할 때 (upstream master <-- 본인의 study)
 
-
+<br><br>
 
 ## study branch에서 하던 작업을 버려야 할 때
 1. master로 switch
