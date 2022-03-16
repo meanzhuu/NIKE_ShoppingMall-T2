@@ -13,6 +13,7 @@
 <jsp:include page="/include/navbar.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
 <jsp:include page="/include/footer.jsp"></jsp:include>
+<a href="${pageContext.request.contextPath}/product/insertform.do">제품 등록</a>
 
 </body>
 </html>
