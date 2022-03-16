@@ -24,7 +24,7 @@
 <a href="./signup.do">signup</a>
 <a href="./updateform.do">updateform</a>
 <a href="./product/productlist.do">productlist</a>
-<a href="${pageContext.request.contextPath}/product/insertform.do">제품 등록</a>
+<a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
 
 <jsp:include page="/include/footer.jsp"></jsp:include>
 

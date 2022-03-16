@@ -1,5 +1,6 @@
 package com.team2.nike.product.dto;
 
+import org.springframework.web.multipart.MultipartFile;
 
 public class ProductDto {
 	private int product_id;
@@ -11,19 +12,21 @@ public class ProductDto {
 	private String product_size;
 	private String product_material;
 	private String product_season;
-	private String product_price;
-	private String product_point;
-	private String product_stock;
-	private String product_views;
+	private int product_price;
+	private double product_point;
+	private int product_stock;
+	private int product_views;
 	private String product_regdate;
+	private MultipartFile product_image;
 	private String product_imagePath;
 	
 	public ProductDto(){}
 
 	public ProductDto(int product_id, String product_lcategory, String product_scategory, String product_name,
 			String product_fullName, String product_color, String product_size, String product_material,
-			String product_season, String product_price, String product_point, String product_stock,
-			String product_views, String product_regdate, String product_imagePath) {
+			String product_season, int product_price, double product_point, int product_stock, int product_views,
+			String product_regdate, MultipartFile product_image, String product_imagePath) {
+		super();
 		this.product_id = product_id;
 		this.product_lcategory = product_lcategory;
 		this.product_scategory = product_scategory;
@@ -38,6 +41,7 @@ public class ProductDto {
 		this.product_stock = product_stock;
 		this.product_views = product_views;
 		this.product_regdate = product_regdate;
+		this.product_image = product_image;
 		this.product_imagePath = product_imagePath;
 	}
 
@@ -113,35 +117,35 @@ public class ProductDto {
 		this.product_season = product_season;
 	}
 
-	public String getProduct_price() {
+	public int getProduct_price() {
 		return product_price;
 	}
 
-	public void setProduct_price(String product_price) {
+	public void setProduct_price(int product_price) {
 		this.product_price = product_price;
 	}
 
-	public String getProduct_point() {
+	public double getProduct_point() {
 		return product_point;
 	}
 
-	public void setProduct_point(String product_point) {
+	public void setProduct_point(double product_point) {
 		this.product_point = product_point;
 	}
 
-	public String getProduct_stock() {
+	public int getProduct_stock() {
 		return product_stock;
 	}
 
-	public void setProduct_stock(String product_stock) {
+	public void setProduct_stock(int product_stock) {
 		this.product_stock = product_stock;
 	}
 
-	public String getProduct_views() {
+	public int getProduct_views() {
 		return product_views;
 	}
 
-	public void setProduct_views(String product_views) {
+	public void setProduct_views(int product_views) {
 		this.product_views = product_views;
 	}
 
@@ -153,6 +157,14 @@ public class ProductDto {
 		this.product_regdate = product_regdate;
 	}
 
+	public MultipartFile getProduct_image() {
+		return product_image;
+	}
+
+	public void setProduct_image(MultipartFile product_image) {
+		this.product_image = product_image;
+	}
+
 	public String getProduct_imagePath() {
 		return product_imagePath;
 	}
@@ -160,6 +172,8 @@ public class ProductDto {
 	public void setProduct_imagePath(String product_imagePath) {
 		this.product_imagePath = product_imagePath;
 	}
+
+	
 	
 	
 }

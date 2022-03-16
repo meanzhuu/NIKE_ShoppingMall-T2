@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="product">
+	<select id="getList" resultType="productDto">
+		SELECT *
+		FROM	
+			(SELECT result1.*, ROWNUM as rnum
+			FROM
+				(SELECT *
+				FROM product
+				ORDER BY product_id ASC) result1)
+	</select>
 	<select id="insert" parameterType="productDto">
 		INSERT INTO product
 		(product_id, product_lcategory, product_scategory,
@@ -8,7 +17,7 @@
 		 product_size, product_material, product_season,
 		 product_price, product_point, product_regdate,
 		 product_imagePath
-		)VALUES(#{product_id},#{product_lcategory}, #{product_scategory},
+		)VALUES(product_seq.NEXTVAL,#{product_lcategory}, #{product_scategory},
 		 #{product_name}, #{product_fullName}, #{product_color},
 		 #{product_size}, #{product_material}, #{product_season},
 		 #{product_price}, #{product_point}, SYSDATE,

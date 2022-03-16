@@ -23,9 +23,22 @@ public class ProductController {
 	@Autowired
 	private ProductService service;
 	
+	@RequestMapping("/product/list")
+	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
+		service.getList(request);
+		mView.setViewName("/product/list");
+		return mView;
+	}
+	
 	@RequestMapping("/product/insertform")
 	public ModelAndView insertform(HttpServletRequest request, ProductDto dto, ModelAndView mView) {
-		service.addProduct(dto);
+		mView.setViewName("/product/insertform");
+		return mView;
+	}
+	
+	@RequestMapping("/product/insert")
+	public ModelAndView insert(HttpServletRequest request, ProductDto dto, ModelAndView mView) {
+		service.addProduct(dto,request);
 		mView.setViewName("/product/insert");
 		return mView;
 	}

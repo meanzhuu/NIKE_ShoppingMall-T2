@@ -1,5 +1,7 @@
 package com.team2.nike.product.dao;
 
+import java.util.List;
+
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -27,6 +29,10 @@ public class ProductDaoImpl implements ProductDao{
 		// TODO Auto-generated method stub
 		
 	}
-	
-	
+
+	@Override
+	public List<ProductDto> getList() {
+		return session.selectList("product.getList");
+	}
+
 }
