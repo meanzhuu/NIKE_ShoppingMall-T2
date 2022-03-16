@@ -23,5 +23,9 @@
 		 #{product_price}, #{product_point}, SYSDATE,
 		 #{product_imagePath})
 	</select>
+	<select id="delete" parameterType="int">
+		DELETE FROM product
+		WHERE product_id=#{product_id}
+	</select>
 
 </mapper>

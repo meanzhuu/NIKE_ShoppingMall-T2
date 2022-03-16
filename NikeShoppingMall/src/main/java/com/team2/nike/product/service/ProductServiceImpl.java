@@ -70,5 +70,11 @@ public class ProductServiceImpl implements ProductService{
 		List<ProductDto> list = productDao.getList();
 		request.setAttribute("list", list);	//gallery list
 	}
+	
+	@Override
+	public void delete(int product_id) {
+		productDao.delete(product_id);
+		
+	}
 
 }

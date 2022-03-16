@@ -23,6 +23,14 @@ public class ProductController {
 	@Autowired
 	private ProductService service;
 	
+	
+	@RequestMapping(value="/product/delete",method= RequestMethod.GET)
+	public ModelAndView delete(@RequestParam int product_id, ModelAndView mView) {
+		service.delete(product_id);
+		mView.setViewName("/product/delete");
+		return mView;
+	}
+	
 	@RequestMapping("/product/list")
 	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
 		service.getList(request);

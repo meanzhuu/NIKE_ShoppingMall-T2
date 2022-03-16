@@ -10,7 +10,7 @@
 <body>
 	<script>
 		alert("상품이 삭제되었습니다.");
-		location.href="${pageContext.request.contextPath}";
+		location.href="${pageContext.request.contextPath}/product/list.do";
 	</script>
 </body>
 </html>

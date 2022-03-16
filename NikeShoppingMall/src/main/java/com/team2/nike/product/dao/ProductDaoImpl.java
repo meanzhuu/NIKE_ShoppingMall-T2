@@ -25,9 +25,8 @@ public class ProductDaoImpl implements ProductDao{
 	}
 
 	@Override
-	public void delete(int num) {
-		// TODO Auto-generated method stub
-		
+	public void delete(int product_id) {
+		session.delete("product.delete",product_id);
 	}
 
 	@Override

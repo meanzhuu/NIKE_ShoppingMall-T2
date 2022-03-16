@@ -9,7 +9,7 @@
 <body>
  <script>
 	alert("새 상품이 추가 되었습니다.");
-	location.href="${pageContext.request.contextPath}/product/insertform.do";
+	location.href="${pageContext.request.contextPath}/product/list.do";
  </script>
 </body>
 </html>

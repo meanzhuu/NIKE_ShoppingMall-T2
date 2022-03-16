@@ -37,7 +37,8 @@
 				<th>제품 재고</th>
 				<th>제품 조회수</th>
 				<th>제품 등록일</th>
-				<th>제품 이미지 경로</th>
+				<th>제품 이미지</th>
+				<th>삭제</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -57,7 +58,8 @@
 				<td>${tmp.product_stock }</td>
 				<td>${tmp.product_views }</td>
 				<td>${tmp.product_regdate }</td>
-				<td>${tmp.product_imagePath }</td>
+				<td><img src="${pageContext.request.contextPath }${tmp.product_imagePath}" alt="" /></td>
+				<td><a href="delete.do?product_id=${tmp.product_id }">삭제</a></td>
 			</tr>
 		</c:forEach>
 		</tbody>
