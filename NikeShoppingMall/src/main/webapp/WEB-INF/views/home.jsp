@@ -12,8 +12,22 @@
 
 <jsp:include page="/include/navbar.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
-<jsp:include page="/include/footer.jsp"></jsp:include>
+
+<a href="./login.do">login</a>
+<a href="./delete.do">delete</a>
+<a href="./info.do">info</a>
+<a href="./loginform.do">loginform</a>
+<a href="./logout.do">logout</a>
+<a href="./pwd_update.do">pwd_update</a>
+<a href="./pwd_updateform.do">pwd_updateform</a>
+<a href="./signup_form.do">signup_form</a>
+<a href="./signup.do">signup</a>
+<a href="./updateform.do">updateform</a>
+<a href="./product/productlist.do">productlist</a>
 <a href="${pageContext.request.contextPath}/product/insertform.do">제품 등록</a>
+
+<jsp:include page="/include/footer.jsp"></jsp:include>
+
 
 </body>
 </html>
