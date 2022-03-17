@@ -7,12 +7,44 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+
+<style>
+#wrap{
+	width : 960px;
+	height : 100%;
+	margin : 0px auto;	/*가운데 정렬*/
+}
+#box1{
+   width:30%;
+   height: 500px;
+   background-color:#ffadb8 ;
+   float: left;
+}
+#box2{
+   width:30%;
+   height: 500px;
+   background-color: #adceff;
+   float: left;
+}
+#box3{
+   width:30%;
+   height: 500px;
+   background-color: #f9ffad;
+   float: left;
+}
+</style>
+
 </head>
 <body>
 
 <jsp:include page="/include/navbar.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
 
+<div id="wrap">
+	<div id="box1"></div>
+	<div id="box2"></div>
+	<div id="box3"></div>
+</div>
 <a href="./login.do">login</a>
 <a href="./delete.do">delete</a>
 <a href="./info.do">info</a>
