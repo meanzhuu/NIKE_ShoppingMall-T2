@@ -19,8 +19,8 @@
 		<div>
 			<label class="control-label" for="users_id">아이디</label>
 			<input class="form-control" type="text" name="users_id" id="users_id"/>
-			<small class="form-text text-muted">영문자 소문자로 시작하고 5글자~10글자 이내로 입력하세요.</small>
-			<div class="invalid-feedback">사용할수 없는 아이디 입니다.</div>
+			<div id="id_length_validation" class="invalid-feedback">영문자 소문자로 시작하고 5~10글자 이내로 작성해주세요.</div>
+			<div id="id_overlap_validation" class="invalid-feedback">중복된 아이디 입니다.</div>
 		</div>
 		<div>
 			<label class="control-label" for="users_name">이름</label>
@@ -29,12 +29,14 @@
 		<div>
 			<label class="control-label" for="users_pwd">비밀번호</label>
 			<input class="form-control" type="password" name="users_pwd" id="users_pwd"/>
-			<small class="form-text text-muted">5글자~10글자 이내로 입력하세요.</small>
-			<div class="invalid-feedback">비밀번호를 확인 하세요.</div>
+			<div id="pwd_length_validation" class="invalid-feedback">영문자,숫자,특수문자를 하나이상을 사용해주세요.</div>
+			<div id="pwd_length_validation" class="valid-feedback">비밀번호 확인</div>
 		</div>
 		<div>
 			<label class="control-label" for="users_pwd2">비밀번호 확인</label>
 			<input class="form-control" type="password" name="users_pwd2" id="users_pwd2"/>
+			<div id="pwd2_overlap_validation" class="invalid-feedback">비밀번호가 일치하지 않습니다.</div>
+			<div id="pwd2_overlap_validation" class="valid-feedback">비밀번호가 일치합니다.</div>
 		</div>
 		<div>
 			<label class="control-label" for="users_email">이메일</label>
@@ -64,96 +66,99 @@
 </div>
 <script src="${pageContext.request.contextPath}/resources/js/gura_util.js"></script>
 <script>
-	//아이디, 비밀번호, 이메일의 유효성 여부를 관리한 변수 만들고 초기값 대입
-	let isIdValid=false;
-	let isPwdValid=false;
-	let isEmailValid=false;
+	let isIdValid;
+	let isPwdValid;
+	let isPwd2Valid;
+	let isEmailValid;
 	//아이디를 입력했을때(input) 실행할 함수 등록 
-	document.querySelector("#users_id").addEventListener("input", function(){
-		//일단 is-valid,  is-invalid 클래스를 제거한다.
-		document.querySelector("#users_id").classList.remove("is-valid");
-		document.querySelector("#users_id").classList.remove("is-invalid");
+document.querySelector("#users_id").addEventListener("input", function(){
+			isIdValid=false;
+			document.querySelector("#users_id").classList.remove("is-valid");
+			document.querySelector("#users_id").classList.remove("is-invalid");
+			
+			document.querySelector("#id_overlap_validation").classList.remove("d-none");
+			document.querySelector("#id_length_validation").classList.remove("d-none");
+			document.querySelector("#id_overlap_validation").classList.add("d-none");
+			document.querySelector("#id_length_validation").classList.add("d-none");
+			 
+			 let inputId=this.value;
+			 let idreg=/^[a-z].{4,9}$/;
+			 let idresult=idreg.test(inputId);
+			 if(idresult){
+				 	document.querySelector("#users_id").classList.remove("is-invalid");
+				   	document.querySelector("#id_length_validation").classList.add("d-none");
+					ajaxPromise("checkid.do","get","users_id="+inputId)
+					.then(function(response){
+						return response.json();
+					}).then(function(data){
+						if(data.isExist){
+							 document.querySelector("#users_id").classList.add("is-invalid");
+							 document.querySelector("#id_overlap_validation").classList.remove("d-none");
+						}else{
+							isIdValid=true;
+							document.querySelector("#users_id").classList.add("is-valid");
+							document.querySelector("#id_overlap_validation").classList.add("d-none");
+						}
+					});
+			 }else{
+				 document.querySelector("#users_id").classList.add("is-invalid");
+				 document.querySelector("#id_length_validation").classList.remove("d-none");
+			 }
 		
-		//1. 입력한 아이디 value 값 읽어오기  
-		let inputId=this.value;
-		//입력한 아이디를 검증할 정규 표현식
-		const reg_id=/^[a-z].{4,9}$/;
-		//만일 입력한 아이디가 정규표현식과 매칭되지 않는다면
-		if(!reg_id.test(inputId)){
-			isIdValid=false; //아이디가 매칭되지 않는다고 표시하고 
-			// is-invalid 클래스를 추가한다. 
-			document.querySelector("#users_id").classList.add("is-invalid");
-			return; //함수를 여기서 끝낸다 (ajax 전송 되지 않도록)
-		}
-		
-		//2. util 에 있는 함수를 이용해서 ajax 요청하기
-		ajaxPromise("${pageContext.request.contextPath}/users/checkid.do", "get", "users_id="+inputId)
-		.then(function(response){
-			return response.json();
-		})
-		.then(function(data){
-			console.log(data);
-			//data 는 {isExist:true} or {isExist:false} 형태의 object 이다.
-			if(data.isExist){//만일 존재한다면
-				//사용할수 없는 아이디라는 피드백을 보이게 한다. 
-				isIdValid=false;
-				// is-invalid 클래스를 추가한다. 
-				document.querySelector("#users_id").classList.add("is-invalid");
-			}else{
-				isIdValid=true;
-				document.querySelector("#users_id").classList.add("is-valid");
-			}
-		});
-	});
+});
+
+document.querySelector("#users_pwd").addEventListener("input", function(){
+	isPwdValid=false;
+	document.querySelector("#users_pwd").classList.remove("is-valid");
+	document.querySelector("#users_pwd").classList.remove("is-invalid");
+	 
+	 let inputPwd=this.value;
+	 let pwdreg=/[^a-zA-Z0-9]/;
+	 let pwdresult=pwdreg.test(inputPwd);
+	 if(pwdresult){
+		 document.querySelector("#users_pwd").classList.add("is-valid");
+		 isPwdValid=true;
+	 }else{
+		 document.querySelector("#users_pwd").classList.add("is-invalid");
+	 }
+});
+
+document.querySelector("#users_pwd2").addEventListener("input", function(){
+	document.querySelector("#users_pwd2").classList.remove("is-valid");
+	document.querySelector("#users_pwd2").classList.remove("is-invalid");
 	
-	//비밀 번호를 확인 하는 함수 
-	function checkPwd(){
-		document.querySelector("#users_pwd").classList.remove("is-valid");
-		document.querySelector("#users_pwd").classList.remove("is-invalid");
-		
-		const pwd=document.querySelector("#users_pwd").value;
-		const pwd2=document.querySelector("#users_pwd2").value;
-		
-		// 최소5글자 최대 10글자인지를 검증할 정규표현식
-		const reg_pwd=/^.{5,10}$/;
-		if(!reg_pwd.test(pwd)){
-			isPwdValid=false;
-			document.querySelector("#users_pwd").classList.add("is-invalid");
-			return; //함수를 여기서 종료
-		}
-		
-		if(pwd != pwd2){//비밀번호와 비밀번호 확인란이 다르면
-			//비밀번호를 잘못 입력한것이다.
-			isPwdValid=false;
-			document.querySelector("#users_pwd").classList.add("is-invalid");
-		}else{
-			isPwdValid=true;
-			document.querySelector("#users_pwd").classList.add("is-valid");
-		}
+	
+	const pwd=document.querySelector("#users_pwd").value;
+	const pwd2=document.querySelector("#users_pwd2").value;
+
+	if(pwd == pwd2){
+		document.querySelector("#users_pwd2").classList.add("is-valid");
+		isPwd2Valid=true;
+	}else{
+		document.querySelector("#users_pwd2").classList.add("is-invalid");
 	}
-	
-	//비밀번호 입력란에 input 이벤트가 일어 났을때 실행할 함수 등록
-	document.querySelector("#users_pwd").addEventListener("input", checkPwd);
-	document.querySelector("#users_pwd2").addEventListener("input", checkPwd);
-	
-	//이메일을 입력했을때 실행할 함수 등록
-	document.querySelector("#users_email").addEventListener("input", function(){
-		document.querySelector("#users_email").classList.remove("is-valid");
-		document.querySelector("#users_email").classList.remove("is-invalid");
-		
-		//1. 입력한 이메일을 읽어와서
-		const inputEmail=this.value;
-		//2. 이메일을 검증할 정규 표현식 객체를 만들어서
-		const reg_email=/@/;
-		//3. 정규표현식 매칭 여부에 따라 분기하기
-		if(reg_email.test(inputEmail)){//만일 매칭된다면
-			isEmailValid=true;
-			document.querySelector("#users_email").classList.add("is-valid");
-		}else{
-			isEmailValid=false;
-			document.querySelector("#users_email").classList.add("is-invalid");
-		}
+});
+
+
+document.querySelector("#users_email").addEventListener("input", function(){
+	   //1. 입력한 이메일을 읽어온다.
+	   let email=this.value;
+	   //2. 이메일 형식에 맞는지 확인해서
+	   let reg=/@/;
+	   //정규 표현식 통과 여부를 global 변수에 대입한다. 
+	   isEmailValid=reg.test(email);
+	   //3. 형식에 맞으면 is-valid 클래스 추가 , 맞지 않으면 is-invalid 클래스 추가
+	   //일단 2개의 클래스를 모두 제거하고 
+	   this.classList.remove("is-valid");
+	   this.classList.remove("is-invalid");
+	   //하나만 추가해 준다. 
+	   if(isEmailValid){
+	      this.classList.add("is-valid");
+	   }else{
+	      this.classList.add("is-invalid");
+	   }
 	});
+
 	
 	
 	//폼에 submit 이벤트가 발생했을때 실행할 함수 등록
