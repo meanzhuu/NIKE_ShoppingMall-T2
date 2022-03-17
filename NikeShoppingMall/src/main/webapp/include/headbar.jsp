@@ -131,19 +131,22 @@ header {
 	justify-content:center;
   } 
 
-
+.search_bar{
+display:inline-block;
+}
 .search_box {
-	width: 350px;
+
+	width: 450px;
 	height: 35px;
 	border: 4px solid #8C8C8B;
-	display: flex;
 	margin-top: 30px;
 	margin-bottom:18px;
+	margin-right:0;
 }
 
 .search_box input {
-	width: 90%;
-	height: 25px;
+	width: 100%;
+	height: 27px;
 	padding-left: 12px;
 	border: none;
 	outline: none;
@@ -151,20 +154,20 @@ header {
 	
 }
 
-.search_box button {
-	width: 10%;
-	height: 27px;
+.search_button {
+	width: 35px;
+	height: 35px;
 	margin: 0;
-	margin-left:40px;
+	margin-left:0px;
 	padding: 0;
-	border: none;
+	border: 4px solid #1D3F6D;
 	background: #1D3F6D;
+	vertcal-align:middle;
+	font-weight:bold;
+	display:inline-block;
+	line-height:30px;
 }
 
-.sear{
-	text-align: center;
-	font-weight:bold;
-}
 
 </style>
 
@@ -174,16 +177,17 @@ header {
 	<div class="box">
 	
 		<a href="./home.do"><h1 class="head">Nike Shop</h1></a>
-		
-	<header>
+		<br />
+	<header class="search_bar">
 		<div class="search_box">
-			<input type="text" maxlength="250">
-				<button class="sear">
+			<input type="text">
+			<button class="search_button">
 					<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"  fill="white" class="bi bi-search" viewBox="0 0 16 16">
   						<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 					</svg>
-				</button>
+			</button>
 		</div>
+
 	</header>
 
 			
