@@ -40,7 +40,8 @@ public class UsersController {
 		 	return "/users/loginform";
 		}
 		@RequestMapping("/users/logout.do")
-		public String logout(HttpServletRequest request) {
+		public String logout(HttpSession session) {
+			session.removeAttribute("users_id");
 			return "/users/logout";
 		}
 		
