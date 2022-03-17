@@ -29,12 +29,12 @@
 		      <legend>로그인</legend>
 		<div class="col-md-3">
 		  <div class="login-box well">
-			<label for="id">아이디</label>
-			<input type="text" name="id" id="id"/ class="form-control">
+			<label for="users_id">아이디</label>
+			<input type="text" name="users_id" id="users_id"/ class="form-control">
 		</div>
 		<div>
-			<label for="pwd">비밀번호</label>
-			<input type="password" name="pwd" id="pwd"/ class="form-control">
+			<label for="users_pwd">비밀번호</label>
+			<input type="password" name="users_pwd" id="users_pwd"/ class="form-control">
 		</div>
 		<hr />
 		<button type="submit">로그인</button>
