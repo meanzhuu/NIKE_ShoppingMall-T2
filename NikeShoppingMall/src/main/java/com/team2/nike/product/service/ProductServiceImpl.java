@@ -22,7 +22,7 @@ public class ProductServiceImpl implements ProductService{
 		MultipartFile image=dto.getProduct_image();
 		String imageName = image.getOriginalFilename();
 		long fileSize = image.getSize();
-		String realPath = request.getServletContext().getRealPath("/upload");
+		String realPath = request.getServletContext().getRealPath("/resources/upload");
 		//db 에 저장할 저장할 파일의 상세 경로
 		String filePath = realPath + File.separator;
 		//디렉토리를 만들 파일 객체 생성
@@ -61,7 +61,7 @@ public class ProductServiceImpl implements ProductService{
 		dto.setProduct_season(product_season);
 		dto.setProduct_price(product_price);
 		dto.setProduct_point(product_point);
-		dto.setProduct_imagePath("/upload/" + saveFileName);
+		dto.setProduct_imagePath("/resources/upload/" + saveFileName);
 		productDao.insert(dto);
 	}
 

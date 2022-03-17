@@ -6,19 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-.horizontal {
-  writing-mode: horizontal-tb;
-}
-
-.vertical {
-  writing-mode: vertical-rl;
-}
-</style>
 </head>
 <body>
 	<div class="container">
-	<a href="insertform.do">제품 추가</a>
+	<a href="insertform.do"><p align="right"><img src="https://cdn.iconscout.com/icon/free/png-256/cloth-1456963-1228881.png" style="height:100px; width:100px;" alt="" /></p></a>
 	<h1>상품 목록</h1>
 	<table border="1">
 		<thead>
