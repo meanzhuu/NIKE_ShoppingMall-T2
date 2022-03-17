@@ -6,12 +6,17 @@
 		users_id,users_name,users_pwd,
 		users_email, users_sex, users_birthday,
 		users_phoneNum, users_addr
-		)VALUES(users_seq.NEXTVAL,#{users_name},#{users_pwd},
+		)VALUES(#{users_id},#{users_name},#{users_pwd},
 		#{users_email},#{users_sex},#{users_birthday},#{users_phoneNum},#{users_addr})
 	</select>
 	<select id="isExist" parameterType="java.lang.String" resultType="string">
 		SELECT users_id 
 		FROM users
 		WHERE users_id=#{users_id}
+	</select>
+	<select id="getUser" parameterType="string" resultType="usersDto">
+		SELECT *
+		FROM users
+		WHERE users_id=#{users_id }
 	</select>
 </mapper>

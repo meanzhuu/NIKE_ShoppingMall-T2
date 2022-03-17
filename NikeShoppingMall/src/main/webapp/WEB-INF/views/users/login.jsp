@@ -14,15 +14,16 @@
 <div class="container">
 	<h1>알림</h1>
 	<c:choose>
-		<c:when test="${not empty sessionScope.id }">
+		<c:when test="${not empty sessionScope.users_id }">
 			<p>
-				<strong>${sessionScope.id }</strong>님 로그인 되었습니다.
+				<strong>${sessionScope.users_id }</strong>님 로그인 되었습니다.
 				<a href="${requestScope.url }">확인</a>
 			</p>
 		</c:when>
 		<c:otherwise>
 			<p>
 				아이디 혹은 비밀 번호가 틀려요
+				<strong>하이${sessionScope.users_id }바이</strong>
 				<a href="loginform.do?url=${requestScope.encodedUrl }">다시 시도</a>
 			</p>
 		</c:otherwise>

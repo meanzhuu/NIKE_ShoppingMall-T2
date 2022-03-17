@@ -3,7 +3,10 @@ package com.team2.nike.users.service;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -35,5 +38,25 @@ public class UsersServiceImpl implements UsersService {
 		map.put("isExist", dao.isExist(users_id));
 		//Map 객체를 리턴해 준다. 
 		return map;
+	}
+
+	@Override
+	public void login(UsersDto dto, HttpSession session) {
+		boolean isValid=false;
+		UsersDto user=dao.getUser(dto.getUsers_id());
+		System.out.println(dto.getUsers_id());
+		System.out.println(dto.getUsers_birthday());
+		System.out.println(dto.getUsers_email());
+		if(user != null)
+		{
+			String encodedPwd=user.getUsers_pwd();
+			String pwd=dto.getUsers_pwd();
+			isValid=BCrypt.checkpw(pwd, encodedPwd);
+			System.out.println("valid성공");
+		}
+		System.out.println("validt실패");
+		if(isValid) {
+			session.setAttribute("users_id", dto.getUsers_id());
+		}
 	}
 }

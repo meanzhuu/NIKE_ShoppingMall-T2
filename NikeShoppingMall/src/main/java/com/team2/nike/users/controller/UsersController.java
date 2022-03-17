@@ -1,8 +1,10 @@
 package com.team2.nike.users.controller;
 
+import java.net.URLEncoder;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -22,13 +24,20 @@ public class UsersController {
 	 private UsersService service;
 	
 	 @RequestMapping("/users/login.do")
-		public String login(HttpServletRequest request) {
-			return "/users/login";
+		public ModelAndView login(ModelAndView mView, UsersDto dto, HttpServletRequest request,@RequestParam String url, HttpSession session) {
+		 	
+		 	service.login(dto, session);
+		 
+		 	String encodedUrl=URLEncoder.encode(url);
+			mView.addObject("url", url);
+			mView.addObject("encodedUrl", encodedUrl);
+			mView.setViewName("users/login");
+		 	return mView;
 		}
 	 
-	 @RequestMapping("/users/loginform.do")
+	 @RequestMapping(value="/users/loginform.do")
 		public String loginform(HttpServletRequest request) {
-			return "/users/loginform";
+		 	return "/users/loginform";
 		}
 		@RequestMapping("/users/logout.do")
 		public String logout(HttpServletRequest request) {
