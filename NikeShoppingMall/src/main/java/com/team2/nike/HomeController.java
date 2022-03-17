@@ -23,10 +23,7 @@ public class HomeController {
 	public String home(HttpServletRequest request) {
 		return "home";
 	}
-	@RequestMapping("/login.do")
-	public String login(HttpServletRequest request) {
-		return "login";
-	}
+	
 	@RequestMapping("/delete.do")
 	public String delete(HttpServletRequest request) {
 		return "delete";
@@ -35,14 +32,7 @@ public class HomeController {
 	public String info(HttpServletRequest request) {
 		return "info";
 	}
-	@RequestMapping("/loginform.do")
-	public String loginform(HttpServletRequest request) {
-		return "loginform";
-	}
-	@RequestMapping("/logout.do")
-	public String logout(HttpServletRequest request) {
-		return "logout";
-	}
+	
 	@RequestMapping("/pwd_updateform.do")
 	public String pwd_updateform(HttpServletRequest request) {
 		return "pwd_updateform";
@@ -51,14 +41,7 @@ public class HomeController {
 	public String pwd_update(HttpServletRequest request) {
 		return "pwd_update";
 	}
-	@RequestMapping("/signup_form.do")
-	public String signup_form(HttpServletRequest request) {
-		return "signup_form";
-	}
-	@RequestMapping("/signup.do")
-	public String pwd_signup(HttpServletRequest request) {
-		return "signup";
-	}
+	
 	@RequestMapping("/updateform.do")
 	public String updateform(HttpServletRequest request) {
 		return "updateform";
