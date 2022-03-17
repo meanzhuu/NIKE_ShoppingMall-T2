@@ -45,19 +45,20 @@
 	<div id="box2"></div>
 	<div id="box3"></div>
 </div>
-<a href="./login.do">login</a>
+<a href="./users/login.do">login</a>
 <a href="./delete.do">delete</a>
 <a href="./info.do">info</a>
-<a href="./loginform.do">loginform</a>
-<a href="./logout.do">logout</a>
+<a href="./users/loginform.do">로그인</a>
+<a href="./users/logout.do">로그아웃</a>
 <a href="./pwd_update.do">pwd_update</a>
 <a href="./pwd_updateform.do">pwd_updateform</a>
-<a href="./signup_form.do">signup_form</a>
-<a href="./signup.do">signup</a>
+<a href="./users/signup_form.do">회원가입</a>
 <a href="./updateform.do">updateform</a>
 <a href="./product/productlist.do">productlist</a>
+<a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
 
 <jsp:include page="/include/footer.jsp"></jsp:include>
+
 
 </body>
 </html>

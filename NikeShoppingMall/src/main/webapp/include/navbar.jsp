@@ -43,13 +43,13 @@ align-items:center;
 		<div class="collapse navbar-collapse d-flex justify-content-end" id="topNav">
 			<ul class="navbar-nav ">
 				<li class="nav-item">
-					<a class="nav-link" href="./loginform.do">로그인</a>
+					<a class="nav-link" href="./users/loginform.do">로그인</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link <%=thisPage.equals("todo") ? "active" : "" %>" href="${pageContext.request.contextPath }/todo/list.jsp">로그아웃</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./signup_form.do">회원가입</a>
+					<a class="nav-link" href="./users/signup_form.do">회원가입</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="./updateform.do">
