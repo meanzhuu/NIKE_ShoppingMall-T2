@@ -102,7 +102,7 @@ font-weight:bold;
 	</div>
 </div>
 
-<div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" style="width:1000px; margin:auto">
+<div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" style="width:1000px; margin:auto; margin-bottom : 180px;">
 	<div class="carousel-indicators" style="">
     	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     	<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
