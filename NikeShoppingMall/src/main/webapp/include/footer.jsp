@@ -6,16 +6,20 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+body{
+height:100%;
+}
 #wrap {
-    min-height: 20vh;
+    min-height: 100%;
     position: relative;
     width: 100%;
 }
 
 footer {
+	padding-top:20px;
 	width: 100%;
-	height: 110px; 
-	bottom: 0px;
+	height: 135px; 
+	bottom: 0;
 	position: absolute;
 	background-color: black;
 	color:#666666;
