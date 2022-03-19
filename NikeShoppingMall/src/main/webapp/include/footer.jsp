@@ -7,14 +7,14 @@
 <title>Insert title here</title>
 <style>
 #wrap {
-    min-height: 100vh;
+    min-height: 20vh;
     position: relative;
     width: 100%;
 }
 
 footer {
 	width: 100%;
-	height: 110px; /* 내용물에 따라 알맞는 값 설정 */
+	height: 110px; 
 	bottom: 0px;
 	position: absolute;
 	background-color: black;
