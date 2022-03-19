@@ -44,18 +44,15 @@ public class UsersServiceImpl implements UsersService {
 	public void login(UsersDto dto, HttpSession session) {
 		boolean isValid=false;
 		UsersDto user=dao.getUser(dto.getUsers_id());
-		System.out.println(dto.getUsers_id());
-		System.out.println(dto.getUsers_birthday());
-		System.out.println(dto.getUsers_email());
-		if(user != null)
-		{
+		if(user != null) {
 			String encodedPwd=user.getUsers_pwd();
 			String pwd=dto.getUsers_pwd();
 			isValid=BCrypt.checkpw(pwd, encodedPwd);
-			System.out.println("valid성공");
+			System.out.println(isValid);
 		}
-		System.out.println("validt실패");
+		System.out.println(isValid);
 		if(isValid) {
+			System.out.println("tt");
 			session.setAttribute("users_id", dto.getUsers_id());
 		}
 	}

@@ -41,7 +41,7 @@
 	</form>
 </div>
 
-        <span class='text-center'><a href="/" class="text-sm"> 회원가입</a></span>
+        <span class='text-center'><a href="/signup_form.jsp" class="text-sm"> 회원가입</a></span>
             <span class='text-center'><a href="/pwd_updateform.do" class="text-sm px-5">아이디/비밀번호 찾기</a></span>
     
           

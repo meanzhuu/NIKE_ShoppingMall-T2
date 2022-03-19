@@ -24,7 +24,8 @@ public class UsersController {
 	 private UsersService service;
 	
 	 @RequestMapping("/users/login.do")
-		public ModelAndView login(ModelAndView mView, UsersDto dto, HttpServletRequest request,@RequestParam String url, HttpSession session) {
+		public ModelAndView login(ModelAndView mView, UsersDto dto, 
+				@RequestParam String url, HttpSession session) {
 		 	
 		 	service.login(dto, session);
 		 
@@ -59,7 +60,7 @@ public class UsersController {
 		}
 		
 		@RequestMapping(value = "/users/signup", method = RequestMethod.POST)
-		public ModelAndView pwd_signup(HttpServletRequest request,ModelAndView mView,UsersDto dto) {
+		public ModelAndView signup(HttpServletRequest request,ModelAndView mView,UsersDto dto) {
 			service.addUsers(dto);
 			mView.setViewName("users/signup");
 			return mView;
