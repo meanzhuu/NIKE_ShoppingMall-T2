@@ -32,27 +32,26 @@ align-items:center;
 </style>
 </head>
 <body>
-
 <div class="navbar bg-dark navbar-dark navbar-expand-sm">
 	<div class="container">
-		<img src="resources/img/nike2.png" class="image"/>
-		<a class="navbar-brand" href="./home.do">Nike</a>	
+		<img src="${pageContext.request.contextPath }/resources/img/nike2.png" class="image"/>
+		<a class="navbar-brand" href="${pageContext.request.contextPath }/home.do">Nike</a>	
 		<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#topNav">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse d-flex justify-content-end" id="topNav">
 			<ul class="navbar-nav ">
 				<li class="nav-item">
-					<a class="nav-link" href="./users/loginform.do">로그인</a>
+					<a class="nav-link" href="${pageContext.request.contextPath }/users/loginform.do">로그인</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link <%=thisPage.equals("todo") ? "active" : "" %>" href="${pageContext.request.contextPath }/todo/list.jsp">로그아웃</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./users/signup_form.do">회원가입</a>
+					<a class="nav-link" href="${pageContext.request.contextPath }/users/signup_form.do">회원가입</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./updateform.do">
+					<a class="nav-link" href="${pageContext.request.contextPath }/updateform.do">
 							<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
   								<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
   								<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
