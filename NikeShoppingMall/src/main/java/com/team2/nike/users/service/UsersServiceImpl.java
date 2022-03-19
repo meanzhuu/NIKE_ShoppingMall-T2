@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCrypt;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.team2.nike.users.dao.UsersDao;
 import com.team2.nike.users.dto.UsersDto;
@@ -55,5 +56,14 @@ public class UsersServiceImpl implements UsersService {
 			System.out.println("tt");
 			session.setAttribute("users_id", dto.getUsers_id());
 		}
+	}
+
+	@Override
+	public void getInfo(HttpSession session, ModelAndView mView) {
+		String id=(String)session.getAttribute("id");
+		//DB 에서 회원 정보를 얻어와서 
+		UsersDto dto=dao.getUser(id);
+		//ModelAndView 객체에 담아준다.
+		mView.addObject("dto", dto);
 	}
 }
