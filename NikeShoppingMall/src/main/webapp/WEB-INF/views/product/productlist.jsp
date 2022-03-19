@@ -8,29 +8,33 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="shortcut icon" href="//image9.coupangcdn.com/image/coupang/favicon/v2/favicon.ico" type="image/x-icon" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<style>
+.back{
+background-color:white;
+}
+</style>
 </head>
 
 <body>
 <jsp:include page="/include/navbar.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
 
-  <div class="text-center mb-5">
-	<ul class="nav justify-content-center mt-3">
-  		<li class="nav-item">
+<div class="text-start mb-5">
+	<ul class="nav justify-content-center mt-3 " style="background-color:white;">
+  		<li class="nav-item back">
     		<a class="nav-link active" aria-current="page" href="#">Men</a>
   		</li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">액세서리</a>
-  </li>
-  <li class="nav-item">
-
-    <a class="nav-link" href="#">지갑</a>
-  </li>
-
-</ul>
-  <h1>지갑</h1>
+  		<li class="nav-item">
+    		<a class="nav-link" href="#">액세서리</a>
+  		</li>
+  		<li class="nav-item">
+    		<a class="nav-link" href="#">지갑</a>
+  		</li>
+	</ul>
+	
+  	<h1>지갑</h1>
 </div>
-    </div>
 
 
   <div class="b-example-divider"></div>
@@ -97,60 +101,6 @@
   </div>
 
 
-
-
-    <div class="container text-center">
-    <div class="row">
-    <div class="col"><div class="card" style="width: 18rem;">
-  <img src="https://contents.lotteon.com/itemimage/_v232942/LO/15/44/72/20/28/_1/54/47/22/02/9/LO1544722028_1544722029_1.jpg/dims/optimize/dims/resizemc/400x400" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-
-  </div>
-</div></div>
-	<div class="col"><div class="card" style="width: 18rem;">
-  <img src="https://contents.lotteon.com/itemimage/_v232942/LO/15/44/72/20/28/_1/54/47/22/02/9/LO1544722028_1544722029_1.jpg/dims/optimize/dims/resizemc/400x400" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-
-  </div>
-</div></div>
- 	<div class="col"><div class="card" style="width: 18rem;">
-  <img src="https://contents.lotteon.com/itemimage/_v232942/LO/15/44/72/20/28/_1/54/47/22/02/9/LO1544722028_1544722029_1.jpg/dims/optimize/dims/resizemc/400x400" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">An item</li>
-
-  </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-
-  </div>
-</div>
-
-</div>
-
-</div>
-</div>
 
  <div class="container">
 
