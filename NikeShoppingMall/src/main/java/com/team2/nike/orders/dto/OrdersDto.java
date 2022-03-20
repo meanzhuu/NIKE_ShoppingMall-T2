@@ -2,9 +2,6 @@ package com.team2.nike.orders.dto;
 
 import java.util.Date;
 import java.util.List;
-
-import org.springframework.web.multipart.MultipartFile;
-
 import com.team2.nike.orderDetail.dto.OrderDetailDto;
 
 public class OrdersDto {
@@ -13,6 +10,37 @@ public class OrdersDto {
 	private Date productDetail_orderDate;
 	private String productDetail_deliveryState;
 	private List<OrderDetailDto> orders;
+	
+	public int getOrders_id() {
+		return orders_id;
+	}
+	public void setOrders_id(int orders_id) {
+		this.orders_id = orders_id;
+	}
+	public String getUsers_id() {
+		return users_id;
+	}
+	public void setUsers_id(String users_id) {
+		this.users_id = users_id;
+	}
+	public Date getProductDetail_orderDate() {
+		return productDetail_orderDate;
+	}
+	public void setProductDetail_orderDate(Date productDetail_orderDate) {
+		this.productDetail_orderDate = productDetail_orderDate;
+	}
+	public String getProductDetail_deliveryState() {
+		return productDetail_deliveryState;
+	}
+	public void setProductDetail_deliveryState(String productDetail_deliveryState) {
+		this.productDetail_deliveryState = productDetail_deliveryState;
+	}
+	public List<OrderDetailDto> getOrders() {
+		return orders;
+	}
+	public void setOrders(List<OrderDetailDto> orders) {
+		this.orders = orders;
+	}
 	
 /*	orders_id NUMBER PRIMARY KEY,
 	users_id VARCHAR2(100),
