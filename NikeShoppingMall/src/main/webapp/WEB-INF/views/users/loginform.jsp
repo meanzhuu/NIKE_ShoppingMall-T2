@@ -8,10 +8,12 @@
 <title>/users/loginform.jsp</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet">
 
 <style>
 .container{
-
+font-family: 'Noto Sans KR', sans-serif;
 }
 .welcome-header{
     margin:80px 0px;
@@ -53,7 +55,7 @@
     opacity: 0.7;
     color:rgba(255,255,255,0.9);
     border-radius: 8px;
-    background-color: #1D3F6D;
+    background-color: #007cc4;
     cursor: pointer;
 }
 #Login-form button{
@@ -107,7 +109,7 @@ height:45px;
 <jsp:include page="/include/navbar2.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
  
-	<div class="container" style="height:800px;">
+	<div class="container" style="height:900px;">
 
     <header class="welcome-header">
         <h1 class="welcome-header__title">Nike shop에 오신것을 환영합니다!</h1>
