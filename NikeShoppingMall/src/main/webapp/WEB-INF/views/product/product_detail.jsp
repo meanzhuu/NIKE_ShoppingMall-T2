@@ -8,10 +8,10 @@
 </head>
 <body>
 
-<jsp:include page="/include/navbar.jsp"></jsp:include>
+<jsp:include page="/include/navbar4.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
 
-<div class="container">
+<div class="container" style="height:1000px">
 <div class="row my-5">
 <div class="col-6">
      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
