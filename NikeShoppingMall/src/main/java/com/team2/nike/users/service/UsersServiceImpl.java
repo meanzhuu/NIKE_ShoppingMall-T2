@@ -60,7 +60,7 @@ public class UsersServiceImpl implements UsersService {
 
 	@Override
 	public void getInfo(HttpSession session, ModelAndView mView) {
-		String id=(String)session.getAttribute("id");
+		String id=(String)session.getAttribute("users_id");
 		//DB 에서 회원 정보를 얻어와서 
 		UsersDto dto=dao.getUser(id);
 		//ModelAndView 객체에 담아준다.
