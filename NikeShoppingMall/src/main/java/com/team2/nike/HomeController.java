@@ -50,4 +50,8 @@ public class HomeController {
 	public String productlist(HttpServletRequest request) {
 		return "product/productlist";
 	}
+	@RequestMapping("/cart/list.do")
+	public String cartlist(HttpServletRequest request) {
+		return "cart/list";
+	}
 }

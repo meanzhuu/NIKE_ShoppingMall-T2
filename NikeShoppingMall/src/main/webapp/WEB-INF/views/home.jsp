@@ -24,7 +24,8 @@
 <a href="./updateform.do">updateform</a>
 <a href="./product/productlist.do">productlist</a>
 <a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
-
+<a href="./cart/cartlist.do">cartlist</a>
+<a href="${pageContext.request.contextPath}/cart/list.do">장바구니 목록</a>
 <jsp:include page="/include/footer.jsp"></jsp:include>
 
 
