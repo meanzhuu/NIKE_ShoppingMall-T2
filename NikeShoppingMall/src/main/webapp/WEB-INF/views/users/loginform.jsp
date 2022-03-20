@@ -126,8 +126,8 @@ height:45px;
 					<input type="hidden" name="url" value="${param.url }"/>
 				</c:otherwise>
 			</c:choose>
-        <input name="username" type="text" placeholder="Email or ID" />
-        <input name="password" type="password" placeholder="Password"/>
+        <input type="text" id="users_id" name="users_id"  placeholder="Email or ID" />
+        <input type="password" id="users_pwd" name="users_pwd"  placeholder="Password"/>
         <input type="submit" value="Log in" />
        	<a href="${pageContext.request.contextPath }/users/signup_form.do" class="find">회원가입이 필요하십니까?</a>
     </form>          

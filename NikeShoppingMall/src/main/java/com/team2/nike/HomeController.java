@@ -62,6 +62,11 @@ public class HomeController {
 	public String productlist(HttpServletRequest request) {
 		return "product/productlist";
 	}
+	@RequestMapping("/cart/list.do")
+	public String cartlist(HttpServletRequest request) {
+		return "cart/list";
+	}
+    
 	@RequestMapping("/product/product_detail.do")
 	public String product_detail(HttpServletRequest request) {
 		return "product/product_detail";
