@@ -135,18 +135,16 @@ font-weight:bold;
   	</button>
 </div>
 <jsp:include page="/include/footer.jsp"></jsp:include>
-<a href="./users/deleteform.do">deleteform</a>
-<a href="./users/delete.do">delete</a>
-<a href="./users/loginform.do">Loginform</a>
-<a href="./users/signup_form.do">signup_form</a>
-<a href="./updateform.do">updateform</a>
-<a href="./product/productlist.do">productlist</a>
+<a href="${pageContext.request.contextPath}/users/deleteform.do">deleteform</a>
+<a href="${pageContext.request.contextPath}/users/delete.do">delete</a>
+<a href="${pageContext.request.contextPath}/users/loginform.do">Loginform</a>
+<a href="${pageContext.request.contextPath}/users/signup_form.do">signup_form</a>
+<a href="${pageContext.request.contextPath}/updateform.do">updateform</a>
+<a href="${pageContext.request.contextPath}/product/productlist.do">productlist</a>
 <a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
 <a href="${pageContext.request.contextPath}/cart/list.do">장바구니 목록</a>
 <a href="${pageContext.request.contextPath}/cart/insert.do">장바구니 삽입</a>
-<jsp:include page="/include/footer.jsp"></jsp:include>
-<a href="./product/list.do">제품 목록</a>
-<a href="./product/product_detail.do">product_detail</a>
+<a href="${pageContext.request.contextPath}/product/product_detail.do">product_detail</a>
 
 <a href="./users/logout.do">로그아웃</a>
 
