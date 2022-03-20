@@ -7,22 +7,25 @@
 <title>/views/users/signup_form.jsp</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet">
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .container{
-    font-family: 'Roboto', sans-serif;
-    color:#42464A;
+font-family: 'Noto Sans KR', sans-serif;
+color:#42464A;
 }
 .head1{
-    margin: 80px 100px;
-    text-align: center;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    padding-bottom:70px;
-    border-bottom:1px solid;
+margin: 80px 100px;
+text-align: center;
+display:flex;
+flex-direction: column;
+align-items: center;
+font-size: 30px;
+font-weight: bold;
+padding-bottom:70px;
+border-bottom:1px solid;
 }
 #myForm{
 display:flex;
@@ -39,43 +42,48 @@ vertical-align:center;
 font-weight:bold;
 }
 #myForm input{
-	border:none;
-    padding:7px 5px;
-    font-size: 17px;
-    margin-top: 5px;
-    border-bottom:1.5px solid rgba(29,63,109,0.4);
-    transition: border-color 0.6s ease-in-out;
-    display:inline-block;
-    width : 500px;
+border:none;
+padding:7px 5px;
+font-size: 17px;
+margin-top: 5px;
+border-bottom:1.5px solid rgba(29,63,109,0.4);
+transition: border-color 0.6s ease-in-out;
+display:inline-block;
+width : 500px;
 }
 #myForm input:focus{
-    border-color: yellow;
+border-color: yellow;
 }
 #myForm button{
-    margin-top: 17px;
-    margin-bottom: 30px;
-    padding: 13px;
-    font-weight: bold;
-    font-size: 15px;
-    opacity: 0.7;
-    color:rgba(255,255,255,0.9);
-    border-radius: 8px;
-    background-color: #1D3F6D;
-    cursor: pointer;
-    width : 200px;
-  	display:inline-block;
+margin-top: 17px;
+margin-bottom: 30px;
+padding: 13px;
+font-weight: bold;
+font-size: 15px;
+opacity: 0.7;
+color:rgba(255,255,255,0.9);
+border-radius: 8px;
+background-color: #007cc4;
+cursor: pointer;
+width : 200px;
+display:inline-block;
+}
+.back{
+text-decoration:none;
+color:white;
+
 }
 </style>
 </head>
 <body>
 <jsp:include page="/include/navbar3.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
-<div class="container" style="height:1400px";>
+<div class="container" style="height:1400px;">
 	<h1 class="head1">회원 가입</h1>
 	<form action="${pageContext.request.contextPath}/users/signup.do" method="post" id="myForm">
 		<div style="text-align:center;">
 			<label class="control-label" for="users_id">아이디</label>
-			<input class="form-control" type="text" name="users_id" id="users_id" placeholder="Email or ID"/>
+			<input class="form-control" type="text" name="users_id" id="users_id" placeholder="영문 소문자로 시작 and 5 ~ 10글자"/>
 			<div id="id_length_validation" class="invalid-feedback">영문자 소문자로 시작하고 5~10글자 이내로 작성해주세요.</div>
 			<div id="id_overlap_validation" class="invalid-feedback">중복된 아이디 입니다.</div>
 		</div>		
@@ -85,7 +93,7 @@ font-weight:bold;
 		</div>
 		<div style="text-align:center;">
 			<label class="control-label" for="users_pwd">비밀번호</label>
-			<input class="form-control" type="password" name="users_pwd" id="users_pwd"/>
+			<input class="form-control" type="password" name="users_pwd" id="users_pwd" placeholder="영문자, 숫자, 특수문자를 하나 이상 조합"/>
 			<div id="pwd_length_validation" class="invalid-feedback">영문자,숫자,특수문자를 하나이상을 사용해주세요.</div>
 			<div id="pwd_length_validation" class="valid-feedback">비밀번호 확인</div>
 		</div>
@@ -97,7 +105,7 @@ font-weight:bold;
 		</div>
 		<div style="text-align:center;">
 			<label class="control-label" for="users_email">이메일</label>
-			<input class="form-control" type="text" name="users_email" id="users_email"/>
+			<input class="form-control" type="text" name="users_email" id="users_email" placeholder="영문과 숫자로 조합"/>
 			<div class="invalid-feedback">이메일 형식을 확인 하세요.</div>
 		</div>
 		<div style="text-align:center;">
@@ -111,8 +119,8 @@ font-weight:bold;
 			
 		</div>
 		<div style="text-align:center;">
-			<label class="control-label" for="users_phoneNum">연락처</label>
-			<input class="form-control" type="text" name="users_phoneNum" id="users_phoneNum"/>
+			<label class="control-label" for="users_phoneNum" >연락처</label>
+			<input class="form-control" type="text" name="users_phoneNum" id="users_phoneNum" placeholder="'-' 는 생략"/>
 		</div>
 		<div style="text-align:center;">
 			<label class="control-label" for="users_addr">주소</label>
@@ -120,7 +128,7 @@ font-weight:bold;
 		</div>
 		<div style="text-align:center; margin-top:80px; padding-top:40px; border-top:1px solid;">
 		<button class="btn btn-primary" type="submit">가입</button>
-		<button class="btn btn-primary" type="submit">취소</button>
+		<button class="btn btn-primary" type="submit" onclick="location.href='${pageContext.request.contextPath }/users/loginform.do'" style="margin-left:20px;">취소</button>
 		</div>
 	</form>
 </div>
