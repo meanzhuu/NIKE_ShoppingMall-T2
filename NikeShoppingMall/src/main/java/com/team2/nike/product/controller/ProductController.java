@@ -32,7 +32,7 @@ public class ProductController {
 	}
 	
 	@RequestMapping("/product/list")
-	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
+	public ModelAndView authgetList(HttpServletRequest request, ModelAndView mView) {
 		service.getList(request);
 		mView.setViewName("/product/list");
 		return mView;

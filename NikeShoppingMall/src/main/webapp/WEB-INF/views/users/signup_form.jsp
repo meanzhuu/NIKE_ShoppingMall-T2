@@ -7,63 +7,124 @@
 <title>/views/users/signup_form.jsp</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.container{
+    font-family: 'Roboto', sans-serif;
+    color:#42464A;
+}
+.head1{
+    margin: 80px 100px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom:70px;
+    border-bottom:1px solid;
+}
+#myForm{
+display:flex;
+flex-direction:column;
+margin: 0px 100px;
+}
+#myForm label{
+margin-top:60px;
+text-align:center;
+display:inline-block;
+width:120px;
+height:30px;
+vertical-align:center;
+font-weight:bold;
+}
+#myForm input{
+	border:none;
+    padding:7px 5px;
+    font-size: 17px;
+    margin-top: 5px;
+    border-bottom:1.5px solid rgba(29,63,109,0.4);
+    transition: border-color 0.6s ease-in-out;
+    display:inline-block;
+    width : 500px;
+}
+#myForm input:focus{
+    border-color: yellow;
+}
+#myForm button{
+    margin-top: 17px;
+    margin-bottom: 30px;
+    padding: 13px;
+    font-weight: bold;
+    font-size: 15px;
+    opacity: 0.7;
+    color:rgba(255,255,255,0.9);
+    border-radius: 8px;
+    background-color: #1D3F6D;
+    cursor: pointer;
+    width : 200px;
+  	display:inline-block;
+}
+</style>
 </head>
 <body>
-<div class="container">
-  <div class="row my-5">
- 	<div class="p-5 mb-7 bg-secondary text-white text-center">나이키</div>
-<div class="container">
-	<h1>회원 가입 폼 입니다.</h1>
+<jsp:include page="/include/navbar3.jsp"></jsp:include>
+<jsp:include page="/include/headbar.jsp"></jsp:include>
+<div class="container" style="height:1400px";>
+	<h1 class="head1">회원 가입</h1>
 	<form action="${pageContext.request.contextPath}/users/signup.do" method="post" id="myForm">
-		<div>
+		<div style="text-align:center;">
 			<label class="control-label" for="users_id">아이디</label>
-			<input class="form-control" type="text" name="users_id" id="users_id"/>
+			<input class="form-control" type="text" name="users_id" id="users_id" placeholder="Email or ID"/>
 			<div id="id_length_validation" class="invalid-feedback">영문자 소문자로 시작하고 5~10글자 이내로 작성해주세요.</div>
 			<div id="id_overlap_validation" class="invalid-feedback">중복된 아이디 입니다.</div>
-		</div>
-		<div>
+		</div>		
+		<div style="text-align:center;">
 			<label class="control-label" for="users_name">이름</label>
 			<input class="form-control" type="text" name="users_name" id="users_name"/>
 		</div>
-		<div>
+		<div style="text-align:center;">
 			<label class="control-label" for="users_pwd">비밀번호</label>
 			<input class="form-control" type="password" name="users_pwd" id="users_pwd"/>
 			<div id="pwd_length_validation" class="invalid-feedback">영문자,숫자,특수문자를 하나이상을 사용해주세요.</div>
 			<div id="pwd_length_validation" class="valid-feedback">비밀번호 확인</div>
 		</div>
-		<div>
+		<div style="text-align:center;">
 			<label class="control-label" for="users_pwd2">비밀번호 확인</label>
 			<input class="form-control" type="password" name="users_pwd2" id="users_pwd2"/>
 			<div id="pwd2_overlap_validation" class="invalid-feedback">비밀번호가 일치하지 않습니다.</div>
 			<div id="pwd2_overlap_validation" class="valid-feedback">비밀번호가 일치합니다.</div>
 		</div>
-		<div>
+		<div style="text-align:center;">
 			<label class="control-label" for="users_email">이메일</label>
 			<input class="form-control" type="text" name="users_email" id="users_email"/>
 			<div class="invalid-feedback">이메일 형식을 확인 하세요.</div>
 		</div>
-		<div>
+		<div style="text-align:center;">
 			<label class="control-label" for="users_sex">성별</label>
 			<input class="form-control" type="text" name="users_sex" id="users_sex"/>
 		</div>
 		
-		<div>
+		<div style="text-align:center;">
 			<label class="control-label" for="users_birthday">생년월일</label>
 			<input class="form-control" type="number" name="users_birthday" id="users_birthday"/>
 			
 		</div>
-		<div>
+		<div style="text-align:center;">
 			<label class="control-label" for="users_phoneNum">연락처</label>
 			<input class="form-control" type="text" name="users_phoneNum" id="users_phoneNum"/>
 		</div>
-		<div>
+		<div style="text-align:center;">
 			<label class="control-label" for="users_addr">주소</label>
 			<input class="form-control" type="text" name="users_addr" id="users_addr"/>
 		</div>
+		<div style="text-align:center; margin-top:80px; padding-top:40px; border-top:1px solid;">
 		<button class="btn btn-primary" type="submit">가입</button>
+		<button class="btn btn-primary" type="submit">취소</button>
+		</div>
 	</form>
 </div>
+<jsp:include page="/include/footer.jsp"></jsp:include>
 <script src="${pageContext.request.contextPath}/resources/js/gura_util.js"></script>
 <script>
 	let isIdValid;
@@ -176,6 +237,8 @@ document.querySelector("#users_email").addEventListener("input", function(){
 			e.preventDefault();
 		}	
 	});
+	
+	
 </script>
 </body>
 </html>

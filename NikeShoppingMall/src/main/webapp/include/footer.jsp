@@ -6,16 +6,20 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+body{
+height:100%;
+}
 #wrap {
-    min-height: 100vh;
+    min-height: 100%;
     position: relative;
     width: 100%;
 }
 
 footer {
+	padding-top:20px;
 	width: 100%;
-	height: 110px; /* 내용물에 따라 알맞는 값 설정 */
-	bottom: 0px;
+	height: 135px; 
+	bottom: 0;
 	position: absolute;
 	background-color: black;
 	color:#666666;

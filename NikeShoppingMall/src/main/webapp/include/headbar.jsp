@@ -11,14 +11,18 @@
 <style>
 .box{
 display:block;
-height:200px;
-border-bottom: 4mm ridge rgba(148, 147, 142, .6);
+height:260px;
+border-bottom: 4mm ridge rgba(29, 63, 109, .6);
 text-align:center;
+background-color:#efefef
 }
 .head{
-font-size:80px;
+font-size:70px;
 display:inline-block;
-margin-top:30px;
+margin-top:40px;
+color:black;
+font-family:fantasy;
+letter-spacing:8px;
 }
 
 .nav-column a,.nav>li>a,h3{
@@ -53,92 +57,58 @@ margin-top:30px;
     float:left
 }
 .nav>li>a{
-    background:#FFFFFF;
+    background:#efefef;
     color:black;
     display:block;
-    line-height:4;
+    line-height:2.5;
     padding:0 1.25em;
     text-shadow:0 0 1px rgba(0,0,0,.35);
     transition:all .3s ease;
     font-weight:bold;
 }
 .nav>li:hover>a,.nav>li>a:focus{
-    background:#d8d8d8;
-    border-bottom:solid
+    background:#1D3F6D;
+    border-bottom:solid;
+    color:#e2e2e2;
 }
 .nav>li:first-child>a{
     border-left:none;
     border-radius:3px 0 0 3px;
     font-weight:bold
 }
-.nav-search>form{
-    
-    height:3.5em;
-    width:inherit
-}
-.nav-search input[type=text]{
-    background:white;
-    color:#999;
-    display:block;
-    float:left;
-    font-weight:700;
-    line-height:1.4em;
-    padding:1em 0;
-    text-shadow:0 0 1px rgba(0,0,0,.35);
-    transition:all .3s ease 1s;
-    width:0;
-}
-.nav-search input[type=text]:focus{
-    color:#fcfcfc
-}
-.nav-search input[type=text]:focus,.nav-search:hover input[type=text]{
-    padding:1em 1.25em;
-    transition:all .3s ease .1s;
-    width:20em
-}
-.nav-search input[type=submit]{
-    background:url(../img/search-icon.svg) center center no-repeat #372f2b;
-    border-radius:0 3px 3px 0;
-    cursor:pointer;
-    display:block;
-    float:left;
-    height:3.5em;
-    padding:0 1.25em;
-    transition:all .3s ease
-}
-.nav-search input:focus,.nav-search input[type=submit]:hover{
-    background-color:#4b4441
-}
+
 .mega-menu{
-    background:#fff;
+    background:rgba(29, 63, 109, .7);
     border:1px solid #ddd;
     border-radius:0 0 3px 3px;
     opacity:0;
     position:absolute;
-    transition:all .3s ease .15s;
+    transition:all .25s ease .05s;
     visibility:hidden;
-    width:100%
+    width:50%;
+    
 }
 li:hover>.mega-menu{
     opacity:1;
     overflow:visible;
     visibility:visible
+    
 }
 .nav-column{
-    float:left;
-    padding:2.5%;
-    width:40%
+	
+    padding:13%;
+    width:100%;
 }
 .nav-column a{
-    color:#888;
+    color:white;
     display:block;
     line-height:1.75
 }
 .nav-column a:hover{
-color:#2196f3
+color:yellow;
 }
 h3{
-color:#372f2b;
+color:white;
 font-size:.95em;
 line-height:1.15;
 margin:1.25em 0 .75em;
@@ -149,98 +119,147 @@ text-transform:uppercase
     color:#2196f3
 }
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+header {
+	display: flex;
+	justify-content:center;
+  } 
+
+.search_bar{
+display:flex;
+}
+.search_box{
+display:flex;
+align-items:center;
+}
+.search_box input {
+	width: 450px;
+	height: 35px;
+	border: 4px solid #8C8C8B;
+	margin-top: 30px;
+	margin-bottom:18px;
+	margin-right:0;
+	
+}
+
+.search_button {
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	background: #1D3F6D;
+	vertcal-align:middle;
+	font-weight:bold;
+	display:inline-block;
+	line-height:30px;
+	margin-top: 30px;
+	margin-bottom:18px;
+}
+
+
 </style>
 
 </head>
 <body>
 <div>
-   <div class="box">
-   
-      <h1 class="head">Nike</h1>
-      
-       <div class="menu-wrapper" role="navigation">
-            <ul class="nav" role="menubar">
-              <li role="menuitem">
-                   <a href="#">의류</a>
-                <div class="mega-menu" aria-hidden="true" role="menu">
-                  <div class="nav-column">
-                       <h3>Heading 1</h3>
-                       <ul>
-                         <li role="menuitem"><a href="#">Item 1</a></li>
-                            <li role="menuitem"><a href="#">Item 2</a></li>
-                            <li role="menuitem"><a href="#">Item 3</a></li>
-                            <li role="menuitem"><a href="#">Item 4</a></li>
-                            <li role="menuitem"><a href="#">Item 5</a></li>
-                            <li role="menuitem"><a href="#">Item 6</a></li>
-                            <li role="menuitem"><a href="#">Item 7</a></li>
-                       </ul>
-                  </div>
-                </div>
-              </li>
-              
-              <li role="menuitem">
-                   <a href="#">신발</a>
-                <div class="mega-menu" aria-hidden="true" role="menu">
-                  <div class="nav-column">
-                       <h3>Heading 1</h3>
-                       <ul>
-                         <li role="menuitem"><a href="#">Item 1</a></li>
-                            <li role="menuitem"><a href="#">Item 2</a></li>
-                            <li role="menuitem"><a href="#">Item 3</a></li>
-                            <li role="menuitem"><a href="#">Item 4</a></li>
-                            <li role="menuitem"><a href="#">Item 5</a></li>
-                            <li role="menuitem"><a href="#">Item 6</a></li>
-                            <li role="menuitem"><a href="#">Item 7</a></li>
-                       </ul>
-                  </div>
-                </div>
-              </li>
-              
-              <li role="menuitem">
-                   <a href="#">가방</a>
-                <div class="mega-menu" aria-hidden="true" role="menu">
-                  <div class="nav-column">
-                       <h3>Heading 1</h3>
-                       <ul>
-                         <li role="menuitem"><a href="#">Item 1</a></li>
-                            <li role="menuitem"><a href="#">Item 2</a></li>
-                            <li role="menuitem"><a href="#">Item 3</a></li>
-                            <li role="menuitem"><a href="#">Item 4</a></li>
-                            <li role="menuitem"><a href="#">Item 5</a></li>
-                            <li role="menuitem"><a href="#">Item 6</a></li>
-                            <li role="menuitem"><a href="#">Item 7</a></li>
-                       </ul>
-                  </div>
-                </div>
-              </li>
-              
-              <li role="menuitem">
-                   <a href="#">악세사리</a>
-                <div class="mega-menu" aria-hidden="true" role="menu">
-                  <div class="nav-column">
-                       <h3>Heading 1</h3>
-                       <ul>
-                         <li role="menuitem"><a href="#">Item 1</a></li>
-                            <li role="menuitem"><a href="#">Item 2</a></li>
-                            <li role="menuitem"><a href="#">Item 3</a></li>
-                            <li role="menuitem"><a href="#">Item 4</a></li>
-                            <li role="menuitem"><a href="#">Item 5</a></li>
-                            <li role="menuitem"><a href="#">Item 6</a></li>
-                            <li role="menuitem"><a href="#">Item 7</a></li>
-                       </ul>
-                  </div>
-                </div>
-              </li>
-              <li role="menuitem" class="nav-search">
-                   <form action="#">
-                     <label for="search"></label>
-                     <input type="text" id="search" title="Search..." placeholder="Search...">
-                     <input type="submit" value="">
-                   </form>
-              </li>
-            </ul>
-       </div>
-   </div>
+	<div class="box">
+	
+		<a href="${pageContext.request.contextPath }/home.do"><h1 class="head">Nike Shop</h1></a>
+		<br />
+	<header class="search_bar">
+		<div class="search_box">
+			<input type="text" />
+			<button class="search_button">
+					<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"  fill="white" class="bi bi-search" viewBox="0 0 16 16">
+  						<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+					</svg>
+			</button>
+		</div>
+
+	</header>
+
+			
+    	<div class="menu-wrapper" role="navigation">
+      		<ul class="nav" role="menubar">
+        		<li role="menuitem">
+          			<a href="#">의류</a>
+          		<div class="mega-menu" aria-hidden="true" role="menu">
+            		<div class="nav-column">
+              			<h3>Heading 1</h3>
+              			<ul>
+                			<li role="menuitem"><a href="#">Item 1</a></li>
+                				<li role="menuitem"><a href="#">Item 2</a></li>
+                				<li role="menuitem"><a href="#">Item 3</a></li>
+                				<li role="menuitem"><a href="#">Item 4</a></li>
+                				<li role="menuitem"><a href="#">Item 5</a></li>
+                				<li role="menuitem"><a href="#">Item 6</a></li>
+                				<li role="menuitem"><a href="#">Item 7</a></li>
+              			</ul>
+            		</div>
+          		</div>
+        		</li>
+        		
+        		<li role="menuitem">
+          			<a href="#">신발</a>
+          		<div class="mega-menu" aria-hidden="true" role="menu">
+            		<div class="nav-column">
+              			<h3>Heading 1</h3>
+              			<ul>
+                			<li role="menuitem"><a href="#">Item 1</a></li>
+                				<li role="menuitem"><a href="#">Item 2</a></li>
+                				<li role="menuitem"><a href="#">Item 3</a></li>
+                				<li role="menuitem"><a href="#">Item 4</a></li>
+                				<li role="menuitem"><a href="#">Item 5</a></li>
+                				<li role="menuitem"><a href="#">Item 6</a></li>
+                				<li role="menuitem"><a href="#">Item 7</a></li>
+              			</ul>
+            		</div>
+          		</div>
+        		</li>
+        		
+        		<li role="menuitem">
+          			<a href="#">가방</a>
+          		<div class="mega-menu" aria-hidden="true" role="menu">
+            		<div class="nav-column">
+              			<h3>Heading 1</h3>
+              			<ul>
+                			<li role="menuitem"><a href="#">Item 1</a></li>
+                				<li role="menuitem"><a href="#">Item 2</a></li>
+                				<li role="menuitem"><a href="#">Item 3</a></li>
+                				<li role="menuitem"><a href="#">Item 4</a></li>
+                				<li role="menuitem"><a href="#">Item 5</a></li>
+                				<li role="menuitem"><a href="#">Item 6</a></li>
+                				<li role="menuitem"><a href="#">Item 7</a></li>
+              			</ul>
+            		</div>
+          		</div>
+        		</li>
+        		
+        		<li role="menuitem">
+          			<a href="#">악세사리</a>
+          		<div class="mega-menu" aria-hidden="true" role="menu">
+            		<div class="nav-column">
+              			<h3>Heading 1</h3>
+              			<ul>
+                			<li role="menuitem"><a href="#">Item 1</a></li>
+                				<li role="menuitem"><a href="#">Item 2</a></li>
+                				<li role="menuitem"><a href="#">Item 3</a></li>
+                				<li role="menuitem"><a href="#">Item 4</a></li>
+                				<li role="menuitem"><a href="#">Item 5</a></li>
+                				<li role="menuitem"><a href="#">Item 6</a></li>
+                				<li role="menuitem"><a href="#">Item 7</a></li>
+              			</ul>
+            		</div>
+          		</div>
+        		</li>
+      		</ul>
+    	</div>
+	</div>
 </div>
 </body>
 </html>
