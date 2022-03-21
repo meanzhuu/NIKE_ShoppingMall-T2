@@ -5,32 +5,38 @@
 <head>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet">
+
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
 <style>
+.container{
+font-family: 'Noto Sans KR', sans-serif;
+}
 #wrap{
-	width : 960px;
-	height : 100%;
-	margin : 0px auto;	/*가운데 정렬*/
+width : 960px;
+height : 100%;
+margin : 0px auto;	/*가운데 정렬*/
 }
 #box1{
-   width:30%;
-   height: 500px;
-   background-color:#ffadb8 ;
-   float: left;
+width:30%;
+height: 500px;
+background-color:#ffadb8 ;
+float: left;
 }
 #box2{
-   width:30%;
-   height: 500px;
-   background-color: #adceff;
-   float: left;
+width:30%;
+height: 500px;
+background-color: #adceff;
+float: left;
 }
 #box3{
-   width:30%;
-   height: 500px;
-   background-color: #f9ffad;
-   float: left;
+width:30%;
+height: 500px;
+background-color: #f9ffad;
+float: left;
 }
 .header-ment{
 text-align:center;
@@ -129,21 +135,18 @@ font-weight:bold;
   	</button>
 </div>
 <jsp:include page="/include/footer.jsp"></jsp:include>
-<a href="./delete.do">delete</a>
-<a href="./info.do">info</a>
-<a href="./users/logout.do">로그아웃</a>
-<a href="./pwd_update.do">pwd_update</a>
-<a href="./pwd_updateform.do">pwd_updateform</a>
-<a href="./updateform.do">updateform</a>
-<a href="./product/productlist.do">productlist</a>
+<a href="${pageContext.request.contextPath}/users/deleteform.do">deleteform</a>
+<a href="${pageContext.request.contextPath}/users/delete.do">delete</a>
+<a href="${pageContext.request.contextPath}/users/loginform.do">Loginform</a>
+<a href="${pageContext.request.contextPath}/users/signup_form.do">signup_form</a>
+<a href="${pageContext.request.contextPath}/updateform.do">updateform</a>
+<a href="${pageContext.request.contextPath}/product/productlist.do">productlist</a>
 <a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
 <a href="${pageContext.request.contextPath}/cart/list.do">장바구니 목록</a>
 <a href="${pageContext.request.contextPath}/cart/insert.do">장바구니 삽입</a>
-<jsp:include page="/include/footer.jsp"></jsp:include>
-<a href="./product/list.do">제품 목록</a>
-<a href="./product/product_detail.do">product_detail</a>
+<a href="${pageContext.request.contextPath}/product/product_detail.do">product_detail</a>
 
-
+<a href="./users/logout.do">로그아웃</a>
 
 </body>
 </html>
