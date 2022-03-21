@@ -51,7 +51,7 @@ font-weight:bold;
 <body>
 
 <jsp:include page="/include/navbar.jsp"></jsp:include>
-<jsp:include page="/include/headbar.jsp"></jsp:include>
+<jsp:include page="/include/headbar2.jsp"></jsp:include>
 
  <div class="container" style="width:100%; height:600px;">
 	<div class="header-ment">Top3 items</div>

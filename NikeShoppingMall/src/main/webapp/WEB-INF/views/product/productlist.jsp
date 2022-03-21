@@ -8,9 +8,19 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="shortcut icon" href="//image9.coupangcdn.com/image/coupang/favicon/v2/favicon.ico" type="image/x-icon" />
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Black+Han+Sans&family=Cute+Font&family=Do+Hyeon&family=Dokdo&family=East+Sea+Dokdo&family=Gaegu&family=Gamja+Flower&family=Gothic+A1&family=Gugi&family=Hi+Melody&family=Jua&family=Kirang+Haerang&family=Nanum+Brush+Script&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Nanum+Myeongjo&family=Nanum+Pen+Script&family=Noto+Sans+KR&family=Noto+Serif+KR&family=Poor+Story&family=Single+Day&family=Song+Myung&family=Stylish&family=Sunflower:wght@300&family=Yeon+Sung&display=swap" rel="stylesheet">
 
 <style>
 .back{
+background-color:white;
+}
+.nav>li>a:hover,.nav>li>a:focus{
+    background:black;
+    border-bottom:solid;
+    color:#e2e2e2;
+}
+.top-nav{
 background-color:white;
 }
 </style>
@@ -19,21 +29,24 @@ background-color:white;
 <body>
 <jsp:include page="/include/navbar.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
-
+<div class="container" style="height:1400px; font-family: 'Noto Sans KR', sans-serif;;">
 <div class="text-start mb-5">
-	<ul class="nav justify-content-center mt-3 " style="background-color:white;">
+	<h1 style="color:#ff91cb; text-align:center; margin-top:30px;" >지갑</h1>
+	<div style="display:block; text-align:center;">
+	<ul class="nav justify-content-center mt-3 " style="font-size:18px;">
   		<li class="nav-item back">
-    		<a class="nav-link active" aria-current="page" href="#">Men</a>
+    		<a class="nav-link active top-nav" aria-current="page" href="#" onMouseOver="this.style.color='#ff91cb'" onMouseOut="this.style.color='#7f7f7f'" style="background-color:white; border-right:3px solid #969696;  color:#7f7f7f">Men</a>
   		</li>
   		<li class="nav-item">
-    		<a class="nav-link" href="#">액세서리</a>
+    		<a class="nav-link top-nav" href="#"  onMouseOver="this.style.color='#ff91cb'" onMouseOut="this.style.color='#7f7f7f'" style="background-color:white; border-right:3px solid #969696;  color:#7f7f7f">액세서리</a>
   		</li>
   		<li class="nav-item">
-    		<a class="nav-link" href="#">지갑</a>
+    		<a class="nav-link top-nav" href="#" onMouseOver="this.style.color='#ff91cb'" onMouseOut="this.style.color='#7f7f7f'" style="background-color:white;  color:#7f7f7f">지갑</a>
   		</li>
 	</ul>
+	</div>
 	
-  	<h1>지갑</h1>
+
 </div>
 
 
@@ -100,9 +113,6 @@ background-color:white;
     </ul>
   </div>
 
-
-
- <div class="container">
 
     <div class="row text-center mt-5">
     <div class="col"><div class="card" style="width: 18rem;">
