@@ -7,11 +7,9 @@
 <title>/cart/insert.jsp</title>
 </head>
 <body>
-<div class="container">
-	<p>
-		장바구니에 상품이 담겼습니다.
-		<a href="list.do">장바구니 목록 보기</a>
-	</p>
-</div>
+<script>
+	alert("장바구니에 상품이 담겼습니다.");
+	location.href = "list.do";
+</script>
 </body>
 </html>

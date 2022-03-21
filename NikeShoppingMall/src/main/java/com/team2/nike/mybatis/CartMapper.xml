@@ -3,17 +3,24 @@
 <mapper namespace="cart">
 
 	<!-- 장바구니 목록을 가져오기 -->
-	<select id="cartList" resultType="cartDto">
-		SELECT cart_id, users_id, product_id, product_name, cart_count, product_price, product_imagePath
-		FROM cart, users, product
-		ORDER BY cart_id ASC
+	<select id="getList" resultType="cartDto">
+		SELECT *
+		FROM
+			(SELECT ROWNUM as rnum, result1.*
+			FROM 
+				(SELECT b.product_imagePath, b.product_name, b.product_price, b.product_point, a.cart_count, a.cart_id, a.users_id 
+				FROM cart a 
+				LEFT OUTER JOIN product b 
+				ON a.product_id = b.product_id
+				WHERE users_id= #{users_id}
+				ORDER BY cart_id ASC) result1)
 	</select>
 
 	<!-- 장바구니 상품 추가하기 -->
 	<insert id="insert" parameterType="cartDto">
 		INSERT INTO cart
-		(cart_id, users_id, product_id, product_name, cart_count, product_price, product_imagePath)
-		VALUES(#{cart_id}, #{users_id} , #{product_id},#{product_name},#{cart_count},#{product_price}, product_imagePath)
+		(cart_id, users_id, product_id)
+		VALUES(cart_seq.NEXTVAL, #{users_id} , #{product_id})
 	</insert>
 
 	<!-- 장바구니 상품을 삭제하기 -->

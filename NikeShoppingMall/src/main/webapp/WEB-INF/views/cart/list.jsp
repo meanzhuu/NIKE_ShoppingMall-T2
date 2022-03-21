@@ -12,17 +12,28 @@
 <table>
 	<thead></thead>
 		<tr>
+			<th>전체 갯수</th>
+			<th>이미지</th>
 			<th>상품명</th>
-			<th>상품수량</th>
-			<th>상품가격</th>
-			<th>상품삭제</th>
+			<th>가격</th>
+			<th>포인트</th>
+			<th>수량</th>
+			<th>삭제</th>
 		</tr>
 	</thead>
 	<tbody>
-		<td>${tmp.product_name }</td>
-		<td></td>
-		<td>${tmp.product_price }</td>
-		<td><a href="delete.do?cart_id=${tmp.cart_id }">삭제</a></td>
+	<c:forEach var="tmp" items="${list }">
+		<tr>
+			<td>${tmp.rnum }</td>
+			<td><img src="${pageContext.request.contextPath }${tmp.product_imagePath}" alt="" /></td>
+			<td>${tmp.product_name }</td>
+			<td>${tmp.product_price }</td>
+			<td>${tmp.product_point }</td>
+			<td>${tmp.cart_count }</td>
+			<td><a href="delete.do?cart_id=${tmp.cart_id}">삭제</a></td>
+		</tr>
+	</c:forEach>
+		
 	</tbody>
 </table>
 </body>
