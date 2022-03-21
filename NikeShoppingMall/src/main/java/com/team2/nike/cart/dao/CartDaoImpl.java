@@ -26,13 +26,11 @@ public class CartDaoImpl implements CartDao{
 	//장바구니에 상품을 추가
 	@Override
 	public void insert(CartDto dto) {
-		
 		session.insert("cart.insert", dto);
 	}
 	//장바구니 상품 삭제
 	@Override
 	public void delete(int cart_id) {
-		
 		session.delete("cart.delete", cart_id);
 	}
 
