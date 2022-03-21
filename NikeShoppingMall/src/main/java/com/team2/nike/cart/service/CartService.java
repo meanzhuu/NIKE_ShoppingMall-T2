@@ -1,5 +1,7 @@
 package com.team2.nike.cart.service;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.web.servlet.ModelAndView;
 
 import com.team2.nike.cart.dto.CartDto;
@@ -15,5 +17,5 @@ public interface CartService {
 	public void getCart(int cart_id, ModelAndView mView);
 	
 	//장바구니 상품 전체의 정보를 인자로 전달하는 ModelAndView 객체에 담아주는 메소드
-	public void getListCart(ModelAndView mView);
+	public void getListCart(String users_id, HttpServletRequest request);
 }

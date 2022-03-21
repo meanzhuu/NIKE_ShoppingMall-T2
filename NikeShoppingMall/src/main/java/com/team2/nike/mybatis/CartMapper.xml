@@ -3,10 +3,10 @@
 <mapper namespace="cart">
 
 	<!-- 장바구니 목록을 가져오기 -->
-	<select id="getList" resultType="cartDto">
+	<select id="getList" parameterType="String" resultType="cartDto">
 		SELECT *
 		FROM
-			(SELECT ROWNUM as rnum, result1.*
+			(SELECT ROWNUM as cart_rnum, result1.*
 			FROM 
 				(SELECT b.product_imagePath, b.product_name, b.product_price, b.product_point, a.cart_count, a.cart_id, a.users_id 
 				FROM cart a 

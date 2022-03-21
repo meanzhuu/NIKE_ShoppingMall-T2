@@ -18,9 +18,8 @@ public class CartDaoImpl implements CartDao{
 	
 	//장바구니 목록을 출력
 	@Override
-	public List<CartDto> getList() {
-		List<CartDto> list=session.selectList("cart.getList");
-		return list;
+	public List<CartDto> getList(String users_id) {
+		return session.selectList("cart.getList",users_id);
 	}
 	
 	//장바구니에 상품을 추가

@@ -21,9 +21,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	@RequestMapping("/home.do")
 	public String home(HttpServletRequest request) {
+		System.out.println("home 열었음");
 		return "home";
 	}
-	
+	/*
 	@RequestMapping("/users/delete.do")
 	public String delete(HttpServletRequest request) {
 		return "users/delete";
@@ -62,14 +63,11 @@ public class HomeController {
 	public String productlist(HttpServletRequest request) {
 		return "product/productlist";
 	}
-	@RequestMapping("/cart/list.do")
-	public String cartlist(HttpServletRequest request) {
-		return "cart/list";
-	}
+	
     
 	@RequestMapping("/product/product_detail.do")
 	public String product_detail(HttpServletRequest request) {
 		return "product/product_detail";
 	}
-
+*/
 }

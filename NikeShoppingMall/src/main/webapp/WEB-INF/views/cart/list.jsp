@@ -24,7 +24,7 @@
 	<tbody>
 	<c:forEach var="tmp" items="${list }">
 		<tr>
-			<td>${tmp.rnum }</td>
+			<td>${tmp.cart_rnum }</td>
 			<td><img src="${pageContext.request.contextPath }${tmp.product_imagePath}" alt="" /></td>
 			<td>${tmp.product_name }</td>
 			<td>${tmp.product_price }</td>
