@@ -20,26 +20,5 @@ import com.team2.nike.product.service.ProductService;
 @Controller //수정 전 그냥 파일만들어둠
 public class MypageController {
 	
-	@Autowired
-	private ProductService service;
 	
-	@RequestMapping("/product/list")
-	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
-		service.getList(request);
-		mView.setViewName("/product/list");
-		return mView;
-	}
-	
-	@RequestMapping("/product/insertform")
-	public ModelAndView insertform(HttpServletRequest request, ProductDto dto, ModelAndView mView) {
-		mView.setViewName("/product/insertform");
-		return mView;
-	}
-	
-	@RequestMapping("/product/insert")
-	public ModelAndView insert(HttpServletRequest request, ProductDto dto, ModelAndView mView) {
-		service.addProduct(dto,request);
-		mView.setViewName("/product/insert");
-		return mView;
-	}
 }
