@@ -66,9 +66,15 @@ public class ProductServiceImpl implements ProductService{
 	}
 
 	@Override
-	public void getList(HttpServletRequest request) {
-		List<ProductDto> list = productDao.getList();
-		request.setAttribute("list", list);	//gallery list
+	public List<ProductDto> getList() {
+		
+		return productDao.getList();
+	}
+	
+	@Override
+	public ProductDto getProduct(int product_id) {
+		
+		return productDao.getProduct(product_id);
 	}
 	
 	@Override
@@ -76,5 +82,6 @@ public class ProductServiceImpl implements ProductService{
 		productDao.delete(product_id);
 		
 	}
+	
 
 }

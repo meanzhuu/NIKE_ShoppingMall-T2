@@ -33,7 +33,7 @@ public class ProductController {
 	
 	@RequestMapping("/product/list")
 	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
-		service.getList(request);
+		mView.addObject("list",service.getList());
 		mView.setViewName("/product/list");
 		return mView;
 	}
@@ -50,4 +50,12 @@ public class ProductController {
 		mView.setViewName("/product/insert");
 		return mView;
 	}
+	
+	@RequestMapping("/product/detail")
+	public ModelAndView detail(@RequestParam int product_id,ModelAndView mView) {
+		mView.addObject("product",service.getProduct(product_id));
+		mView.setViewName("/product/detail");
+		return mView;
+	}
+	
 }

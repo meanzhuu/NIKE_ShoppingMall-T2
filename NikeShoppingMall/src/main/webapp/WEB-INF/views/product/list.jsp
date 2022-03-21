@@ -38,7 +38,7 @@
 				<td>${tmp.product_id }</td>
 				<td>${tmp.product_lcategory }</td>
 				<td>${tmp.product_scategory }</td>
-				<td>${tmp.product_name }</td>
+				<td><a href="detail.do?product_id=${tmp.product_id}">${tmp.product_name }</a></td>
 				<td>${tmp.product_fullName }</td>
 				<td>${tmp.product_color }</td>
 				<td>${tmp.product_size }</td>
