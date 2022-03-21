@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="orders">
+	<insert id="getData" resultType="ordersDto">
+		INSERT INTO orders
+		(orders_id,	users_id, productDetail_orderDate, productDetail_deliveryState
+		)VALUES(orders_seq.NEXTVAL,#{users_id},SYSDATE, #{productDetail_deliveryState})
+	</insert>
+	<select id="orderList" resultType="ordersDto">
+		Select users_id, orders_id, productDetail_orderDate, productDetail_deliveryState
+		FROM orders
+		ORDER BY orders_id ASC
+	</select>
+</mapper>

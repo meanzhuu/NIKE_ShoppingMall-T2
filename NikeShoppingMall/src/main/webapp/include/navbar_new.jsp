@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
 	// thisPage 라는 파라미터명으로 전달되는 값을 읽어와 본다. ( null 일수도 있음!)
 	String thisPage=request.getParameter("thisPage");
@@ -8,7 +7,6 @@
 	if(thisPage==null){
 		thisPage="";
 	}
-	String users_id = (String)session.getAttribute("users_id");
 %>    
 <!DOCTYPE html>
 <html>
@@ -44,15 +42,10 @@ align-items:center;
 		<div class="collapse navbar-collapse d-flex justify-content-end" id="topNav">
 			<ul class="navbar-nav ">
 				<li class="nav-item">
-				<%if(users_id == null) {%>
 					<a class="nav-link" href="${pageContext.request.contextPath }/users/loginform.do">로그인</a>
-				<%}else{ %>
-					<a class="nav-link" href="${pageContext.request.contextPath }/users/logout.do"><%=users_id %></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="${pageContext.request.contextPath }/users/logout.do">로그아웃</a>
-					</li>
-				<%} %>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link <%=thisPage.equals("todo") ? "active" : "" %>" href="${pageContext.request.contextPath }/users/logout.jsp">로그아웃</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="${pageContext.request.contextPath }/users/signup_form.do">회원가입</a>
