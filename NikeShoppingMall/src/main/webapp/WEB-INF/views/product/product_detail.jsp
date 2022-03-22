@@ -67,7 +67,6 @@ font-family: 'Noto Sans KR', sans-serif;
 
     <div class="card" style="width: 500px; border:none;">
   <div class="card-body">
-<<<<<<< HEAD
     <h1 class="card-title">${product.product_name}</h1>  
     <p class="card-text border-top pt-3 pb-3">    
       <p> 소비자가 : ${product.product_price}</p>  

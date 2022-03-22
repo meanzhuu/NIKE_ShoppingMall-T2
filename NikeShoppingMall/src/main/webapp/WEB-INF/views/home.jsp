@@ -71,10 +71,7 @@ font-weight:bold;
   					<div class="card-body">
     					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
 
-<<<<<<< HEAD
 
-
-=======
   					</div>
 			</div>
 		</div>
@@ -90,7 +87,6 @@ font-weight:bold;
 					</ul>
   					<div class="card-body">
     					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
->>>>>>> refs/heads/master
 
   					</div>
 			</div>
