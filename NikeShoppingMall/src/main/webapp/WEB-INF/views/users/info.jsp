@@ -25,7 +25,7 @@
 	<table>
 		<tr>
 			<th>아이디</th>
-			<td>${id }</td>
+			<td>${id} </td>
 		</tr>
 		<tr>
 			<th>프로필 이미지</th>

@@ -66,7 +66,6 @@
 	<tx:annotation-driven transaction-manager="txManager"/>
 
    
-   
    <!-- 
       위의 bean 설정을 java code 로 환산 하면 아래와 같다 
       

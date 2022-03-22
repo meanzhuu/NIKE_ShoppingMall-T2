@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +11,7 @@
 
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/bootstrap.css" />
 
 <style>
 .container{
@@ -69,6 +71,7 @@ font-weight:bold;
   					<div class="card-body">
     					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
 
+
   					</div>
 			</div>
 		</div>
@@ -88,6 +91,7 @@ font-weight:bold;
   					</div>
 			</div>
 		</div>
+  
 
     	<div class="col col-sm-3 d-flex justify-content-center"  style="width:300px;">
     		<div class="card" style="width: 19rem;">

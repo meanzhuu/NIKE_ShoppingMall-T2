@@ -9,4 +9,6 @@ public interface ProductDao {
 	public void update(ProductDto dto);
 	public void delete(int product_id);
 	public List<ProductDto> getList();
+	public ProductDto getProduct(int product_id);
+	public List<ProductDto> getUpper();
 }

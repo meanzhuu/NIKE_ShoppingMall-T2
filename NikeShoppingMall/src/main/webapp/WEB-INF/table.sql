@@ -2,7 +2,7 @@ create table users(
 	users_id VARCHAR2(100) PRIMARY KEY,
 	users_name VARCHAR2(100) NOT NULL,
 	users_pwd VARCHAR2(100) NOT NULL,
-	users_email VARCHAR2(100) UNIQUE KEY,
+	users_email VARCHAR2(100) UNIQUE,
 	users_sex VARCHAR2(100) NOT NULL,
 	users_birthday DATE NOT NULL,
 	users_phoneNum VARCHAR2(100)  NOT NULL,
@@ -29,7 +29,9 @@ create table product(
 	product_stock NUMBER DEFAULT 100,
 	product_views NUMBER DEFAULT 0,
 	product_regdate DATE not null,
-	product_imagePath VARCHAR2(100) not null
+	product_imagePath VARCHAR2(100) not null,
+	product_imagePath2 VARCHAR2(100),
+	product_imagePath3 VARCHAR2(100)
 );
 
 
