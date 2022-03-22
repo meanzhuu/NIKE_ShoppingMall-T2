@@ -36,6 +36,14 @@ public class HomeController {
 	public String info(HttpServletRequest request) {
 		return "info";
 	}
+	@RequestMapping("/payform.do")
+	public String payform(HttpServletRequest request) {
+		return "payform";
+	}
+	@RequestMapping("/pay.do")
+	public String pay(HttpServletRequest request) {
+		return "pay";
+	}
 	
 	@RequestMapping("/pwd_updateform.do")
 	public String pwd_updateform(HttpServletRequest request) {
@@ -65,6 +73,10 @@ public class HomeController {
 	@RequestMapping("/cart/list.do")
 	public String cartlist(HttpServletRequest request) {
 		return "cart/list";
+	}
+	@RequestMapping("/cart/bucket.do")
+	public String bucket(HttpServletRequest request) {
+		return "cart/bucket";
 	}
     
 	@RequestMapping("/product/product_detail.do")
