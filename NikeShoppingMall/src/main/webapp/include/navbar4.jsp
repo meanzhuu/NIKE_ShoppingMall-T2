@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
 	// thisPage 라는 파라미터명으로 전달되는 값을 읽어와 본다. ( null 일수도 있음!)
 	String thisPage=request.getParameter("thisPage");
@@ -8,7 +7,6 @@
 	if(thisPage==null){
 		thisPage="";
 	}
-	String users_id = (String)session.getAttribute("users_id");
 %>    
 <!DOCTYPE html>
 <html>
@@ -44,18 +42,7 @@ align-items:center;
 		<div class="collapse navbar-collapse d-flex justify-content-end" id="topNav">
 			<ul class="navbar-nav ">
 				<li class="nav-item">
-				<%if(users_id == null) {%>
-					<a class="nav-link" href="${pageContext.request.contextPath }/users/loginform.do">로그인</a>
-				<%}else{ %>
-					<a class="nav-link" href="${pageContext.request.contextPath }/users/logout.do"><%=users_id %></a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="${pageContext.request.contextPath }/users/logout.do">로그아웃</a>
-					</li>
-				<%} %>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="${pageContext.request.contextPath }/users/signup_form.do">회원가입</a>
+					<a class="nav-link <%=thisPage.equals("todo") ? "active" : "" %>" href="${pageContext.request.contextPath }/todo/list.jsp">로그아웃</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="${pageContext.request.contextPath }/updateform.do">
@@ -66,7 +53,7 @@ align-items:center;
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="${pageContext.request.contextPath }/cart/cartlist.do">
+					<a class="nav-link <%=thisPage.equals("todo") ? "active" : "" %>" href="${pageContext.request.contextPath }/users/bucket.do">
 						<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
   							<path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
 						</svg>

@@ -17,16 +17,23 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Handles requests for the application home page.
  */
+
+
 @Controller
 public class HomeController {
+	
 	@RequestMapping("/home.do")
 	public String home(HttpServletRequest request) {
 		return "home";
 	}
 	
-	@RequestMapping("/delete.do")
+	@RequestMapping("/users/delete.do")
 	public String delete(HttpServletRequest request) {
-		return "delete";
+		return "users/delete";
+	}
+	@RequestMapping("/users/deleteform.do")
+	public String deleteform(HttpServletRequest request) {
+		return "users/deleteform";
 	}
 	@RequestMapping("/info.do")
 	public String info(HttpServletRequest request) {
@@ -46,8 +53,26 @@ public class HomeController {
 	public String updateform(HttpServletRequest request) {
 		return "updateform";
 	}
+	@RequestMapping("/users/signup.do")
+	public String signup(HttpServletRequest request) {
+		return "users/signup";
+	}
+	@RequestMapping("/update.do")
+	public String update(HttpServletRequest request) {
+		return "update";
+	}
 	@RequestMapping("/product/productlist.do")
 	public String productlist(HttpServletRequest request) {
 		return "product/productlist";
 	}
+	@RequestMapping("/cart/list.do")
+	public String cartlist(HttpServletRequest request) {
+		return "cart/list";
+	}
+    
+	@RequestMapping("/product/product_detail.do")
+	public String product_detail(HttpServletRequest request) {
+		return "product/product_detail";
+	}
+
 }

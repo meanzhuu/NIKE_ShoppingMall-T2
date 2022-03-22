@@ -25,11 +25,18 @@
 		DELETE FROM product
 		WHERE product_id=#{product_id}
 	</select>
-	<select id="getProduct" resultType="productDto">
+	<select id="getProduct" parameterType="int" resultType="productDto">
 		SELECT *
 		FROM 
 			product
 		WHERE 
 			product_id=#{product_id}	
+	</select>
+	<select id="getUpper" resultType="productDto">
+		SELECT *
+		FROM
+			product
+		WHERE
+			product_scategory = '상의'
 	</select>
 </mapper>

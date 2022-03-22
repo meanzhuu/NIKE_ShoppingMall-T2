@@ -11,4 +11,5 @@ public interface ProductService {
 	public List<ProductDto> getList();
 	public void delete(int product_id);
 	public ProductDto getProduct(int product_id);
+	public List<ProductDto> getUpper();
 }

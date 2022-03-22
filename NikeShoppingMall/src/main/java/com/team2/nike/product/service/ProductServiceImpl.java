@@ -63,6 +63,7 @@ public class ProductServiceImpl implements ProductService{
 		dto.setProduct_point(product_point);
 		dto.setProduct_imagePath("/resources/upload/" + saveFileName);
 		productDao.insert(dto);
+		
 	}
 
 	@Override
@@ -81,6 +82,11 @@ public class ProductServiceImpl implements ProductService{
 	public void delete(int product_id) {
 		productDao.delete(product_id);
 		
+	}
+
+	@Override
+	public List<ProductDto> getUpper() {
+		return productDao.getUpper();
 	}
 	
 
