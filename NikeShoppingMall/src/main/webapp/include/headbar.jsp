@@ -187,7 +187,7 @@ align-items:center;
     	<div class="menu-wrapper" role="navigation">
       		<ul class="nav" role="menubar">
         		<li role="menuitem">
-          			<a href="#">의류</a>
+          			<a href="/product/getUpper.do">의류</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
               			<h3>Heading 1</h3>

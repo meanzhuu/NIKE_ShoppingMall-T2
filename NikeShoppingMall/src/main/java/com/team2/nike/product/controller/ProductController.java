@@ -32,9 +32,10 @@ public class ProductController {
 	}
 	
 	@RequestMapping("/product/list")
-	public ModelAndView authgetList(HttpServletRequest request, ModelAndView mView) {
-		service.getList(request);
-		mView.setViewName("/product/list");
+	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
+		mView.addObject("list",service.getList());
+
+		mView.setViewName("product/productlist");
 		return mView;
 	}
 	
@@ -50,4 +51,19 @@ public class ProductController {
 		mView.setViewName("/product/insert");
 		return mView;
 	}
+	
+	@RequestMapping("/product/detail")
+	public ModelAndView detail(@RequestParam int product_id,ModelAndView mView) {
+		mView.addObject("product",service.getProduct(product_id));
+		mView.setViewName("/product/product_detail");
+		return mView;
+	}
+	
+	@RequestMapping("/product/getUpper")
+	public ModelAndView getUpper (ModelAndView mView) {
+		mView.addObject("list", service.getUpper());
+		mView.setViewName("/product/productlist");
+		return mView;
+	}
+	
 }
