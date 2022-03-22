@@ -119,7 +119,6 @@ font-weight:bold;
 		</div>
 		<div style="text-align:center; margin-top:80px; padding-top:40px; border-top:1px solid;">
 		<button class="btn btn-primary" type="submit">가입</button>
-		<button class="btn btn-primary" type="submit">취소</button>
 		</div>
 	</form>
 </div>

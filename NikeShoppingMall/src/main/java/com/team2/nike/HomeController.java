@@ -27,6 +27,7 @@ public class HomeController {
 		return "home";
 	}
 	
+	
 	@RequestMapping("/users/delete.do")
 	public String delete(HttpServletRequest request) {
 		return "users/delete";
@@ -65,10 +66,6 @@ public class HomeController {
 		return "updateform";
 	}
 	
-	@RequestMapping("/users/signup.do")
-	public String signup(HttpServletRequest request) {
-		return "users/signup";
-	}
 	
 	@RequestMapping("/update.do")
 	public String update(HttpServletRequest request) {
