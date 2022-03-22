@@ -22,8 +22,10 @@ public class UsersServiceImpl implements UsersService {
 	@Override
 	public void addUsers(UsersDto dto) {
 		//사용자가 입력한 비밀 번호를 읽어와서 
+		
 				String pwd=dto.getUsers_pwd();
 				//암호화 한 후에 
+				System.out.println(pwd);
 				BCryptPasswordEncoder encoder=new BCryptPasswordEncoder();
 				String encodedPwd=encoder.encode(pwd);
 				//dto 에 다시 넣어준다.
@@ -44,9 +46,6 @@ public class UsersServiceImpl implements UsersService {
 	public void login(UsersDto dto, HttpSession session) {
 		boolean isValid=false;
 		UsersDto user=dao.getUser(dto.getUsers_id());
-		System.out.println(dto.getUsers_id());
-		System.out.println(dto.getUsers_birthday());
-		System.out.println(dto.getUsers_email());
 		if(user != null)
 		{
 			String encodedPwd=user.getUsers_pwd();
