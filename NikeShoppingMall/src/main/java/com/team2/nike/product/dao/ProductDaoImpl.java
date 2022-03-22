@@ -34,4 +34,15 @@ public class ProductDaoImpl implements ProductDao{
 		return session.selectList("product.getList");
 	}
 
+	@Override
+	public ProductDto getProduct(int product_id) {
+		return session.selectOne("product.getProduct", product_id);
+	}
+
+	@Override
+	public List<ProductDto> getUpper() {
+		
+		return session.selectList("product.getUpper");
+	}
+
 }

@@ -67,6 +67,11 @@ font-family: 'Noto Sans KR', sans-serif;
 
     <div class="card" style="width: 500px; border:none;">
   <div class="card-body">
+    <h1 class="card-title">${product.product_name}</h1>  
+    <p class="card-text border-top pt-3 pb-3">    
+      <p> 소비자가 : ${product.product_price}</p>  
+        <p> 적립금 : ${product.product_point}</p>
+
     <h1 class="card-title" style="font-weight:bold; font-size:30px;">Nike Women's Web Belt</h1>
     <p>제품 번호 099465</p>  
     <div class="card-text pt-4 pb-3" style="border-bottom:2px solid black; border-top:2px solid black; margin-bottom:30px;">    
@@ -96,6 +101,26 @@ font-family: 'Noto Sans KR', sans-serif;
           <div class="col-3">
           	<label class="col-form-label for="">color</label>
           </div>
+           <div class="col-auto">
+          <div class="input-group">
+  <span class="input-group-text">-</span>
+  <input type="text" class="form-control" style="width:40px;" value="1">
+  <span class="input-group-text">+</span>
+</div>
+<div class="row pt-3 pb-3">
+<div class="col-6">
+<h3>총 상품금액 </h3></div>
+<div class="col-6" style="text-align: right;">
+<h3> ${product.product_price}</h3></div>
+</div>
+</div>
+          
+                <div class="container"></div>  
+     <a href="#" class="btn btn-primary">구입하기</a>
+       <a href="#" class="btn btn-primary">장바구니 가기</a>
+		
+		
+		</div>
           <div class="col-6">
 			<div class="input-group mb-3">
   			<select class="form-select" id="inputGroupSelect01">
