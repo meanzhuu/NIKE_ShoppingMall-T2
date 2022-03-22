@@ -59,8 +59,8 @@ width:1000px;
 <jsp:include page="/include/headbar.jsp"></jsp:include>
 <div class="container" style="height:1500px; font-family: 'Noto Sans KR', sans-serif;;">
 	<div class="text-start mb-5">
-		<h1 style="color:#ff47a9; text-align:center; margin-top:30px;" >지갑</h1>
-		<div style="display:block; text-align:center;">
+		<h1 style="color:#ff47a9; text-align:center; margin-top:50px;" >지갑</h1>
+		<div style="display:block; text-align:start;">
 			<ul class="nav justify-content-center mt-3 " style="font-size:18px;">
   				<li class="nav-item back">
     				<a class="nav-link active top-nav" aria-current="page" href="#" onMouseOver="this.style.color='#ff47a9'" onMouseOut="this.style.color='#7f7f7f'" style="background-color:white; border-right:3px solid #969696;  color:#7f7f7f">Men</a>
@@ -138,10 +138,10 @@ width:1000px;
     </ul>
   </div>	
  		</div>
-	<div id="right_content" class="right_content" style="width:700px;">
+	<div id="right_content" class="right_content" style="width:950px;">
 	
     <div class="row text-center mt-5">
-    <div class="col" style="width:233px;"><div class="card" style="width: 14rem;">
+    <div class="col" style="width:300px;"><div class="card" style="width: 15rem;">
   <img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -156,7 +156,7 @@ width:1000px;
 
   </div>
 </div></div>
-	<div class="col" style="width:233px;"><div class="card" style="width: 14rem;">
+	<div class="col" style="width:300px;"><div class="card" style="width: 15rem;">
   <img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -171,7 +171,7 @@ width:1000px;
 
   </div>
 </div></div>
- 	<div class="col" style="width:233px;"><div class="card" style="width: 14rem;">
+ 	<div class="col" style="width:300px;"><div class="card" style="width: 15rem;">
   <img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -188,7 +188,7 @@ width:1000px;
 </div>
 </div>
 
-<div class="col" style="width:233px;"><div class="card" style="width: 14rem; margin-top:50px;">
+<div class="col" style="width:300px;"><div class="card" style="width: 15rem; margin-top:50px;">
   <img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -204,7 +204,7 @@ width:1000px;
   </div>
 </div></div>
 
-<div class="col" style="width:233px;"><div class="card" style="width: 14em;  margin-top:50px;">
+<div class="col" style="width:300px;"><div class="card" style="width: 15em;  margin-top:50px;">
   <img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -220,7 +220,7 @@ width:1000px;
   </div>
 </div></div>
 
-<div class="col" style="width:233px;"><div class="card" style="width: 14rem;  margin-top:50px;">
+<div class="col" style="width:300px;"><div class="card" style="width: 15rem;  margin-top:50px;">
   <img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
