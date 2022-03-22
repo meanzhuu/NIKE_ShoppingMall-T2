@@ -50,8 +50,7 @@ public class UsersServiceImpl implements UsersService {
 			String pwd=dto.getUsers_pwd();
 			isValid=BCrypt.checkpw(pwd, encodedPwd);
 			System.out.println(isValid);
-		}
-		System.out.println(isValid);
+		}	
 		if(isValid) {
 			System.out.println("tt");
 			session.setAttribute("users_id", dto.getUsers_id());

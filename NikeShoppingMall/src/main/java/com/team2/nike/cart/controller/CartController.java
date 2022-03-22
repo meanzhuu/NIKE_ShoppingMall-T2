@@ -1,5 +1,8 @@
 package com.team2.nike.cart.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,10 +33,12 @@ public class CartController {
 		service.addCart(dto);
 		return "cart/insert";
 	}
-	//장바구니 리스트를 요청 처리
-	@RequestMapping ("/cart/list")
-	public ModelAndView list(ModelAndView mView) {
-		service.getListCart(mView);
+	
+	@RequestMapping(value="/cart/list")
+	public ModelAndView authshowCart(HttpSession session,HttpServletRequest request,ModelAndView mView)
+	{
+		String users_id = (String)session.getAttribute("users_id");
+		service.getListCart(users_id, request);
 		mView.setViewName("cart/list");
 		return mView;
 	}

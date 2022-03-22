@@ -168,9 +168,16 @@ align-items:center;
 <body>
 <div>
 	<div class="box">
-	
+	<div class="row">
+		<div class="col" style="display:flex; justify-content:center; align-items:center;">
+		<button id="women" style="margin-top:30px;color:#848484;font-weight:bold; border:none; border-right:2px solid #a6a6a6; padding-right:20px;">WOMEN</button>
+		<button id="men" style="margin-top:30px;color:#848484;font-weight:bold; border:none; padding-left:20px;">MEN</button>
+		</div>
+		<div class="col-6">
 		<a href="${pageContext.request.contextPath }/home.do"><h1 class="head">Nike Shop</h1></a>
-		<br />
+		</div>
+		<div class="col"></div>	
+	</div>
 	<header class="search_bar">
 		<div class="search_box">
 			<input type="text" />
@@ -187,7 +194,7 @@ align-items:center;
     	<div class="menu-wrapper" role="navigation">
       		<ul class="nav" role="menubar">
         		<li role="menuitem">
-          			<a href="/product/getUpper.do">의류</a>
+          			<a href="#">의류</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
               			<h3>Heading 1</h3>
@@ -261,5 +268,11 @@ align-items:center;
     	</div>
 	</div>
 </div>
+<script src="${pageContext.request.contextPath}/resources/js/gura_util.js"></script>
+<script>
+	document.querySelector("#men").addEventListener("click",function(){
+		
+	});
+</script>
 </body>
 </html>
