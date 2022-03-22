@@ -14,7 +14,18 @@
 		ORDER BY orders_id ASC
 	</select>
  -->
-		
+	<select id="getList" parameterType="String" resultType="ordersDto">
+		SELECT *
+		FROM
+			(SELECT ROWNUM as orderDetail_rnum, result1.*
+			FROM 
+				(SELECT b.product_imagePath, b.product_name, b.product_price, b.product_point, a.cart_count, a.cart_id, a.users_id 
+				FROM orderDetail a 
+				LEFT OUTER JOIN product b 
+				ON a.product_id = b.product_id
+				WHERE users_id= #{users_id}
+				ORDER BY orders_id ASC) result1)
+	</select>
 	
 	
 </mapper>
