@@ -150,7 +150,6 @@ display:inline-block;
 		</div >
 		<div style="text-align:center; margin-top:80px; padding-top:40px; border-top:1px solid;">
 		<button class="btn btn-primary" type="submit">수정하기</button>
-		<button class="btn" type="submit" onclick="location.href='${pageContext.request.contextPath }/delete.do'" style="margin-left:20px;">탈퇴하기</button>
 		</div>
 	</form>
 	<form action="${pageContext.request.contextPath}/users/private/ajax_profile_upload.do" method="post" 
