@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,28 +25,65 @@ font-family: 'Noto Sans KR', sans-serif;
 		<div style="margin-top:20px;">
 			<p style="font-weight:bold;">장바구니에 담긴 상품</p>
 		</div>
-		<c:forEach var="tmp" items="${list }">
-			<div style="font-size:12px;">
+		<div style="font-size:12px;">
 			<div class="row">
-				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
-					<p name="color" value="red" style="margin-top:50px;">${tmp.cart_rnum }</p>
-				</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
 					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
 				</div>
 				<div class="col-2" style="border-top:2px solid #c6c4c4; text-align:center;">
-					<img src="${pageContext.request.contextPath }${tmp.product_imagePath}" style="width:100px;height:100px; margin-top:10px; alt="" />
+					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_1.png" style="width:100px;height:100px; margin-top:10px;"/>
 				</div>
-				<div class="col-6" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; ">
-					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">${tmp.product_name }</div>
+				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; ">
+					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">나이키 xT1 클럽</div>
 					<div style=" height:60px; line-height:60px;color:#007f41">오늘(목) 3/24 새벽 7시 전 도착</div>
 				</div>
-				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >${tmp.product_price }원</div>
-				<div class="col-1" style="border-top:2px solid #c6c4c4;  border-right:2px solid  height:120px;  line-height:120px; text-align:center;">무료</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >85,000원</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4;  height:120px;  line-height:120px; text-align:center;">무료</div>
+			</div>
+			<div class="row">
+				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
+					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
+				</div>
+				<div class="col-2" style="border-top:2px solid #c6c4c4; text-align:center;">
+					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_2.png" style="width:100px;height:100px; margin-top:10px;"/>
+				</div>
+				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4;">
+					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">나이키 xT1 헤리티지86</div>
+					<div style=" height:60px; line-height:60px;color:#007f41">오늘(목) 3/24 새벽 7시 전 도착</div>
+				</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >33,000원</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4;  height:120px;  line-height:120px; text-align:center;">무료</div>
+			</div>
+			<div class="row">
+				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
+					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
+				</div>
+				<div class="col-2" style="border-top:2px solid #c6c4c4;  text-align:center;">
+					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_3.png" style="width:100px;height:100px; margin-top:10px;"/>
+				</div>
+				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4;">
+					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px ; font-weight:bold;">나이키 스포츠웨어 퓨추라</div>
+					<div style=" height:60px; line-height:60px;color:#007f41">내일(금) 3/25 새벽 7시 전 도착</div>
+				</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >23,400원</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4;  height:120px;  line-height:120px; text-align:center;">무료</div>
+			</div>
+			<div class="row" style="border-bottom:2px solid #c6c4c4">
+				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
+					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
+				</div>
+				<div class="col-2" style="border-top:2px solid #c6c4c4; text-align:center;">
+					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_4.png" style="width:100px;height:100px; margin-top:10px;"/>
+				</div>
+				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4;">
+					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px ; font-weight:bold;">조던 에센셜</div>
+					<div style=" height:60px; line-height:60px;color:#007f41">모레(토) 3/26 새벽 7시 전 도착</div>
+				</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center; font-size:11px;" >119,000원</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;">무료</div>
 			</div>
 		</div>
-		</div>
-		</c:forEach>
+		
 		<div style>
 			<div class="row" style="border:3px solid #c6c4c4; font-size:12px; height:70px;line-height:65px; margin-top:40px;">
 				<div class="col-1"></div>
@@ -85,5 +121,3 @@ font-family: 'Noto Sans KR', sans-serif;
 	</div>
 </body>
 </html>
-
-

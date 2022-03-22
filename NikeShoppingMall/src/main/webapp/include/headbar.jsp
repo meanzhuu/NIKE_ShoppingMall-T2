@@ -241,7 +241,7 @@ align-items:center;
         		</li>
         		
         		<li role="menuitem">
-          			<a href="#">악세사리</a>
+          			<a href="#">액세사리</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
               			<h3>Heading 1</h3>

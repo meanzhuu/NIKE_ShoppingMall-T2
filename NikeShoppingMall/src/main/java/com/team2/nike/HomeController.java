@@ -24,32 +24,31 @@ public class HomeController {
 		System.out.println("home 열었음");
 		return "home";
 	}
-	
-	@RequestMapping("/men.do")
-	public String men(HttpServletRequest request) {
-		return "men";
-	}
-	
 	@RequestMapping("/users/delete.do")
 	public String delete(HttpServletRequest request) {
 		return "users/delete";
 	}
-	
 	@RequestMapping("/users/deleteform.do")
 	public String deleteform(HttpServletRequest request) {
 		return "users/deleteform";
 	}
-	
 	@RequestMapping("/info.do")
 	public String info(HttpServletRequest request) {
 		return "info";
+	}
+	@RequestMapping("/payform.do")
+	public String payform(HttpServletRequest request) {
+		return "payform";
+	}
+	@RequestMapping("/pay.do")
+	public String pay(HttpServletRequest request) {
+		return "pay";
 	}
 	
 	@RequestMapping("/pwd_updateform.do")
 	public String pwd_updateform(HttpServletRequest request) {
 		return "pwd_updateform";
 	}
-	
 	@RequestMapping("/pwd_update.do")
 	public String pwd_update(HttpServletRequest request) {
 		return "pwd_update";
@@ -59,22 +58,24 @@ public class HomeController {
 	public String updateform(HttpServletRequest request) {
 		return "updateform";
 	}
-	
 	@RequestMapping("/users/signup.do")
 	public String signup(HttpServletRequest request) {
 		return "users/signup";
 	}
-	
 	@RequestMapping("/update.do")
 	public String update(HttpServletRequest request) {
 		return "update";
 	}
-	
 	@RequestMapping("/product/productlist.do")
 	public String productlist(HttpServletRequest request) {
 		return "product/productlist";
 	}
-	
+
+	@RequestMapping("/cart/bucket.do")
+	public String bucket(HttpServletRequest request){
+		return "cart/bucket";
+	}
+
 	@RequestMapping("/product/product_detail.do")
 	public String product_detail(HttpServletRequest request) {
 		return "product/product_detail";
