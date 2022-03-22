@@ -42,6 +42,7 @@ font-family: 'Noto Sans KR', sans-serif;
 				<div class="col-1" text-align:center;" >가격</div>
 				<div class="col-1" text-align:center;">수량</div>
 			</div>
+		<c:set var="total" value="0" />
 		<c:forEach var="tmp" items="${list }">
 			<div style="font-size:12px;">
 			<div class="row">
@@ -62,22 +63,22 @@ font-family: 'Noto Sans KR', sans-serif;
 				<div class="col-1" style="border-top:2px solid #c6c4c4;  border-right:2px solid  height:120px;  line-height:120px; text-align:center;">${tmp.cart_count }</div>
 			</div>
 		</div>
+		<c:set var="total" value="${total+(tmp.product_price * tmp.cart_count) }"></c:set>
 		</c:forEach>
 		</div>
-		
 		<div>
 			<div class="row" style="border:3px solid #c6c4c4; font-size:12px; height:70px;line-height:65px; margin-top:40px;">
 				<div class="col-1"></div>
 				<div class="col-1" style="text-align:right;">총 상품가격</div>
-				<div class="col-1" style="font-weight:bold;text-align:left;">260,400원</div>
+				<div class="col-1" style="font-weight:bold;text-align:left;"><c:out value="${total }"/>원</div>
 				<div class="col-1">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-square" viewBox="0 0 16 16">
   						<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
   						<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
 					</svg>
 				</div>
-				<div class="col-1" style="text-align:right;">총 할인</div>
-				<div class="col-1" style="font-weight:bold; color:red;">3,400원</div>
+				<div class="col-1" style="text-align:right;">총 적립</div>
+				<div class="col-1" style="font-weight:bold; color:red;"><c:out value="${total*0.1 }"/>원</div>
 				<div class="col-1" style="text-align:right;">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
   						<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
@@ -92,11 +93,11 @@ font-family: 'Noto Sans KR', sans-serif;
 					</svg>
 				</div>
 				<div class="col-1" style="text-align:right;">총 주문금액</div>
-				<div class="col-1" style="font-weight:bold;">257,000원</div>
+				<div class="col-1" style="font-weight:bold;"><c:out value="${total*0.9 }"/>원</div>
 			</div>
 			<div style="margin-top:60px; text-align:center;">
   				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="history.back()">계속 쇼핑하기</button>
-  				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/payform.do'">결제하기</button>
+  				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/payform.do?total_price=${total }'">결제하기</button>
   			</div>
 		</div>
 	</div>
