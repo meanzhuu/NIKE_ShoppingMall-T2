@@ -171,7 +171,7 @@ align-items:center;
 	<div class="row">
 		<div class="col" style="display:flex; justify-content:center; align-items:center;">
 		<button id="women" style="margin-top:30px;color:#848484;font-weight:bold; border:none; border-right:2px solid #a6a6a6; padding-right:20px;">WOMEN</button>
-		<button id="men" style="margin-top:30px;color:#848484;font-weight:bold; border:none; padding-left:20px;">MEN</button>
+		<button class="active" id="men" style="margin-top:30px;color:#848484;font-weight:bold; border:none; padding-left:20px;">MEN</button>
 		</div>
 		<div class="col-6">
 		<a href="${pageContext.request.contextPath }/home.do"><h1 class="head">Nike Shop</h1></a>
@@ -248,7 +248,7 @@ align-items:center;
         		</li>
         		
         		<li role="menuitem">
-          			<a href="#">액세사리</a>
+          			<a href="#">악세사리</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
               			<h3>Heading 1</h3>

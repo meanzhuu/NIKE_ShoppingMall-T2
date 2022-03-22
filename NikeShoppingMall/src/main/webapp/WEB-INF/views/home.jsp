@@ -147,6 +147,7 @@ font-weight:bold;
 <a href="${pageContext.request.contextPath}/cart/insert.do">장바구니 삽입</a>
 <a href="${pageContext.request.contextPath}/product/product_detail.do">product_detail</a>
 <a href="${pageContext.request.contextPath}/mypage.do">Mypage</a>
+<a href="${pageContext.request.contextPath}/men.do">남자여자</a>
 
 <a href="./users/logout.do">로그아웃</a>
 
