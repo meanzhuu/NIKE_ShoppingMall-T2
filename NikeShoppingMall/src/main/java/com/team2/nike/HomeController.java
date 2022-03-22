@@ -50,6 +50,10 @@ public class HomeController {
 	public String pay(HttpServletRequest request) {
 		return "pay";
 	}
+	@RequestMapping("/mypage.do")
+	public String mypage(HttpServletRequest request) {
+		return "mypage";
+	}
 	
 	@RequestMapping("/pwd_updateform.do")
 	public String pwd_updateform(HttpServletRequest request) {

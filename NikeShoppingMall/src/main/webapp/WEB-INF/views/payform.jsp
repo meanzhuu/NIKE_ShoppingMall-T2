@@ -99,7 +99,7 @@ font-family: 'Noto Sans KR', sans-serif;
   						<div style="border-bottom: 1px solid #d3d3d3; height:250px; font-size:16px; padding-left:10px;">
   							<div style="margin-top:30px;">
   								<label style="margin-right:15px;"><input type="radio" name="fruit" value="apple" style="margin-left:10px;margin-right:5px;"> 계좌이체</label>
-  								<label style="margin-right:15px;"><input type="radio" name="fruit" value="apple" style="margin-right:5px;"> 신용/체크카드</label>
+  								<label style="margin-right:15px;"><input type="radio" name="fruit" value="apple" checked style="margin-right:5px;"> 신용/체크카드</label>
   								<label style="margin-right:15px;"><input type="radio" name="fruit" value="apple" style="margin-right:5px;"> 법인카드</label>
   								<label style="margin-right:15px;"><input type="radio" name="fruit" value="apple" style="margin-right:5px;"> 휴대폰</label>
   								<label style="margin-right:15px;"><input type="radio" name="fruit" value="apple" style="margin-right:5px;"> 무통장입금(가상계좌)</label>
@@ -113,10 +113,10 @@ font-family: 'Noto Sans KR', sans-serif;
 											<div class="input-group" style="margin-top:10px; width: 300px;">
   												<select class="form-select" id="inputGroupSelect01">
     												<option selected>신한카드 / 510737*******985*</option>
-    												<option value="1">문 앞에 놔주세요. </option>
-    												<option value="2">경비실에 맡겨주세요.</option>
-    												<option value="3">배송 전에 연락주세요.</option>
-    												<option value="4">파손위험이 있으니 조심히 다뤄주세요.</option>
+    												<option value="1">우리카드 / 345123*******613* </option>
+    												<option value="2">비씨카드 / 138432*******317*</option>
+    												<option value="3">하나카드 / 324256*******732*</option>
+    												<option value="4">카카오카드 / 134781*******431*</option>
   												</select>
 											</div>
   										</div>
