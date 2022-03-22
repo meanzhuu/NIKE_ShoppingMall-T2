@@ -3,12 +3,10 @@
 <mapper namespace="product">
 	<select id="getList" resultType="productDto">
 		SELECT *
-		FROM	
-			(SELECT result1.*, ROWNUM as rnum
-			FROM
-				(SELECT *
-				FROM product
-				ORDER BY product_id ASC) result1)
+		FROM 
+			product
+		ORDER BY 
+			product_id ASC
 	</select>
 	<select id="insert" parameterType="productDto">
 		INSERT INTO product
@@ -27,5 +25,18 @@
 		DELETE FROM product
 		WHERE product_id=#{product_id}
 	</select>
-
+	<select id="getProduct" parameterType="int" resultType="productDto">
+		SELECT *
+		FROM 
+			product
+		WHERE 
+			product_id=#{product_id}	
+	</select>
+	<select id="getUpper" resultType="productDto">
+		SELECT *
+		FROM
+			product
+		WHERE
+			product_scategory = '상의'
+	</select>
 </mapper>

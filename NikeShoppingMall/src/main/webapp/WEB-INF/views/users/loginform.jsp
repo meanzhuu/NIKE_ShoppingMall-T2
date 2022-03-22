@@ -111,6 +111,17 @@ height:45px;
  
 	<div class="container" style="height:900px;">
 
+<<<<<<< HEAD
+        <span class='text-center'><a href="/signup_form.jsp" class="text-sm"> 회원가입</a></span>
+            <span class='text-center'><a href="/pwd_updateform.do" class="text-sm px-5">아이디/비밀번호 찾기</a></span>
+    
+          
+          </div>
+        </div>
+      </div>
+    </div>
+<hr />
+=======
     <header class="welcome-header">
         <h1 class="welcome-header__title">Nike shop에 오신것을 환영합니다!</h1>
         <p class="welcome-header__text">사용자 계정이 있다면,</p>
@@ -132,6 +143,7 @@ height:45px;
        	<a href="${pageContext.request.contextPath }/users/signup_form.do" class="find">회원가입이 필요하십니까?</a>
     </form>          
 	</div>
+>>>>>>> refs/heads/master
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->

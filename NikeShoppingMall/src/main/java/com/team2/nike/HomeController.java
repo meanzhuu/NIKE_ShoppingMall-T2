@@ -17,8 +17,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * Handles requests for the application home page.
  */
+
+
 @Controller
 public class HomeController {
+	
 	@RequestMapping("/home.do")
 	public String home(HttpServletRequest request) {
 		return "home";
