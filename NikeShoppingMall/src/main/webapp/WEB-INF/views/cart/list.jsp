@@ -26,6 +26,22 @@ font-family: 'Noto Sans KR', sans-serif;
 		<div style="margin-top:20px;">
 			<p style="font-weight:bold;">장바구니에 담긴 상품</p>
 		</div>
+		<div class="row">
+				<div class="col-1"  text-align:center;">
+					<p>전체</p>
+				</div>
+				<div class="col-1"  text-align:center;">
+					<input type="checkbox">
+				</div>
+				<div class="col-2" text-align:center;">
+					<p>상품</p>
+				</div>
+				<div class="col-6">
+					<p>상품명</p>
+				</div>
+				<div class="col-1" text-align:center;" >가격</div>
+				<div class="col-1" text-align:center;">수량</div>
+			</div>
 		<c:forEach var="tmp" items="${list }">
 			<div style="font-size:12px;">
 			<div class="row">
@@ -42,13 +58,14 @@ font-family: 'Noto Sans KR', sans-serif;
 					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">${tmp.product_name }</div>
 					<div style=" height:60px; line-height:60px;color:#007f41">오늘(목) 3/24 새벽 7시 전 도착</div>
 				</div>
-				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >${tmp.product_price }원</div>
-				<div class="col-1" style="border-top:2px solid #c6c4c4;  border-right:2px solid  height:120px;  line-height:120px; text-align:center;">무료</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >${tmp.product_price }</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4;  border-right:2px solid  height:120px;  line-height:120px; text-align:center;">${tmp.cart_count }</div>
 			</div>
 		</div>
-		</div>
 		</c:forEach>
-		<div style>
+		</div>
+		
+		<div>
 			<div class="row" style="border:3px solid #c6c4c4; font-size:12px; height:70px;line-height:65px; margin-top:40px;">
 				<div class="col-1"></div>
 				<div class="col-1" style="text-align:right;">총 상품가격</div>

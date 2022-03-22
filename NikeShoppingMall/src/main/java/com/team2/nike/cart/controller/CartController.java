@@ -28,7 +28,6 @@ public class CartController {
 	//장바구니 추가 요청 처리
 	@RequestMapping(value = "/cart/insert")
 	public String insert(CartDto dto) {
-		System.out.println("hi");
 		dto.setProduct_id(1);
 		dto.setUsers_id("nike1");
 		service.addCart(dto);
@@ -36,7 +35,7 @@ public class CartController {
 	}
 	
 	@RequestMapping(value="/cart/list")
-	public ModelAndView showCart(HttpSession session,HttpServletRequest request,ModelAndView mView)
+	public ModelAndView authshowCart(HttpSession session,HttpServletRequest request,ModelAndView mView)
 	{
 		String users_id = (String)session.getAttribute("users_id");
 		service.getListCart(users_id, request);
