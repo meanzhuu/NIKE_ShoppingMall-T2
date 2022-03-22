@@ -27,9 +27,9 @@ public class CartController {
 	
 	//장바구니 추가 요청 처리
 	@RequestMapping(value = "/cart/insert")
-	public String insert(CartDto dto) {
-		dto.setProduct_id(1);
-		dto.setUsers_id("nike1");
+	public String insert(CartDto dto,HttpServletRequest request) {
+		dto.setProduct_id(61);
+		dto.setUsers_id((String)request.getSession().getAttribute("users_id"));
 		service.addCart(dto);
 		return "cart/insert";
 	}

@@ -138,5 +138,5 @@ height:45px;
   <script src="js/bootstrap.min.js"></script>
 </body>
 <jsp:include page="/include/footer.jsp"></jsp:include>
-    
+   
 </html>
