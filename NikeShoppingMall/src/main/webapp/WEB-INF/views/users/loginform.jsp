@@ -110,7 +110,6 @@ height:45px;
 <jsp:include page="/include/headbar.jsp"></jsp:include>
  
 	<div class="container" style="height:900px;">
-
     <header class="welcome-header">
         <h1 class="welcome-header__title">Nike shop에 오신것을 환영합니다!</h1>
         <p class="welcome-header__text">사용자 계정이 있다면,</p>
