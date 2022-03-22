@@ -20,5 +20,4 @@ import com.team2.nike.product.service.ProductService;
 @Controller //수정 전 그냥 파일만들어둠
 public class MypageController {
 	
-	
 }

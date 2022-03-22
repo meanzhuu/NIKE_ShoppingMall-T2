@@ -2,6 +2,8 @@ package com.team2.nike.cart.service;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.ModelAndView;
@@ -10,7 +12,7 @@ import com.team2.nike.cart.dao.CartDao;
 import com.team2.nike.cart.dto.CartDto;
 
 @Service
-public class CartServiceImpl implements CartService {
+public class CartServiceImpl implements CartService{
 	
 	@Autowired
 	private CartDao dao;
@@ -26,6 +28,8 @@ public class CartServiceImpl implements CartService {
 		dao.delete(cart_id);
 		
 	}
+	
+	
 
 	@Override
 	public void getCart(int cart_id, ModelAndView mView) {
@@ -35,9 +39,11 @@ public class CartServiceImpl implements CartService {
 	}
 
 	@Override
-	public void getListCart(ModelAndView mView) {
-		List<CartDto> list=dao.getList();
-		mView.addObject("list", list);
+	public void getListCart(String users_id, HttpServletRequest request) {
+		List<CartDto> list=dao.getList(users_id);
+		request.setAttribute("list", list);
 	}
+
+
 
 }
