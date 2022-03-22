@@ -24,7 +24,6 @@ public class HomeController {
 		System.out.println("home 열었음");
 		return "home";
 	}
-	/*
 	@RequestMapping("/users/delete.do")
 	public String delete(HttpServletRequest request) {
 		return "users/delete";
@@ -36,6 +35,14 @@ public class HomeController {
 	@RequestMapping("/info.do")
 	public String info(HttpServletRequest request) {
 		return "info";
+	}
+	@RequestMapping("/payform.do")
+	public String payform(HttpServletRequest request) {
+		return "payform";
+	}
+	@RequestMapping("/pay.do")
+	public String pay(HttpServletRequest request) {
+		return "pay";
 	}
 	
 	@RequestMapping("/pwd_updateform.do")
@@ -63,11 +70,21 @@ public class HomeController {
 	public String productlist(HttpServletRequest request) {
 		return "product/productlist";
 	}
-	
+
+	@RequestMapping("/cart/list.do")
+	public String cartlist(HttpServletRequest request) {
+		return "cart/list";
+	}
+
+	@RequestMapping("/cart/bucket.do")
+	public String bucket(HttpServletRequest request){
+		return "cart/bucket";
+	}
+
     
 	@RequestMapping("/product/product_detail.do")
 	public String product_detail(HttpServletRequest request) {
 		return "product/product_detail";
 	}
-*/
+
 }

@@ -56,7 +56,7 @@ font-weight:bold;
  <div class="container" style="width:100%; height:600px;">
 	<div class="header-ment">Top3 items</div>
     <div class="row text-center mt-3 d-flex justify-content-center">
-    	<div class="col col-lg-3 d-flex justify-content-center" style="width:350px;">
+    	<div class="col col-sm-3 d-flex justify-content-center" style="width:300px;">
     		<div class="card" style="width: 19rem;">
   				<img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   					<div class="card-body">
@@ -67,12 +67,12 @@ font-weight:bold;
     					<li class="list-group-item">An item</li>
 					</ul>
   					<div class="card-body">
-    					<a href="#" class="card-link">Card link</a>
+    					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
 
   					</div>
 			</div>
 		</div>
-    	<div class="col col-lg-3 d-flex justify-content-center"  style="width:350px;">
+    	<div class="col col-sm-3 d-flex justify-content-center"  style="width:300px;">
     		<div class="card" style="width: 19rem;">
   				<img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   					<div class="card-body">
@@ -83,13 +83,13 @@ font-weight:bold;
     					<li class="list-group-item">An item</li>
 					</ul>
   					<div class="card-body">
-    					<a href="#" class="card-link">Card link</a>
+    					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
 
   					</div>
 			</div>
 		</div>
 
-    	<div class="col col-lg-3 d-flex justify-content-center"  style="width:350px;">
+    	<div class="col col-sm-3 d-flex justify-content-center"  style="width:300px;">
     		<div class="card" style="width: 19rem;">
   				<img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
   					<div class="card-body">
@@ -100,7 +100,7 @@ font-weight:bold;
     					<li class="list-group-item">An item</li>
 					</ul>
   					<div class="card-body">
-    					<a href="#" class="card-link">Card link</a>
+    					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
 
   					</div>
 			</div>
@@ -141,6 +141,7 @@ font-weight:bold;
 <a href="${pageContext.request.contextPath}/users/signup_form.do">signup_form</a>
 <a href="${pageContext.request.contextPath}/updateform.do">updateform</a>
 <a href="${pageContext.request.contextPath}/product/productlist.do">productlist</a>
+<a href="${pageContext.request.contextPath}/payform.do">payform</a>
 <a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
 <a href="${pageContext.request.contextPath}/cart/list.do">장바구니 목록</a>
 <a href="${pageContext.request.contextPath}/cart/insert.do">장바구니 삽입</a>
