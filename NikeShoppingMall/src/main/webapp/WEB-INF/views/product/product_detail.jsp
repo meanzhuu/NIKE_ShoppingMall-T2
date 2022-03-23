@@ -64,13 +64,8 @@ font-family: 'Noto Sans KR', sans-serif;
     </div>
 
     <div class="col-5 text" style="margin-left:40px;">
-
     <div class="card" style="width: 500px; border:none;">
-  <div class="card-body">
-    <h1 class="card-title">${product.product_name}</h1>  
-    <p class="card-text border-top pt-3 pb-3">    
-      <p> 소비자가 : ${product.product_price}</p>  
-        <p> 적립금 : ${product.product_point}</p>
+  <div class="card-body"> 
 
     <h1 class="card-title" style="font-weight:bold; font-size:30px;">Nike Women's Web Belt</h1>
     <p>제품 번호 099465</p>  
@@ -95,55 +90,64 @@ font-family: 'Noto Sans KR', sans-serif;
         	</div>
         </div>   
 	</div>
-         <div style="margin-top:20px;">
-          <div class="row">
-          <p style="margin-bottom:30px;"> 도서산관(제주도) 배송비 추가 5,000원 </p> 
-          
+        <div style="margin-top:20px;">
+          	<div class="row">
+          		<p style="margin-bottom:30px;"> 도서산관(제주도) 배송비 추가 5,000원 </p> 
+          	
+		<div class="col-3">
+          	<label class="col-form-label for="">color</label>
+         </div>          
+          <div class="col-6">
+				<div class="input-group mb-3">
+  					<select class="form-select" id="inputGroupSelect01">
+    					<option selected>select color</option>
+    					<option value="1">black</option>
+    					<option value="2">gray</option>
+    					<option value="3">navy</option>
+  					</select>
 				</div>
-		</div>
-          
-		</div>
-          <div class="col-6">
-			<div class="input-group mb-3">
-  			<select class="form-select" id="inputGroupSelect01">
-    			<option selected>select color</option>
-    			<option value="1">black</option>
-    			<option value="2">gray</option>
-    			<option value="3">navy</option>
-  			</select>
-			</div>
 		  </div>
-         </div> 
-         </div>
-		  
-		  <div style="margin-top:10px;">
-          <div class="row">
-          <div class="col-3">
-          	<label class="col-form-label for="">size</label>
-          </div>
-          <div class="col-6">
-			<div class="input-group mb-3">
-  			<select class="form-select" id="inputGroupSelect01">
-    			<option selected>select size</option>
-    			<option value="1">sm</option>
-    			<option value="2">m</option>
-    			<option value="3">lg</option>
-    			<option value="3">2x-lg</option>
-    			<option value="3">3x-lg</option>
-    			<option value="3">4x-lg</option>
-  			</select>
 			</div>
-		  </div>
-         </div> 
-         </div>
-	<div class="buttons" style="display:flex; justify-content:left; margin-top:10px;">
+		</div>
+			<div style="margin-top:10px;">
+          		<div class="row">
+          			<div class="col-3">
+          				<label class="col-form-label for="">size</label>
+          			</div>
+          			<div class="col-6">
+						<div class="input-group mb-3">
+  							<select class="form-select" id="inputGroupSelect01">
+    							<option selected>select size</option>
+    							<option value="1">sm</option>
+    							<option value="2">m</option>
+    							<option value="3">lg</option>
+    							<option value="3">2x-lg</option>
+    							<option value="3">3x-lg</option>
+    							<option value="3">4x-lg</option>
+  							</select>
+						</div>
+		  			</div>
+         		</div> 
+         	</div>
+         	
+         	         	<div class="buttons" style="display:flex; justify-content:left; margin-top:10px;">
 		<button class="btn" style="background-color:black; color:white; width:300px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/payform.do'">BUY NOW</button>
 		<button class="btn" style="color:black;background-color:#f2f2f2 ; border:1px solid #eaeaea;">
 			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
   				<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 			</svg>
 		</button>
-	</div>
+	</div>          
+		</div>
+          			
+         	
+
+         </div> 
+         </div>
+		  
+
+         	
+
           </div>
           
  
