@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Handles requests for the application home page.
@@ -22,9 +23,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 	
+	@RequestMapping("/product/productdetail2")
+	public String detail2(HttpServletRequest request) {
+		return "product/productdetail2";
+	}
+	
+	@RequestMapping("/mypage/mypage.do")
+	public ModelAndView authmyPage(HttpServletRequest request, ModelAndView mView) {
+		mView.setViewName("mypage/mypage");
+		return mView;
+	}
+	
 	@RequestMapping("/home.do")
 	public String home(HttpServletRequest request) {
 		return "home";
 	}
-
 }

@@ -34,9 +34,9 @@ font-family: 'Noto Sans KR', sans-serif;
   						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:center; align-items:center; font-size:16px; font-weight:bold;">휴대폰 번호</div>
   					</div>
   					<div class="col-10">
-  						<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">배동현</div>
-  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">qoehdgusdlek@naver.com</div>
-  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">010-7372-0196 <br />쿠폰/티켓 정보는 구매한 분의 번호로 전됩니다.</div>
+  						<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">김구라</div>
+  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">gura2@acorn.com</div>
+  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">010-1234-5678 <br />쿠폰/티켓 정보는 구매한 분의 번호로 전됩니다.</div>
   					</div>
   				</div>
   			</div>
@@ -53,9 +53,9 @@ font-family: 'Noto Sans KR', sans-serif;
   						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:center; align-items:center; font-size:16px; font-weight:bold; text-decoration: red wavy underline;height:80px;">배송 요청사항</div>
   					</div>
   					<div class="col-10">
-  						<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">배동현</div>
-  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">인천광역시 남동구 서창2동 **아파트 ****동 ****호</div>
-  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">010-7372-0196</div>
+  						<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">김구라</div>
+  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">acorn</div>
+  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">010-1234-5678</div>
 						<div style="border-bottom:1px solid #d3d3d3;">	
 							<div class="input-group mb-3" style="margin-top:20px; ">
   								<select class="form-select" id="inputGroupSelect01">
@@ -73,7 +73,7 @@ font-family: 'Noto Sans KR', sans-serif;
   		</div>
   		
   		<div>
-  			<p style=" font-size:20px; font-weight:bold; margin-top:30px;">배송 1건 중 1</p>
+  			<p style=" font-size:20px; font-weight:bold; margin-top:30px;">배송 3건 중 3</p>
   				<div>
   					<div style="border: 1px solid #d3d3d3; background-color:#f7f4f4; height:60px; line-height:60px; padding-left:20px;color:green; font-weight:bold;">내일(금) 3/25 도착 보장</div>
   					<div style="border: 1px solid #d3d3d3; background-color:white; height:60px; line-height:60px; padding-left:20px;">Nike Women's Web Belt</div>

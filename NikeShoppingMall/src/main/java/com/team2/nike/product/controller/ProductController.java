@@ -58,11 +58,26 @@ public class ProductController {
 		mView.setViewName("/product/insert");
 		return mView;
 	}
-	
 	@RequestMapping("/product/detail")
 	public ModelAndView detail(@RequestParam int product_id,ModelAndView mView) {
 		mView.addObject("product",service.getProduct(product_id));
 		mView.setViewName("/product/product_detail");
+		return mView;
+	}
+	
+	
+	@RequestMapping("/product/product_detail")
+	public ModelAndView detail1(@RequestParam int product_id,ModelAndView mView) {
+		mView.addObject("product",service.getProduct(product_id));
+		mView.setViewName("/product/product_detail");
+		return mView;
+	}
+	
+	
+	@RequestMapping("/product/product_detail2")
+	public ModelAndView detail2(@RequestParam int product_id,ModelAndView mView) {
+		mView.addObject("product",service.getProduct(product_id));
+		mView.setViewName("/product/product_detail2");
 		return mView;
 	}
 	

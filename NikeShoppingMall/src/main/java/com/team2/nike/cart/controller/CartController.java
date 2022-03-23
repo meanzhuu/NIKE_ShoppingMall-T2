@@ -18,6 +18,17 @@ public class CartController {
 	@Autowired
 	private CartService service;
 	
+	@RequestMapping("/pay/pay")
+	public String pay(HttpServletRequest request) {
+		return "pay/pay";
+	}
+	
+	@RequestMapping("/pay/payform")
+	public String deleteAllList(HttpServletRequest request) {
+		service.deleteAllCart((String)request.getSession().getAttribute("users_id"));
+		return "pay/payform";
+	}
+	
 	//장바구니 삭제 요청 처리
 	@RequestMapping("/cart/delete")
 	public String delete(int cart_id) {

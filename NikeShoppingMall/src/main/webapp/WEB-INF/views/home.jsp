@@ -139,21 +139,10 @@ font-weight:bold;
   	</button>
 </div>
 <jsp:include page="/include/footer.jsp"></jsp:include>
-<a href="${pageContext.request.contextPath}/users/deleteform.do">deleteform</a>
-<a href="${pageContext.request.contextPath}/users/delete.do">delete</a>
-<a href="${pageContext.request.contextPath}/users/loginform.do">Loginform</a>
-<a href="${pageContext.request.contextPath}/users/signup_form.do">signup_form</a>
-<a href="${pageContext.request.contextPath}/updateform.do">updateform</a>
-<a href="${pageContext.request.contextPath}/product/productlist.do">productlist</a>
-<a href="${pageContext.request.contextPath}/payform.do">payform</a>
+<a href="${pageContext.request.contextPath}/product/productlist.do">제품페이지(productlist) 상규형 product페이지는 이걸로</a>
 <a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
 <a href="${pageContext.request.contextPath}/cart/list.do">장바구니 목록</a>
 <a href="${pageContext.request.contextPath}/cart/insert.do">장바구니 삽입</a>
-<a href="${pageContext.request.contextPath}/product/product_detail.do">product_detail</a>
-<a href="${pageContext.request.contextPath}/mypage.do">Mypage</a>
-<a href="${pageContext.request.contextPath}/men.do">남자여자</a>
-<a href="${pageContext.request.contextPath}/product/product_detail2.do">product_detail2</a>
-<a href="./users/logout.do">로그아웃</a>
 
 </body>
 </html>

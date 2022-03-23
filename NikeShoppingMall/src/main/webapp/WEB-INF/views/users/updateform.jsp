@@ -104,7 +104,7 @@ display:inline-block;
 		</c:choose>
 		</a>
 	</div>
-	<form action="${pageContext.request.contextPath}/update.do" method="post" id="myForm">
+	<form action="${pageContext.request.contextPath}/users/update.do" method="post" id="myForm">
 		<input type="hidden" name="profile" 
 			value="${ empty dto.profile ? '' : dto.profile}"/>
 

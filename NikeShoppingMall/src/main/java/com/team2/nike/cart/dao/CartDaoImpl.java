@@ -39,4 +39,9 @@ public class CartDaoImpl implements CartDao{
 		CartDto dto=session.selectOne("cart.getData",cart_id);
 		return null;
 	}
+
+	@Override
+	public void deleteAll(String users_id) {
+		session.delete("cart.deleteAll", users_id);
+	}
 }
