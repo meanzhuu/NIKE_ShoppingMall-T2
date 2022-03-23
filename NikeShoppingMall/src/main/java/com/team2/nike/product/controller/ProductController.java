@@ -81,11 +81,5 @@ public class ProductController {
 		return mView;
 	}
 	
-	@RequestMapping("/product/getUpper")
-	public ModelAndView getUpper (ModelAndView mView) {
-		mView.addObject("list", service.getUpper());
-		mView.setViewName("/product/productlist");
-		return mView;
-	}
 	
 }
