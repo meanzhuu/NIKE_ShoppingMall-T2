@@ -187,56 +187,56 @@ align-items:center;
     	<div class="menu-wrapper" role="navigation">
       		<ul class="nav" role="menubar">
         		<li role="menuitem">
-          			<a href="/product/getUpper.do">의류</a>
+          			<a href="#" onclick="location.href='/nike/product/productlist.do?type=아우터'">의류</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
               			<h3>Clothes</h3>
               			<ul>
-                			<li role="menuitem"><a href="#">아우터</a></li>
-                				<li role="menuitem"><a href="#">상의</a></li>
-                				<li role="menuitem"><a href="#">하의</a></li>
+                			<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=아우터'">아우터</a></li>
+                				<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=상의'">상의</a></li>
+                				<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=하의'">하의</a></li>
               			</ul>
             		</div>
           		</div>
         		</li>
         		
         		<li role="menuitem">
-          			<a href="#">신발</a>
+          			<a href="#" onclick="location.href='/nike/product/productlist.do?type=운동화'">신발</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
               			<h3>Shoes</h3>
               			<ul>
-                			<li role="menuitem"><a href="#">운동화</a></li>
-                				<li role="menuitem"><a href="#">축구화</a></li>
-                				<li role="menuitem"><a href="#">슬리퍼</a></li>
+                			<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=운동화'">운동화</a></li>
+                				<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=축구화'">축구화</a></li>
+                				<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=슬리퍼'">슬리퍼</a></li>
               			</ul>
             		</div>
           		</div>
         		</li>
         		
         		<li role="menuitem">
-          			<a href="#">가방</a>
+          			<a href="#" onclick="location.href='/nike/product/productlist.do?type=백팩'">가방</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
               			<h3>Bag</h3>
               			<ul>
-                				<li role="menuitem"><a href="#">더블짐색백</a></li>
-                				<li role="menuitem"><a href="#">백팩</a></li>
-                				<li role="menuitem"><a href="#">힙팩</a></li>
+                				<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=더플짐색백'">더플짐색백</a></li>
+                				<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=백팩'">백팩</a></li>
+                				<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=힙팩'">힙팩</a></li>
               			</ul>
             		</div>
           		</div>
         		</li>
         		
         		<li role="menuitem">
-          			<a href="#">용품</a>
+          			<a href="#" onclick="location.href='/nike/product/productlist.do?type=모자'">용품</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
               			<h3>Supplies</h3>
               			<ul>
-                			<li role="menuitem"><a href="#">모자</a></li>
-                			<li role="menuitem"><a href="#">장갑</a></li>
-                			<li role="menuitem"><a href="#">공</a></li>
+                			<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=모자'">모자</a></li>
+                			<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=장갑'">장갑</a></li>
+                			<li role="menuitem"><a href="#" onclick="location.href='/nike/product/productlist.do?type=공'">공</a></li>
               			</ul>
             		</div>
           		</div>

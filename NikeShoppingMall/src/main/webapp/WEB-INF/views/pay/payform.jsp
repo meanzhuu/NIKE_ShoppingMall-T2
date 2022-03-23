@@ -151,7 +151,7 @@ font-family: 'Noto Sans KR', sans-serif;
   		</div>  
   		
   		<div style="margin-top:60px; text-align:center;">
-  			<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/pay.do'">결제하기</button>
+  			<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/pay/pay.do'">결제하기</button>
   			<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="history.back()">취소하기</button>
   		</div>
 	</div>
