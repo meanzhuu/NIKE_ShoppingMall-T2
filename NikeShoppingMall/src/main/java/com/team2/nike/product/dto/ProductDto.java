@@ -19,13 +19,18 @@ public class ProductDto {
 	private String product_regdate;
 	private MultipartFile product_image;
 	private String product_imagePath;
+	private MultipartFile product_image2;
+	private String product_imagePath2;
+	private MultipartFile product_image3;
+	private String product_imagePath3;
 	
 	public ProductDto(){}
 
 	public ProductDto(int product_id, String product_lcategory, String product_scategory, String product_name,
 			String product_fullName, String product_color, String product_size, String product_material,
 			String product_season, int product_price, double product_point, int product_stock, int product_views,
-			String product_regdate, MultipartFile product_image, String product_imagePath) {
+			String product_regdate, MultipartFile product_image, String product_imagePath, MultipartFile product_image2,
+			String product_imagePath2, MultipartFile product_image3, String product_imagePath3) {
 		super();
 		this.product_id = product_id;
 		this.product_lcategory = product_lcategory;
@@ -43,6 +48,10 @@ public class ProductDto {
 		this.product_regdate = product_regdate;
 		this.product_image = product_image;
 		this.product_imagePath = product_imagePath;
+		this.product_image2 = product_image2;
+		this.product_imagePath2 = product_imagePath2;
+		this.product_image3 = product_image3;
+		this.product_imagePath3 = product_imagePath3;
 	}
 
 	public int getProduct_id() {
@@ -173,6 +182,39 @@ public class ProductDto {
 		this.product_imagePath = product_imagePath;
 	}
 
+	public MultipartFile getProduct_image2() {
+		return product_image2;
+	}
+
+	public void setProduct_image2(MultipartFile product_image2) {
+		this.product_image2 = product_image2;
+	}
+
+	public String getProduct_imagePath2() {
+		return product_imagePath2;
+	}
+
+	public void setProduct_imagePath2(String product_imagePath2) {
+		this.product_imagePath2 = product_imagePath2;
+	}
+
+	public MultipartFile getProduct_image3() {
+		return product_image3;
+	}
+
+	public void setProduct_image3(MultipartFile product_image3) {
+		this.product_image3 = product_image3;
+	}
+
+	public String getProduct_imagePath3() {
+		return product_imagePath3;
+	}
+
+	public void setProduct_imagePath3(String product_imagePath3) {
+		this.product_imagePath3 = product_imagePath3;
+	}
+
+	
 	
 	
 	

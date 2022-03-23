@@ -128,7 +128,7 @@ height:45px;
 			</c:choose>
         <input type="text" id="users_id" name="users_id"  placeholder="Email or ID" />
         <input type="password" id="users_pwd" name="users_pwd"  placeholder="Password"/>
-        <input type="submit" value="Log in" />
+        <input type="submit" value="Log in" style="margin-top:40px;"/>
        	<a href="${pageContext.request.contextPath }/users/signup_form.do" class="find">회원가입이 필요하십니까?</a>
     </form>          
 	</div>
@@ -138,5 +138,5 @@ height:45px;
   <script src="js/bootstrap.min.js"></script>
 </body>
 <jsp:include page="/include/footer.jsp"></jsp:include>
-    
+   
 </html>
