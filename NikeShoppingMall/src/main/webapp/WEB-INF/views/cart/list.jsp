@@ -60,7 +60,7 @@ font-family: 'Noto Sans KR', sans-serif;
 					<div style=" height:60px; line-height:60px;color:#007f41">오늘(목) 3/24 새벽 7시 전 도착</div>
 				</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >${tmp.product_price }</div>
-				<div class="col-1" style="border-top:2px solid #c6c4c4;  border-right:2px solid  height:120px;  line-height:120px; text-align:center;">${tmp.cart_count }</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4;  border-right:2px solid  height:120px;  line-height:120px; text-align:center;"><a href="delete.do?cart_id=${tmp.cart_id }">x</a></div>
 			</div>
 		</div>
 		<c:set var="total" value="${total+(tmp.product_price * tmp.cart_count) }"></c:set>
