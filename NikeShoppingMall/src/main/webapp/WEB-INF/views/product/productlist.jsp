@@ -139,6 +139,7 @@ width:1000px;
     </ul>
   </div>   
        </div>
+       </div>
    <div id="right_content" class="right_content" style="width:700px;">
    
     <div class="row text-center mt-5">
@@ -166,6 +167,7 @@ width:1000px;
 
 
 
+</div>
 </div>
 </div>
 <jsp:include page="/include/footer.jsp"></jsp:include>
