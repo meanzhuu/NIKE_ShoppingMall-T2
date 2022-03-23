@@ -39,7 +39,37 @@ public class ProductServiceImpl implements ProductService{
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+		
+		MultipartFile image2=dto.getProduct_image2();
+		String imageName2 = image2.getOriginalFilename();
+		String realPath2 = request.getServletContext().getRealPath("/resources/upload");
+		//db 에 저장할 저장할 파일의 상세 경로
+		String filePath2 = realPath2 + File.separator;
+		//디렉토리를 만들 파일 객체 생성
+		String saveFileName2 = System.currentTimeMillis() + imageName2;
+		try {
+			//upload 폴더에 파일을 저장한다.
+			image2.transferTo(new File(filePath2 + saveFileName2));
+			System.out.println();	//임시 출력
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 	
+		MultipartFile image3=dto.getProduct_image3();
+		String imageName3 = image2.getOriginalFilename();
+		String realPath3 = request.getServletContext().getRealPath("/resources/upload");
+		//db 에 저장할 저장할 파일의 상세 경로
+		String filePath3 = realPath2 + File.separator;
+		//디렉토리를 만들 파일 객체 생성
+		String saveFileName3 = System.currentTimeMillis() + imageName3;
+		try {
+			//upload 폴더에 파일을 저장한다.
+			image3.transferTo(new File(filePath3 + saveFileName3));
+			System.out.println();	//임시 출력
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		
 		String product_lcategory = request.getParameter("product_lcategory");
 		String product_scategory = request.getParameter("product_scategory");
 		String product_name = request.getParameter("product_name");
@@ -62,6 +92,8 @@ public class ProductServiceImpl implements ProductService{
 		dto.setProduct_price(product_price);
 		dto.setProduct_point(product_point);
 		dto.setProduct_imagePath("/resources/upload/" + saveFileName);
+		dto.setProduct_imagePath2("/resources/upload/" + saveFileName2);
+		dto.setProduct_imagePath3("/resources/upload/" + saveFileName3);
 		productDao.insert(dto);
 		
 	}

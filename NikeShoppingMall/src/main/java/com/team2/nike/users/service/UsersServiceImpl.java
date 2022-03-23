@@ -26,7 +26,6 @@ public class UsersServiceImpl implements UsersService {
 		
 				String pwd=dto.getUsers_pwd();
 				//암호화 한 후에 
-				System.out.println(pwd);
 				BCryptPasswordEncoder encoder=new BCryptPasswordEncoder();
 				String encodedPwd=encoder.encode(pwd);
 				//dto 에 다시 넣어준다.
@@ -52,7 +51,6 @@ public class UsersServiceImpl implements UsersService {
 			String encodedPwd=user.getUsers_pwd();
 			String pwd=dto.getUsers_pwd();
 			isValid=BCrypt.checkpw(pwd, encodedPwd);
-			System.out.println(isValid);
 		}	
 		if(isValid) {
 			session.setAttribute("users_id", dto.getUsers_id());

@@ -77,7 +77,7 @@ font-family: 'Noto Sans KR', sans-serif;
   						<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
 					</svg>
 				</div>
-				<div class="col-1" style="text-align:right;">총 적립</div>
+				<div class="col-1" style="text-align:right;">총 할인</div>
 				<div class="col-1" style="font-weight:bold; color:red;"><c:out value="${total*0.1 }"/>원</div>
 				<div class="col-1" style="text-align:right;">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
