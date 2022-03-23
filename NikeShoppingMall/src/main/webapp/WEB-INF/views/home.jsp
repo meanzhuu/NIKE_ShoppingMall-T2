@@ -152,7 +152,7 @@ font-weight:bold;
 <a href="${pageContext.request.contextPath}/product/product_detail.do">product_detail</a>
 <a href="${pageContext.request.contextPath}/mypage.do">Mypage</a>
 <a href="${pageContext.request.contextPath}/men.do">남자여자</a>
-
+<a href="${pageContext.request.contextPath}/product/product_detail2.do">product_detail2</a>
 <a href="./users/logout.do">로그아웃</a>
 
 </body>
