@@ -52,6 +52,16 @@
 				<input type="file" name="product_image" id="product_image"
 					accept=".jpg, .jpeg, .png, .JPG, .JPEG"/>		
 			</div>
+			<div>
+				<label for="product_image2">제품 이미지2</label>
+				<input type="file" name="product_image2" id="product_image2"
+					accept=".jpg, .jpeg, .png, .JPG, .JPEG"/>		
+			</div>
+			<div>
+				<label for="product_image3">제품 이미지3</label>
+				<input type="file" name="product_image3" id="product_image3"
+					accept=".jpg, .jpeg, .png, .JPG, .JPEG"/>		
+			</div>
 			<button type="submit">상품 추가</button>		
 		</form>
 	</div>

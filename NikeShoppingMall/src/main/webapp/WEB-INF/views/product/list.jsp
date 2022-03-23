@@ -29,6 +29,8 @@
 				<th>제품 조회수</th>
 				<th>제품 등록일</th>
 				<th>제품 이미지</th>
+				<th>제품 이미지2</th>
+				<th>제품 이미지3</th>
 				<th>삭제</th>
 			</tr>
 		</thead>
@@ -50,6 +52,8 @@
 				<td>${tmp.product_views }</td>
 				<td>${tmp.product_regdate }</td>
 				<td><img src="${pageContext.request.contextPath }${tmp.product_imagePath}" alt="" /></td>
+				<td><img src="${pageContext.request.contextPath }${tmp.product_imagePath2}" alt="" /></td>
+				<td><img src="${pageContext.request.contextPath }${tmp.product_imagePath3}" alt="" /></td>
 				<td><a href="delete.do?product_id=${tmp.product_id }">삭제</a></td>
 			</tr>
 		</c:forEach>

@@ -31,11 +31,18 @@ public class ProductController {
 		return mView;
 	}
 	
-	@RequestMapping("/product/list")
-	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
+	@RequestMapping("/product/productlist")
+	public ModelAndView getProductList(HttpServletRequest request, ModelAndView mView) {
 		mView.addObject("list",service.getList());
 
 		mView.setViewName("product/productlist");
+		return mView;
+	}
+	
+	@RequestMapping("/product/list")
+	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
+		mView.addObject("list",service.getList());
+		mView.setViewName("product/list");
 		return mView;
 	}
 	
