@@ -140,7 +140,7 @@ width:1000px;
   </div>   
        </div>
 
-   <div id="right_content" class="right_content" style="width:1000px;">
+   	<div id="right_content" class="right_content" style="width:1000px;">
    
     <div class="row text-center mt-3" style="width:999px;">
     <c:forEach var="tmp" items="${list}">
@@ -156,9 +156,8 @@ width:1000px;
       
         </ul>
         <div class="card-body">
-          <a href="detail.do?product_id=${tmp.product_id }" class="card-link">바로가기</a>
-      
-        </div>
+          	<a href="detail.do?product_id=${tmp.product_id }" class="card-link">바로가기</a>
+      	</div>
         </div>
    </div>
    </c:forEach>
