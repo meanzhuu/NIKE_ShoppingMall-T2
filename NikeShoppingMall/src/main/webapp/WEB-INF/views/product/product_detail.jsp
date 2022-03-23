@@ -67,8 +67,8 @@ font-family: 'Noto Sans KR', sans-serif;
     <div class="card" style="width: 500px; border:none;">
   <div class="card-body"> 
 
-    <h1 class="card-title" style="font-weight:bold; font-size:30px;">Nike Women's Web Belt</h1>
-    <p>제품 번호 099465</p>  
+    <h1 class="card-title" style="font-weight:bold; font-size:30px;">${product.product_name}</h1>
+    <p>제품 번호: ${product.product_id}</p>  
     <div class="card-text pt-4 pb-3" style="border-bottom:2px solid black; border-top:2px solid black; margin-bottom:30px;">    
     	<div class="row">
     		<div class="col-3" style="font-weight:bold;">
@@ -84,12 +84,12 @@ font-family: 'Noto Sans KR', sans-serif;
         	
         	<div class="col-9">
         		<p style="color:#8c8c8c; text-decoration: line-through">150,000</p>
-        		<p style="font-size:18px; font-weight:bold; text-decoration: red wavy underline">120,000</p>
-        		<p>2,200</p>
+        		<p style="font-size:18px; font-weight:bold; text-decoration: red wavy underline">${product.product_price}</p>
+        		<p>${product.product_point}</p>
         		<p> 최대 12개월</p>
         		<p>무료</p>
-        		<p>black / gray / navy</p>
-        		<p>sm  /  m  /  lg  /  x-lg  /  2x-lg  /  3x-lg </p>
+        		<p>${product.product_color}</p>
+        		<p>${product.product_size}</p>
         		<p style="font-size:20px; font-weight:bold;">04/01(금) ~ 04/05(화)</p>
         	</div>
         </div>   
@@ -136,12 +136,12 @@ font-family: 'Noto Sans KR', sans-serif;
   				<div style="border-bottom: 1px solid #d3d3d3; height:60px;display:flex; justify-content:center; align-items:center; font-size:16px; font-weight:bold;">등록일</div>
   			</div>
   			<div class="col-9">
-  				<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">099465</div>
-  				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">Nike Women's Web Belt</div>
-  				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">가죽(소가죽:40% 인조가죽:60%)</div>
-  				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">모든 계절</div>
-  				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">92</div>
-  				<div style="border-bottom: 1px solid #d3d3d3; height:60px;display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">2022-03-22</div>
+  				<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_id}</div>
+  				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_name}</div>
+  				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_material}</div>
+  				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_season}</div>
+  				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_stock}</div>
+  				<div style="border-bottom: 1px solid #d3d3d3; height:60px;display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_regdate}</div>
   			</div>
   		</div>
   	</div>
