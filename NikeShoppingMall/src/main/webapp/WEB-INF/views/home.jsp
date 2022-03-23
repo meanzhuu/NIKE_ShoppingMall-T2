@@ -139,10 +139,6 @@ font-weight:bold;
   	</button>
 </div>
 <jsp:include page="/include/footer.jsp"></jsp:include>
-<a href="${pageContext.request.contextPath}/product/productlist.do">제품페이지(productlist) 상규형 product페이지는 이걸로</a>
 <a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
-<a href="${pageContext.request.contextPath}/cart/list.do">장바구니 목록</a>
-<a href="${pageContext.request.contextPath}/cart/insert.do">장바구니 삽입</a>
-
 </body>
 </html>

@@ -145,7 +145,7 @@ width:1000px;
     <c:forEach var="tmp" items="${list}">
     <div class="col" style="margin-top:40px; width:300px;"> 
        <div class="card" style="width: 16rem;">
-        <img src="${pageContext.request.contextPath}${product.product_imagePath}" class="card-img-top" alt="...">
+        <img src="${pageContext.request.contextPath}${tmp.product_imagePath}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${tmp.product_name}</h5>
           <p class="card-text">${tmp.product_lcategory} | ${tmp.product_scategory}</p>
