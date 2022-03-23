@@ -28,13 +28,13 @@ font-family: 'Noto Sans KR', sans-serif;
 		<div style="font-size:12px;">
 			<div class="row">
 				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
-					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
+					<input class="chkbox" type="checkbox" name="product" value="${dto.product_id}" data-price="${dto.product_price }" style="margin-top:50px;">
 				</div>
 				<div class="col-2" style="border-top:2px solid #c6c4c4; text-align:center;">
 					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_1.png" style="width:100px;height:100px; margin-top:10px;"/>
 				</div>
 				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; ">
-					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">나이키 xT1 클럽</div>
+					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">${dto.product_name }</div>
 					<div style=" height:60px; line-height:60px;color:#007f41">오늘(목) 3/24 새벽 7시 전 도착</div>
 				</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >85,000원</div>
@@ -42,13 +42,13 @@ font-family: 'Noto Sans KR', sans-serif;
 			</div>
 			<div class="row">
 				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
-					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
+					<input class="chkbox" type="checkbox" name="product" value="${dto.product_id}" data-price="${dto.product_price }" style="margin-top:50px;">
 				</div>
 				<div class="col-2" style="border-top:2px solid #c6c4c4; text-align:center;">
 					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_2.png" style="width:100px;height:100px; margin-top:10px;"/>
 				</div>
 				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4;">
-					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">나이키 xT1 헤리티지86</div>
+					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">${dto.product_name }</div>
 					<div style=" height:60px; line-height:60px;color:#007f41">오늘(목) 3/24 새벽 7시 전 도착</div>
 				</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >33,000원</div>
@@ -56,13 +56,13 @@ font-family: 'Noto Sans KR', sans-serif;
 			</div>
 			<div class="row">
 				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
-					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
+					<input class="chkbox" type="checkbox" name="product" value="${dto.product_id}" data-price="${dto.product_price }" style="margin-top:50px;">
 				</div>
 				<div class="col-2" style="border-top:2px solid #c6c4c4;  text-align:center;">
 					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_3.png" style="width:100px;height:100px; margin-top:10px;"/>
 				</div>
 				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4;">
-					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px ; font-weight:bold;">나이키 스포츠웨어 퓨추라</div>
+					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px ; font-weight:bold;">${dto.product_name }</div>
 					<div style=" height:60px; line-height:60px;color:#007f41">내일(금) 3/25 새벽 7시 전 도착</div>
 				</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >23,400원</div>
@@ -70,13 +70,13 @@ font-family: 'Noto Sans KR', sans-serif;
 			</div>
 			<div class="row" style="border-bottom:2px solid #c6c4c4">
 				<div class="col-1" style="border-top:2px solid #c6c4c4; text-align:center;">
-					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
+					<input class="chkbox" type="checkbox" name="product" value="${dto.product_id}" data-price="${dto.product_price }" style="margin-top:50px;">
 				</div>
 				<div class="col-2" style="border-top:2px solid #c6c4c4; text-align:center;">
 					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_4.png" style="width:100px;height:100px; margin-top:10px;"/>
 				</div>
 				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4;">
-					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px ; font-weight:bold;">조던 에센셜</div>
+					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px ; font-weight:bold;">${dto.product_name }</div>
 					<div style=" height:60px; line-height:60px;color:#007f41">모레(토) 3/26 새벽 7시 전 도착</div>
 				</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center; font-size:11px;" >119,000원</div>
@@ -111,7 +111,7 @@ font-family: 'Noto Sans KR', sans-serif;
 					</svg>
 				</div>
 				<div class="col-1" style="text-align:right;">총 주문금액</div>
-				<div class="col-1" style="font-weight:bold;">257,000원</div>
+				<div class="col-1" style="font-weight:bold;" id=finalPrice> 원</div>
 			</div>
 			<div style="margin-top:60px; text-align:center;">
   				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="history.back()">계속 쇼핑하기</button>
@@ -119,5 +119,29 @@ font-family: 'Noto Sans KR', sans-serif;
   			</div>
 		</div>
 	</div>
+	<script>
+	
+	let chks=document.querySelectorAll(".chkbox");
+      //반복문 돌면서 change 이벤트가 일어났을때 호출되는 함수를 등록한다.
+    for(let i=0; i<chks.length; i++){
+       chks.addEventListener("change", function(){ 
+            checkBox();
+         });
+     }
+	function checkBox(){
+        //let totalPrice=0;
+        //let totalPoint=0;
+        let finalPrice=0;
+        //var count=document.querySelectorAll(".chkbox")
+        let chks=document.querySelectorAll(".chkbox");
+        for(let i=0; i<chks.length; i++){
+           let tmp=chks[i];
+           if(tmp.checked){
+              let price=Number(tmp.getAttribute("data-price"));
+              finalPrice += price;
+           }
+        }
+	}
+	</script>
 </body>
 </html>

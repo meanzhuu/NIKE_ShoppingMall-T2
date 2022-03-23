@@ -1,4 +1,4 @@
-package com.team2.nike.orderDetail.dto;
+package com.team2.nike.orders.dto;
 
 public class OrderDetailDto {
 	private int orderDetail_id;

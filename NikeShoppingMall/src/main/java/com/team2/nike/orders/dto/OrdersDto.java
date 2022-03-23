@@ -2,7 +2,6 @@ package com.team2.nike.orders.dto;
 
 import java.util.Date;
 import java.util.List;
-import com.team2.nike.orderDetail.dto.OrderDetailDto;
 
 public class OrdersDto {
 	private int orders_id;
