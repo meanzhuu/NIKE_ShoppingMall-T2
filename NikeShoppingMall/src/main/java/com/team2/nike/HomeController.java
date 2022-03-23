@@ -23,6 +23,11 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 	
+	@RequestMapping("/product/productdetail2")
+	public String detail2(HttpServletRequest request) {
+		return "product/productdetail2";
+	}
+	
 	@RequestMapping("/mypage/mypage.do")
 	public ModelAndView authmyPage(HttpServletRequest request, ModelAndView mView) {
 		mView.setViewName("mypage/mypage");

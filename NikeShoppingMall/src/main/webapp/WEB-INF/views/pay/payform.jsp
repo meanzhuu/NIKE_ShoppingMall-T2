@@ -35,7 +35,7 @@ font-family: 'Noto Sans KR', sans-serif;
   					</div>
   					<div class="col-10">
   						<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">김구라</div>
-  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">gura@acorn.com</div>
+  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">gura2@acorn.com</div>
   						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">010-1234-5678 <br />쿠폰/티켓 정보는 구매한 분의 번호로 전됩니다.</div>
   					</div>
   				</div>
