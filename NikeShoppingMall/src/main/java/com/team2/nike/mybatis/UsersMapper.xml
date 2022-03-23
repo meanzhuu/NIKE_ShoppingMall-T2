@@ -19,4 +19,15 @@
 		FROM users
 		WHERE users_id=#{users_id }
 	</select>
+	
+	<update id="update" parameterType="usersDto">
+		UPDATE users
+		SET email=#{users_email }
+		WHERE users_id=#{users_id }
+	</update>
+	
+	<delete id="delete" parameterType="string">
+		DELETE FROM users
+		WHERE users_id=#{users_id}
+	</delete>
 </mapper>
