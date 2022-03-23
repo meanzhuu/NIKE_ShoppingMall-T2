@@ -28,6 +28,12 @@
 		DELETE FROM cart
 		WHERE cart_id=#{cart_id}
 	</delete>
+	
+	<!-- 장바구니 홀라당 날리기 -->
+	<delete id="deleteAll" parameterType="String">
+		DELETE FROM cart
+		WHERE users_id=#{users_id}
+	</delete>
 
 	<!-- 장바구니 상품하나의 정보를 가져오기 -->
 	<select id="getData" parameterType="int" resultType="cartDto">
