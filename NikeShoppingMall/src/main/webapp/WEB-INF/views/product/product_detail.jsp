@@ -21,7 +21,7 @@ font-family: 'Noto Sans KR', sans-serif;
 <jsp:include page="/include/navbar4.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
 
-<div class="container" style="height:1500px">
+<div class="container" style="height:1400px">
 
 <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; margin-top:40px; border-bottom:2px solid #bfbfbf ">
   <ol class="breadcrumb" >
@@ -77,6 +77,8 @@ font-family: 'Noto Sans KR', sans-serif;
       			<p> 적립금 </p>
       			<p> 무이자 할부</p>  
         		<p> 배송비</p>
+        		<p> color</p>
+        		<p> size</p>
         		<p style="font-size:20px;"> 예상 수령일</p>
         	</div>
         	
@@ -86,6 +88,8 @@ font-family: 'Noto Sans KR', sans-serif;
         		<p>2,200</p>
         		<p> 최대 12개월</p>
         		<p>무료</p>
+        		<p>black / gray / navy</p>
+        		<p>sm  /  m  /  lg  /  x-lg  /  2x-lg  /  3x-lg </p>
         		<p style="font-size:20px; font-weight:bold;">04/01(금) ~ 04/05(화)</p>
         	</div>
         </div>   
@@ -93,44 +97,11 @@ font-family: 'Noto Sans KR', sans-serif;
         <div style="margin-top:20px;">
           	<div class="row">
           		<p style="margin-bottom:30px;"> 도서산관(제주도) 배송비 추가 5,000원 </p> 
-          	
-		<div class="col-3">
-          	<label class="col-form-label for="">color</label>
-         </div>          
-          <div class="col-6">
-				<div class="input-group mb-3">
-  					<select class="form-select" id="inputGroupSelect01">
-    					<option selected>select color</option>
-    					<option value="1">black</option>
-    					<option value="2">gray</option>
-    					<option value="3">navy</option>
-  					</select>
-				</div>
-		  </div>
-			</div>
+          	</div>
 		</div>
-			<div style="margin-top:10px;">
-          		<div class="row">
-          			<div class="col-3">
-          				<label class="col-form-label for="">size</label>
-          			</div>
-          			<div class="col-6">
-						<div class="input-group mb-3">
-  							<select class="form-select" id="inputGroupSelect01">
-    							<option selected>select size</option>
-    							<option value="1">sm</option>
-    							<option value="2">m</option>
-    							<option value="3">lg</option>
-    							<option value="3">2x-lg</option>
-    							<option value="3">3x-lg</option>
-    							<option value="3">4x-lg</option>
-  							</select>
-						</div>
-		  			</div>
-         		</div> 
-         	</div>
+
          	
-         	         	<div class="buttons" style="display:flex; justify-content:left; margin-top:10px;">
+     <div class="buttons" style="display:flex; justify-content:left;">
 		<button class="btn" style="background-color:black; color:white; width:300px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/payform.do'">BUY NOW</button>
 		<button class="btn" style="color:black;background-color:#f2f2f2 ; border:1px solid #eaeaea;">
 			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
