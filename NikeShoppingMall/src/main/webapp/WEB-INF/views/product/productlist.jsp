@@ -145,7 +145,7 @@ width:1000px;
     <c:forEach var="tmp" items="${list}">
     <div class="col" style="margin-top:40px; width:300px;"> 
        <div class="card" style="width: 16rem;">
-        <img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
+        <img src="${pageContext.request.contextPath}${product.product_imagePath}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${tmp.product_name}</h5>
           <p class="card-text">${tmp.product_lcategory} | ${tmp.product_scategory}</p>
