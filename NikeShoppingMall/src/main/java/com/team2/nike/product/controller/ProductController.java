@@ -33,19 +33,19 @@ public class ProductController {
 	
 	@RequestMapping("/product/productlist")
 	public ModelAndView getProductList(HttpServletRequest request, ModelAndView mView) {
-		mView.addObject("list",service.getList());
+		mView.addObject("list",service.getList(request.getParameter("type")));
 
 		mView.setViewName("product/productlist");
 		return mView;
 	}
-	
+	/*
 	@RequestMapping("/product/list")
 	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
 		mView.addObject("list",service.getList());
 		mView.setViewName("product/list");
 		return mView;
 	}
-	
+	*/
 	@RequestMapping("/product/insertform")
 	public ModelAndView insertform(HttpServletRequest request, ProductDto dto, ModelAndView mView) {
 		mView.setViewName("/product/insertform");

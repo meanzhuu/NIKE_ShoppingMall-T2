@@ -27,8 +27,8 @@ font-family: 'Noto Sans KR', sans-serif;
   <ol class="breadcrumb" >
     <li class="breadcrumb-item"><a href="${pageContext.request.contextPath }/home.do" style="text-decoration:none; font-weight:bold;">HOME</a></li>
     <li class="breadcrumb-item"><a href="#" style="text-decoration:none; font-weight:bold;">WOMEN</a></li>
-    <li class="breadcrumb-item"><a href="#" style="text-decoration:none;">액세사리</a></li>
-    <li class="breadcrumb-item active" aria-current="page">벨트</li>
+    <li class="breadcrumb-item"><a href="#" style="text-decoration:none;">${product.product_lcategory} </a></li>
+    <li class="breadcrumb-item active" aria-current="page">${product.product_scategory} </li>
   </ol>
 </nav>
 
@@ -43,13 +43,13 @@ font-family: 'Noto Sans KR', sans-serif;
   </div>
   <div class="carousel-inner" >
     <div class="carousel-item active">
-      <img src="https://th.bing.com/th/id/R.23f98422c56bdb54755060112471d3c6?rik=YqML%2b5e5Cdimug&riu=http%3a%2f%2fwww.fairly.co.kr%2fdown%2fprize_photo%2fopen99%2f216642%2f2166424.jpg&ehk=RCWbU5pBaAVwE%2fgc9dXQltjvfcfokw7yRCMoVSK1uaw%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="...">
+      <img src="${pageContext.request.contextPath}${product.product_imagePath}" class="d-block w-100" alt="...">
+    </div> 
+    <div class="carousel-item">
+      <img src="${pageContext.request.contextPath}${product.product_imagePath2}" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="https://th.bing.com/th/id/R.86c96fa07c4132f0debbb18ece60a7fe?rik=fqzGJDogC5%2fm1w&riu=http%3a%2f%2fwww.fairly.co.kr%2fdown%2fprize_photo%2fifly77%2f148080%2f1480800.jpg&ehk=an%2bzQUcozxq8CbxY37jiP0TcrSLJ7zTwtRd3cz4Ng%2fc%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://th.bing.com/th/id/R.a79d649a6b8d434686ad0f27b7e40fe1?rik=9iRe7gSmmtDJXQ&riu=http%3a%2f%2fwww.fairly.co.kr%2fdown%2fprize_photo%2fluxzon%2f267518%2f2675180.jpg&ehk=hBCY4G5PcIaxJYXPLNVA1fOltN0duhyn60IddtmnpQ0%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="...">
+      <img src="${pageContext.request.contextPath}${product.product_imagePath3}" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -68,7 +68,7 @@ font-family: 'Noto Sans KR', sans-serif;
   <div class="card-body"> 
 
     <h1 class="card-title" style="font-weight:bold; font-size:30px;">${product.product_name}</h1>
-    <p>제품 번호: ${product.product_id}</p>  
+    <p>제품 번호: 0${product.product_id + 8888} </p>  
     <div class="card-text pt-4 pb-3" style="border-bottom:2px solid black; border-top:2px solid black; margin-bottom:30px;">    
     	<div class="row">
     		<div class="col-3" style="font-weight:bold;">
@@ -83,7 +83,7 @@ font-family: 'Noto Sans KR', sans-serif;
         	</div>
         	
         	<div class="col-9">
-        		<p style="color:#8c8c8c; text-decoration: line-through">150,000</p>
+        		<p style="color:#8c8c8c; text-decoration: line-through">${product.product_price*1.2}</p>
         		<p style="font-size:18px; font-weight:bold; text-decoration: red wavy underline">${product.product_price}</p>
         		<p>${product.product_point}</p>
         		<p> 최대 12개월</p>
@@ -136,7 +136,7 @@ font-family: 'Noto Sans KR', sans-serif;
   				<div style="border-bottom: 1px solid #d3d3d3; height:60px;display:flex; justify-content:center; align-items:center; font-size:16px; font-weight:bold;">등록일</div>
   			</div>
   			<div class="col-9">
-  				<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_id}</div>
+  				<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;"> 0${product.product_id + 8888}</div>
   				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_name}</div>
   				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_material}</div>
   				<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">${product.product_season}</div>
