@@ -190,15 +190,11 @@ align-items:center;
           			<a href="/product/getUpper.do">의류</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
-              			<h3>Heading 1</h3>
+              			<h3>Clothes</h3>
               			<ul>
-                			<li role="menuitem"><a href="#">Item 1</a></li>
-                				<li role="menuitem"><a href="#">Item 2</a></li>
-                				<li role="menuitem"><a href="#">Item 3</a></li>
-                				<li role="menuitem"><a href="#">Item 4</a></li>
-                				<li role="menuitem"><a href="#">Item 5</a></li>
-                				<li role="menuitem"><a href="#">Item 6</a></li>
-                				<li role="menuitem"><a href="#">Item 7</a></li>
+                			<li role="menuitem"><a href="#">아우터</a></li>
+                				<li role="menuitem"><a href="#">상의</a></li>
+                				<li role="menuitem"><a href="#">하의</a></li>
               			</ul>
             		</div>
           		</div>
@@ -208,15 +204,11 @@ align-items:center;
           			<a href="#">신발</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
-              			<h3>Heading 1</h3>
+              			<h3>Shoes</h3>
               			<ul>
-                			<li role="menuitem"><a href="#">Item 1</a></li>
-                				<li role="menuitem"><a href="#">Item 2</a></li>
-                				<li role="menuitem"><a href="#">Item 3</a></li>
-                				<li role="menuitem"><a href="#">Item 4</a></li>
-                				<li role="menuitem"><a href="#">Item 5</a></li>
-                				<li role="menuitem"><a href="#">Item 6</a></li>
-                				<li role="menuitem"><a href="#">Item 7</a></li>
+                			<li role="menuitem"><a href="#">운동화</a></li>
+                				<li role="menuitem"><a href="#">축구화</a></li>
+                				<li role="menuitem"><a href="#">슬리퍼</a></li>
               			</ul>
             		</div>
           		</div>
@@ -226,33 +218,25 @@ align-items:center;
           			<a href="#">가방</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
-              			<h3>Heading 1</h3>
+              			<h3>Bag</h3>
               			<ul>
-                			<li role="menuitem"><a href="#">Item 1</a></li>
-                				<li role="menuitem"><a href="#">Item 2</a></li>
-                				<li role="menuitem"><a href="#">Item 3</a></li>
-                				<li role="menuitem"><a href="#">Item 4</a></li>
-                				<li role="menuitem"><a href="#">Item 5</a></li>
-                				<li role="menuitem"><a href="#">Item 6</a></li>
-                				<li role="menuitem"><a href="#">Item 7</a></li>
+                				<li role="menuitem"><a href="#">더블짐색백</a></li>
+                				<li role="menuitem"><a href="#">백팩</a></li>
+                				<li role="menuitem"><a href="#">힙팩</a></li>
               			</ul>
             		</div>
           		</div>
         		</li>
         		
         		<li role="menuitem">
-          			<a href="#">액세사리</a>
+          			<a href="#">용품</a>
           		<div class="mega-menu" aria-hidden="true" role="menu">
             		<div class="nav-column">
-              			<h3>Heading 1</h3>
+              			<h3>Supplies</h3>
               			<ul>
-                			<li role="menuitem"><a href="#">Item 1</a></li>
-                				<li role="menuitem"><a href="#">Item 2</a></li>
-                				<li role="menuitem"><a href="#">Item 3</a></li>
-                				<li role="menuitem"><a href="#">Item 4</a></li>
-                				<li role="menuitem"><a href="#">Item 5</a></li>
-                				<li role="menuitem"><a href="#">Item 6</a></li>
-                				<li role="menuitem"><a href="#">Item 7</a></li>
+                			<li role="menuitem"><a href="#">모자</a></li>
+                			<li role="menuitem"><a href="#">장갑</a></li>
+                			<li role="menuitem"><a href="#">공</a></li>
               			</ul>
             		</div>
           		</div>

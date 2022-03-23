@@ -98,28 +98,10 @@ font-family: 'Noto Sans KR', sans-serif;
          <div style="margin-top:20px;">
           <div class="row">
           <p style="margin-bottom:30px;"> 도서산관(제주도) 배송비 추가 5,000원 </p> 
-          <div class="col-3">
-          	<label class="col-form-label for="">color</label>
-          </div>
-           <div class="col-auto">
-          <div class="input-group">
-  <span class="input-group-text">-</span>
-  <input type="text" class="form-control" style="width:40px;" value="1">
-  <span class="input-group-text">+</span>
-</div>
-<div class="row pt-3 pb-3">
-<div class="col-6">
-<h3>총 상품금액 </h3></div>
-<div class="col-6" style="text-align: right;">
-<h3> ${product.product_price}</h3></div>
-</div>
-</div>
           
-                <div class="container"></div>  
-     <a href="#" class="btn btn-primary">구입하기</a>
-       <a href="#" class="btn btn-primary">장바구니 가기</a>
-		
-		
+				</div>
+		</div>
+          
 		</div>
           <div class="col-6">
 			<div class="input-group mb-3">
@@ -164,11 +146,8 @@ font-family: 'Noto Sans KR', sans-serif;
 	</div>
           </div>
           
-          </div>
  
-  </div>
-</div>
-  
+
   <div>
   	<p style="border-bottom:1px solid black; font-size:20px; font-weight:bold; padding-bottom:10px;">상세 정보</p>
   	<div>
