@@ -31,7 +31,7 @@ font-family: 'Noto Sans KR', sans-serif;
 					<input type="checkbox" name="color" value="red" style="margin-top:50px;">
 				</div>
 				<div class="col-2" style="border-top:2px solid #c6c4c4; text-align:center;">
-					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_1.png" style="width:100px;height:100px; margin-top:10px;"/>
+					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_5.png" style="width:100px;height:100px; margin-top:10px;"/>
 				</div>
 				<div class="col-7" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; ">
 					<div style="border-bottom:2px solid #c6c4c4;  height:60px; line-height:60px; font-weight:bold;">나이키 xT1 클럽</div>

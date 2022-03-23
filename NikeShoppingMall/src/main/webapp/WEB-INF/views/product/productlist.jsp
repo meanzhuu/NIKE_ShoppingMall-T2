@@ -59,9 +59,9 @@ width:1000px;
 <jsp:include page="/include/navbar.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
 <div class="container" style="height:1500px; font-family: 'Noto Sans KR', sans-serif;;">
-   <div class="text-start mb-5">
+   <div class="text-start mb-2">
       <h1 style="color:#ff47a9; text-align:center; margin-top:30px;" >지갑</h1>
-      <div style="display:block; text-align:center;">
+      <div style="display:block; text-align:left;">
          <ul class="nav justify-content-center mt-3 " style="font-size:18px;">
               <li class="nav-item back">
                 <a class="nav-link active top-nav" aria-current="page" href="#" onMouseOver="this.style.color='#ff47a9'" onMouseOut="this.style.color='#7f7f7f'" style="background-color:white; border-right:3px solid #969696;  color:#7f7f7f">Men</a>
@@ -99,52 +99,53 @@ width:1000px;
       </li>
       <li class="border-top my-3"></li>
       <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false" style="font-weight:bold;">
-          슈즈
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true" style="font-weight:bold;">
+         신발
         </button>
-        <div class="collapse " id="dashboard-collapse">
+        <div class="collapse show" id="dashboard-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li style="margin-bottom:10px; margin-top:5px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">운동화</a></li>
-            <li style="margin-bottom:10px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">샌들</a></li>
-            <li><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">구두</a></li>
+            <li style="margin-bottom:10px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">슬리퍼</a></li>
+            <li><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">축구화</a></li>
           </ul>
         </div>
       </li>
       <li class="border-top my-3"></li>
       <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false" style="font-weight:bold;" >
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true" style="font-weight:bold;" >
           가방
         </button>
-        <div class="collapse" id="orders-collapse">
+        <div class="collapse show" id="orders-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
             <li style="margin-bottom:10px; margin-top:5px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">백팩</a></li>
-            <li style="margin-bottom:10px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">클러치</a></li>
-            <li><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">크로스백</a></li>
+            <li style="margin-bottom:10px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">힙팩</a></li>
+            <li><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">더블짐색백</a></li>
           </ul>
         </div>
       </li>
       <li class="border-top my-3"></li>
       <li class="mb-1">
-        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false" style="font-weight:bold;">
-          액세서리
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="true" style="font-weight:bold;">
+          용품
         </button>
-        <div class="collapse" id="account-collapse">
+        <div class="collapse show" id="account-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-            <li style="margin-bottom:10px; margin-top:5px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px; ">지갑</a></li>
+            <li style="margin-bottom:10px; margin-top:5px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px; ">공</a></li>
             <li style="margin-bottom:10px;"><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">모자</a></li>
-            <li><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">벨트</a></li>
+            <li><a href="#" class="link-dark rounded" style="text-decoration:none; margin-left:30px;">장갑</a></li>
           </ul>
         </div>
       </li>
     </ul>
   </div>   
        </div>
-   <div id="right_content" class="right_content" style="width:700px;">
+
+   	<div id="right_content" class="right_content" style="width:1000px;">
    
-    <div class="row text-center mt-5">
+    <div class="row text-center mt-3" style="width:999px;">
     <c:forEach var="tmp" items="${list}">
-    <div class="col"> 
-       <div class="card" style="width: 18rem;">
+    <div class="col" style="margin-top:40px; width:300px;"> 
+       <div class="card" style="width: 16rem;">
         <img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">${tmp.product_name}</h5>
@@ -155,18 +156,14 @@ width:1000px;
       
         </ul>
         <div class="card-body">
-          <a href="detail.do?product_id=${tmp.product_id }" class="card-link">바로가기</a>
-      
-        </div>
+          	<a href="detail.do?product_id=${tmp.product_id }" class="card-link">바로가기</a>
+      	</div>
         </div>
    </div>
    </c:forEach>
-
-
-
-
-
 </div>
+</div>
+       </div>
 </div>
 <jsp:include page="/include/footer.jsp"></jsp:include>
 
