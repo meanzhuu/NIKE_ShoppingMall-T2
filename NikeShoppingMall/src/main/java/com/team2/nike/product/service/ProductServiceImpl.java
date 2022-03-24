@@ -133,6 +133,11 @@ public class ProductServiceImpl implements ProductService{
 	public List<ProductDto> getUpper() {
 		return productDao.getUpper();
 	}
+
+	@Override
+	public List<ProductDto> getListAll() {
+		return productDao.getList();
+	}
 	
 
 }

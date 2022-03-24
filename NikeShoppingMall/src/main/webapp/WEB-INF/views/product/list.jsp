@@ -35,7 +35,7 @@
 			</tr>
 		</thead>
 		<tbody>
-		<c:forEach var="tmp" items="${list }">
+		<c:forEach var="tmp" items="${alist }">
 			<tr>
 				<td>${tmp.product_id }</td>
 				<td>${tmp.product_lcategory }</td>

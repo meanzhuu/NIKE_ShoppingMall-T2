@@ -40,7 +40,7 @@ font-family: 'Noto Sans KR', sans-serif;
 					<p>상품명</p>
 				</div>
 				<div class="col-1" text-align:center;" >가격</div>
-				<div class="col-1" text-align:center;">수량</div>
+				<div class="col-1" text-align:center;">삭제</div>
 			</div>
 		<c:set var="total" value="0" />
 		<c:forEach var="tmp" items="${list }">
