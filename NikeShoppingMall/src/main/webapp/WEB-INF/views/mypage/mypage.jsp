@@ -28,7 +28,7 @@ font-family: 'Noto Sans KR', sans-serif;
 			</div>
 			<div class="col-2" style="background-color:#17a5ee; color:white; font-weight:bold; border-right:1px solid #0077bc;">
 				<div style="height:55px; line-height:55px;">배송중</div>
-				<div style="height:55px; line-height:55px;">0개</div>
+				<div style="height:55px; line-height:55px;">3개</div>
 			</div>
 			<div class="col-2" style="background-color:#17a5ee; color:white; font-weight:bold; border-right:1px solid #0077bc;">
 				<div style="height:55px; line-height:55px;">할인쿠폰</div>
@@ -51,15 +51,15 @@ font-family: 'Noto Sans KR', sans-serif;
 		<div style="font-size:12px;font-size:16px;">
 			<div class="row">
 				<div class="col-2" style="border-top:2px solid #c6c4c4;border-left:2px solid #c6c4c4; border-right:2px solid #c6c4c4; text-align:center;">
-					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_5.png" style="width:110px;height:110px; margin-top:5px;"/>
+					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_8.png" style="width:110px;height:110px; margin-top:5px;"/>
 				</div>
 				<div class="col-5" style="border-top:2px solid #c6c4c4; text-align:center; border-right:2px solid #c6c4c4;height:120px;  line-height:120px; ">
-					나이키 고 플라이즈(성인공용 신발) 사이즈:260 수량:1개 
+					남성 풀집 리버서블 재킷 AS 사이즈:L 수량:1개 
 				</div>
 				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; ">
-					<div style="height:120px;  line-height:120px; text-align:center;">149,000원</div>
+					<div style="height:120px;  line-height:120px; text-align:center;">90,300원</div>
 				</div>
-				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >2022-03-22</div>
+				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >2022-03-24</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4;  height:120px;  line-height:120px; text-align:center; border-right:4px solid #c6c4c4;font-weight:bold;">배송중</div>
 			</div>
 			
@@ -73,22 +73,22 @@ font-family: 'Noto Sans KR', sans-serif;
 				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; ">
 					<div style="height:120px;  line-height:120px; text-align:center;">39,000원</div>
 				</div>
-				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >2022-03-21</div>
+				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >2022-03-24</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4;  height:120px;  line-height:120px; text-align:center; border-right:4px solid #c6c4c4;font-weight:bold;">배송중</div>
 			</div>
 			
 			<div class="row" style="border-bottom:4px solid #c6c4c4">
 				<div class="col-2" style="border-top:2px solid #c6c4c4;border-left:2px solid #c6c4c4; border-right:2px solid #c6c4c4; text-align:center;">
-					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_7.png" style="width:110px;height:110px;margin-top:5px;"/>
+					<img src="${pageContext.request.contextPath }/resources/img/cloth_sample_9.png" style="width:110px;height:110px;margin-top:5px;"/>
 				</div>
 				<div class="col-5" style="border-top:2px solid #c6c4c4; text-align:center; border-right:2px solid #c6c4c4;height:120px;  line-height:120px;">
-					나이키 스포츠웨어 트렌드(남성 풀오버 후디 AS) 사이즈:100(L) 수량:1개
+					나이키 헤리티지(가방 / 힙팩) 사이즈:FREE 수량:1개
 				</div>
 				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; ">
-					<div style="height:120px;  line-height:120px; text-align:center;">125,000원</div>
+					<div style="height:120px;  line-height:120px; text-align:center;">29,000원</div>
 				</div>
-				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >2022-03-18</div>
-				<div class="col-1" style="border-top:2px solid #c6c4c4;  height:120px;  line-height:120px; text-align:center; border-right:4px solid #c6c4c4; font-weight:bold;">배송완료</div>
+				<div class="col-2" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >2022-03-24</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4;  height:120px;  line-height:120px; text-align:center; border-right:4px solid #c6c4c4; font-weight:bold;">배송중</div>
 			</div>
 		</div>
 		
