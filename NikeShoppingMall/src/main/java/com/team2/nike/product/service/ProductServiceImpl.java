@@ -1,6 +1,7 @@
 package com.team2.nike.product.service;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -99,9 +100,21 @@ public class ProductServiceImpl implements ProductService{
 	}
 
 	@Override
-	public List<ProductDto> getList() {
+	public List<ProductDto> getList(String type) {
 		
-		return productDao.getList();
+		List<ProductDto> productList = productDao.getList();
+		List<ProductDto> result = new ArrayList<ProductDto>();
+		
+	// 파라미터가 데이터가 없을때 비워있는값 방지 
+		if(type != null)  {
+			for(int i=0;i<productList.size(); i++) {
+				if(type.equals(productList.get(i).getProduct_scategory())){
+					result.add(productList.get(i));
+				} 
+			}
+		}
+		
+		return result;
 	}
 	
 	@Override
@@ -119,6 +132,11 @@ public class ProductServiceImpl implements ProductService{
 	@Override
 	public List<ProductDto> getUpper() {
 		return productDao.getUpper();
+	}
+
+	@Override
+	public List<ProductDto> getListAll() {
+		return productDao.getList();
 	}
 	
 

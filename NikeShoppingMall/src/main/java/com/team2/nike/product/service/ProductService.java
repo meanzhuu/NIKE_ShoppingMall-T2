@@ -8,7 +8,8 @@ import com.team2.nike.product.dto.ProductDto;
 
 public interface ProductService {
 	public void addProduct(ProductDto dto,HttpServletRequest request);
-	public List<ProductDto> getList();
+	public List<ProductDto> getList(String type);
+	public List<ProductDto> getListAll();
 	public void delete(int product_id);
 	public ProductDto getProduct(int product_id);
 	public List<ProductDto> getUpper();

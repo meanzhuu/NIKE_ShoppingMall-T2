@@ -50,6 +50,7 @@ font-weight:bold;
           
               <span class="gray">Copyright 2022. 최강 2조. All Rights Reserved.</span>
               <span class="gray">고객센터 전화문의 080-789-4561</span>
+              <a class ="gray" href="${pageContext.request.contextPath}/product/list.do">.</a>
           </p>
       </footer>
     </div>

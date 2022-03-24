@@ -35,7 +35,7 @@ font-family: 'Noto Sans KR', sans-serif;
   					</div>
   					<div class="col-10">
   						<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">김구라</div>
-  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">gura2@acorn.com</div>
+  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">gura@acorn.com</div>
   						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">010-1234-5678 <br />쿠폰/티켓 정보는 구매한 분의 번호로 전됩니다.</div>
   					</div>
   				</div>
@@ -92,10 +92,10 @@ font-family: 'Noto Sans KR', sans-serif;
   						<div style="border-bottom: 1px solid #d3d3d3; height:280px; display:flex; justify-content:center; align-items:center; font-size:16px; font-weight:bold;">결재방법</div>
   					</div>
   					<div class="col-10">
-  						<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">120,000원</div>
-  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;color:red;">-2,000원</div>
+  						<div style="border-top: 1px solid #d3d3d3; border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">158,300원</div>
+  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;color:red;">-15830원</div>
   						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">0원</div>
-  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">118,000원</div>
+  						<div style="border-bottom: 1px solid #d3d3d3; height:60px; display:flex; justify-content:left; align-items:center; font-size:16px; padding-left:10px;">142470원</div>
   						<div style="border-bottom: 1px solid #d3d3d3; height:250px; font-size:16px; padding-left:10px;">
   							<div style="margin-top:30px;">
   								<label style="margin-right:15px;"><input type="radio" name="fruit" value="apple" style="margin-left:10px;margin-right:5px;"> 계좌이체</label>
@@ -151,7 +151,7 @@ font-family: 'Noto Sans KR', sans-serif;
   		</div>  
   		
   		<div style="margin-top:60px; text-align:center;">
-  			<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/pay.do'">결제하기</button>
+  			<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/pay/pay.do'">결제하기</button>
   			<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="history.back()">취소하기</button>
   		</div>
 	</div>
