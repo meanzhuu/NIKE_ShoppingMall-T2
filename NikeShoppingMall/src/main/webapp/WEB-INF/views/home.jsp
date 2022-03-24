@@ -60,16 +60,16 @@ font-weight:bold;
     <div class="row text-center mt-3 d-flex justify-content-center">
     	<div class="col col-sm-3 d-flex justify-content-center" style="width:300px;">
     		<div class="card" style="width: 19rem;">
-  				<img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
+  				<img src="/nike/resources/upload/16479990255504_1_아우터.png" class="card-img-top" alt="...">
   					<div class="card-body">
-    					<h5 class="card-title">Card title</h5>
-    						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    					<h5 class="card-title">나이키 클럽</h5>
+    						<p class="card-text">의류 | 아우터</p>
   					</div>
   					<ul class="list-group list-group-flush">
-    					<li class="list-group-item">An item</li>
+    					<li class="list-group-item">99000원</li>
 					</ul>
   					<div class="card-body">
-    					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
+    					<a href="${pageContext.request.contextPath }/product/product_detail.do?product_id=4" class="card-link">바로가기</a>
 
 
   					</div>
@@ -77,16 +77,16 @@ font-weight:bold;
 		</div>
     	<div class="col col-sm-3 d-flex justify-content-center"  style="width:300px;">
     		<div class="card" style="width: 19rem;">
-  				<img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
+  				<img src="/nike/resources/upload/16480067523132_1_가방.JPG" class="card-img-top" alt="...">
   					<div class="card-body">
-    					<h5 class="card-title">Card title</h5>
-    						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    					<h5 class="card-title">나이키 헤리티지 윈터 벨루어</h5>
+    						<p class="card-text">가방 | 백팩</p>
   					</div>
   					<ul class="list-group list-group-flush">
-    					<li class="list-group-item">An item</li>
+    					<li class="list-group-item">59000원</li>
 					</ul>
   					<div class="card-body">
-    					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
+    					<a href="${pageContext.request.contextPath }/product/product_detail.do?product_id=39" class="card-link">바로가기</a>
 
   					</div>
 			</div>
@@ -95,16 +95,16 @@ font-weight:bold;
 
     	<div class="col col-sm-3 d-flex justify-content-center"  style="width:300px;">
     		<div class="card" style="width: 19rem;">
-  				<img src="https://ww.namu.la/s/fc0927cd1619f4d217ee6196414e820c871e544a9d15981a67016858cfeaf5421d7837863fbce93edda0b1555e75fcd8aebe769e9a457555e2fa73d04af1e762d00606873b0f550de191734093bfd725" class="card-img-top" alt="...">
+  				<img src="/nike/resources/upload/16480002915281_1_운동화.png" class="card-img-top" alt="...">
   					<div class="card-body">
-    					<h5 class="card-title">Card title</h5>
-    						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    					<h5 class="card-title">나이키 리엑트 인피니티 런 플라이니트 3</h5>
+    						<p class="card-text">신발 | 운동화</p>
   					</div>
   					<ul class="list-group list-group-flush">
-    					<li class="list-group-item">An item</li>
+    					<li class="list-group-item">179000원</li>
 					</ul>
   					<div class="card-body">
-    					<a href="${pageContext.request.contextPath }/product/product_detail.do" class="card-link">Card link</a>
+    					<a href="${pageContext.request.contextPath }/product/product_detail.do?product_id=19" class="card-link">바로가기</a>
 
   					</div>
 			</div>
