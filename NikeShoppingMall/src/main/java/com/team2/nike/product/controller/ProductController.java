@@ -38,14 +38,14 @@ public class ProductController {
 		mView.setViewName("product/productlist");
 		return mView;
 	}
-	/*
+	
 	@RequestMapping("/product/list")
 	public ModelAndView getList(HttpServletRequest request, ModelAndView mView) {
-		mView.addObject("list",service.getList());
+		mView.addObject("alist",service.getListAll());
 		mView.setViewName("product/list");
 		return mView;
 	}
-	*/
+	
 	@RequestMapping("/product/insertform")
 	public ModelAndView insertform(HttpServletRequest request, ProductDto dto, ModelAndView mView) {
 		mView.setViewName("/product/insertform");

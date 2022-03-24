@@ -139,6 +139,5 @@ font-weight:bold;
   	</button>
 </div>
 <jsp:include page="/include/footer.jsp"></jsp:include>
-<a href="${pageContext.request.contextPath}/product/list.do">제품 목록</a>
 </body>
 </html>
