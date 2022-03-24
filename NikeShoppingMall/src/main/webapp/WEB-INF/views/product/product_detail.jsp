@@ -21,7 +21,7 @@ font-family: 'Noto Sans KR', sans-serif;
 <jsp:include page="/include/navbar4.jsp"></jsp:include>
 <jsp:include page="/include/headbar.jsp"></jsp:include>
 
-<div class="container" style="height:1500px">
+<div class="container" style="height:1400px">
 
 <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>'; margin-top:40px; border-bottom:2px solid #bfbfbf ">
   <ol class="breadcrumb" >
@@ -64,13 +64,8 @@ font-family: 'Noto Sans KR', sans-serif;
     </div>
 
     <div class="col-5 text" style="margin-left:40px;">
-
     <div class="card" style="width: 500px; border:none;">
-  <div class="card-body">
-    <h1 class="card-title">${product.product_name}</h1>  
-    <p class="card-text border-top pt-3 pb-3">    
-      <p> 소비자가 : ${product.product_price}</p>  
-        <p> 적립금 : ${product.product_point}</p>
+  <div class="card-body"> 
 
     <h1 class="card-title" style="font-weight:bold; font-size:30px;">Nike Women's Web Belt</h1>
     <p>제품 번호 099465</p>  
@@ -82,6 +77,8 @@ font-family: 'Noto Sans KR', sans-serif;
       			<p> 적립금 </p>
       			<p> 무이자 할부</p>  
         		<p> 배송비</p>
+        		<p> color</p>
+        		<p> size</p>
         		<p style="font-size:20px;"> 예상 수령일</p>
         	</div>
         	
@@ -91,84 +88,41 @@ font-family: 'Noto Sans KR', sans-serif;
         		<p>2,200</p>
         		<p> 최대 12개월</p>
         		<p>무료</p>
+        		<p>black / gray / navy</p>
+        		<p>sm  /  m  /  lg  /  x-lg  /  2x-lg  /  3x-lg </p>
         		<p style="font-size:20px; font-weight:bold;">04/01(금) ~ 04/05(화)</p>
         	</div>
         </div>   
 	</div>
-         <div style="margin-top:20px;">
-          <div class="row">
-          <p style="margin-bottom:30px;"> 도서산관(제주도) 배송비 추가 5,000원 </p> 
-          <div class="col-3">
-          	<label class="col-form-label for="">color</label>
-          </div>
-           <div class="col-auto">
-          <div class="input-group">
-  <span class="input-group-text">-</span>
-  <input type="text" class="form-control" style="width:40px;" value="1">
-  <span class="input-group-text">+</span>
-</div>
-<div class="row pt-3 pb-3">
-<div class="col-6">
-<h3>총 상품금액 </h3></div>
-<div class="col-6" style="text-align: right;">
-<h3> ${product.product_price}</h3></div>
-</div>
-</div>
-          
-                <div class="container"></div>  
-     <a href="#" class="btn btn-primary">구입하기</a>
-       <a href="#" class="btn btn-primary">장바구니 가기</a>
-		
-		
+        <div style="margin-top:20px;">
+          	<div class="row">
+          		<p style="margin-bottom:30px;"> 도서산관(제주도) 배송비 추가 5,000원 </p> 
+          	</div>
 		</div>
-          <div class="col-6">
-			<div class="input-group mb-3">
-  			<select class="form-select" id="inputGroupSelect01">
-    			<option selected>select color</option>
-    			<option value="1">black</option>
-    			<option value="2">gray</option>
-    			<option value="3">navy</option>
-  			</select>
-			</div>
-		  </div>
-         </div> 
-         </div>
-		  
-		  <div style="margin-top:10px;">
-          <div class="row">
-          <div class="col-3">
-          	<label class="col-form-label for="">size</label>
-          </div>
-          <div class="col-6">
-			<div class="input-group mb-3">
-  			<select class="form-select" id="inputGroupSelect01">
-    			<option selected>select size</option>
-    			<option value="1">sm</option>
-    			<option value="2">m</option>
-    			<option value="3">lg</option>
-    			<option value="3">2x-lg</option>
-    			<option value="3">3x-lg</option>
-    			<option value="3">4x-lg</option>
-  			</select>
-			</div>
-		  </div>
-         </div> 
-         </div>
-	<div class="buttons" style="display:flex; justify-content:left; margin-top:10px;">
-		<button class="btn" style="background-color:black; color:white; width:300px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/payform.do'">BUY NOW</button>
-		<button class="btn" style="color:black;background-color:#f2f2f2 ; border:1px solid #eaeaea;">
+
+         	
+     <div class="buttons" style="display:flex; justify-content:left;">
+		<button class="btn" style="background-color:black; color:white; width:300px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/pay/payform.do'">BUY NOW</button>
+		<button class="btn" style="color:black;background-color:#f2f2f2 ; border:1px solid #eaeaea;" onclick="location.href='${pageContext.request.contextPath }/cart/insert.do?product_id=${product.product_id }'">
 			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart-check-fill" viewBox="0 0 16 16">
   				<path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
 			</svg>
 		</button>
-	</div>
+	</div>          
+		</div>
+          			
+         	
+
+         </div> 
+         </div>
+		  
+
+         	
+
           </div>
           
-          </div>
  
-  </div>
-</div>
-  
+
   <div>
   	<p style="border-bottom:1px solid black; font-size:20px; font-weight:bold; padding-bottom:10px;">상세 정보</p>
   	<div>

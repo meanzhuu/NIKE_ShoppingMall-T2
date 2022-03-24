@@ -93,7 +93,7 @@ font-family: 'Noto Sans KR', sans-serif;
 		</div>
 		
 			<div style="margin-top:60px; text-align:center;">
-  				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:100px;" onclick="location.href='${pageContext.request.contextPath }/updateform.do'">내 정보 수정하기</button>
+  				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:100px;" onclick="location.href='${pageContext.request.contextPath }/users/updateform.do'">내 정보 수정하기</button>
   				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/users/deleteform.do'">회원 탈퇴하기</button>
   			</div>
 </div>

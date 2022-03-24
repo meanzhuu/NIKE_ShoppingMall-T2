@@ -44,6 +44,11 @@ public class CartServiceImpl implements CartService{
 		request.setAttribute("list", list);
 	}
 
+	@Override
+	public void deleteAllCart(String users_id) {
+		dao.deleteAll(users_id);
+	}
+
 
 
 }

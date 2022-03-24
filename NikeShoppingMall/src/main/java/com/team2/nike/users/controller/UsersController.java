@@ -66,13 +66,36 @@ public class UsersController {
 			return mView;
 		}
 		
-		@RequestMapping("/users/private/info")
-		public ModelAndView info(HttpSession session, ModelAndView mView) {
-
-			service.getInfo(session, mView);
-
-			mView.setViewName("users/info");
-			return mView; 
+		@RequestMapping("/users/deleteform")
+		public ModelAndView authdeleteform(HttpServletRequest request,ModelAndView mView)
+		{
+			mView.setViewName("users/deleteform");
+			return mView;
 		}
+		
+		@RequestMapping("/users/delete")
+		public ModelAndView authDelete(HttpSession session, ModelAndView mView,
+				HttpServletRequest request) {
+			
+			service.deleteUser(session, mView);
+			
+			mView.setViewName("users/delete");
+			return mView;
+		}
+		
+		@RequestMapping("/users/updateform")
+		public ModelAndView authupdateform(HttpServletRequest request,ModelAndView mView)
+		{
+			mView.setViewName("users/updateform");
+			return mView;
+		}
+		
+		@RequestMapping("/users/update")
+		public ModelAndView authupdate(HttpServletRequest request,ModelAndView mView)
+		{
+			mView.setViewName("users/update");
+			return mView;
+		}
+		
 		
 }

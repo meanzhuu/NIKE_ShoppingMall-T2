@@ -60,7 +60,7 @@ font-family: 'Noto Sans KR', sans-serif;
 					<div style=" height:60px; line-height:60px;color:#007f41">오늘(목) 3/24 새벽 7시 전 도착</div>
 				</div>
 				<div class="col-1" style="border-top:2px solid #c6c4c4; border-right:2px solid #c6c4c4; height:120px;  line-height:120px; text-align:center;" >${tmp.product_price }</div>
-				<div class="col-1" style="border-top:2px solid #c6c4c4;  border-right:2px solid  height:120px;  line-height:120px; text-align:center;">${tmp.cart_count }</div>
+				<div class="col-1" style="border-top:2px solid #c6c4c4;  border-right:2px solid  height:120px;  line-height:120px; text-align:center;"><a href="delete.do?cart_id=${tmp.cart_id }">x</a></div>
 			</div>
 		</div>
 		<c:set var="total" value="${total+(tmp.product_price * tmp.cart_count) }"></c:set>
@@ -77,7 +77,7 @@ font-family: 'Noto Sans KR', sans-serif;
   						<path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
 					</svg>
 				</div>
-				<div class="col-1" style="text-align:right;">총 적립</div>
+				<div class="col-1" style="text-align:right;">총 할인</div>
 				<div class="col-1" style="font-weight:bold; color:red;"><c:out value="${total*0.1 }"/>원</div>
 				<div class="col-1" style="text-align:right;">
 					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
@@ -97,7 +97,7 @@ font-family: 'Noto Sans KR', sans-serif;
 			</div>
 			<div style="margin-top:60px; text-align:center;">
   				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="history.back()">계속 쇼핑하기</button>
-  				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/payform.do?total_price=${total }'">결제하기</button>
+  				<button class="btn" style="background-color:black; color:white; width:300px;height:60px; margin-right:20px;" onclick="location.href='${pageContext.request.contextPath }/pay/payform.do?total_price=${total }'">결제하기</button>
   			</div>
 		</div>
 	</div>

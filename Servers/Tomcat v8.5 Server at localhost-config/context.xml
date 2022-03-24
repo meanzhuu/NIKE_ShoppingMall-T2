@@ -28,6 +28,6 @@
 <Resource name="jdbc/myoracle" auth="Container"
               type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
               url="jdbc:oracle:thin:@14.63.164.99:1521:xe"
-              username="acorn2" password="gura2" maxTotal="20" maxIdle="10"
+              username="acorn6" password="gura6" maxTotal="20" maxIdle="10"
               maxWaitMillis="-1"/>
 </Context>

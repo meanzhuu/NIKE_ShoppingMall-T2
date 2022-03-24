@@ -13,6 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Handles requests for the application home page.
@@ -22,73 +23,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 	
+	@RequestMapping("/product/productdetail2")
+	public String detail2(HttpServletRequest request) {
+		return "product/productdetail2";
+	}
+	
+	@RequestMapping("/mypage/mypage.do")
+	public ModelAndView authmyPage(HttpServletRequest request, ModelAndView mView) {
+		mView.setViewName("mypage/mypage");
+		return mView;
+	}
+	
 	@RequestMapping("/home.do")
 	public String home(HttpServletRequest request) {
 		return "home";
-	}
-	
-	
-	@RequestMapping("/users/delete.do")
-	public String delete(HttpServletRequest request) {
-		return "users/delete";
-	}
-	
-	@RequestMapping("/users/deleteform.do")
-	public String deleteform(HttpServletRequest request) {
-		return "users/deleteform";
-	}
-	
-	@RequestMapping("/info.do")
-	public String info(HttpServletRequest request) {
-		return "info";
-	}
-	@RequestMapping("/payform.do")
-	public String payform(HttpServletRequest request) {
-		return "payform";
-	}
-	@RequestMapping("/pay.do")
-	public String pay(HttpServletRequest request) {
-		return "pay";
-	}
-	@RequestMapping("/mypage.do")
-	public String mypage(HttpServletRequest request) {
-		return "mypage";
-	}
-	
-	@RequestMapping("/pwd_updateform.do")
-	public String pwd_updateform(HttpServletRequest request) {
-		return "pwd_updateform";
-	}
-	
-	@RequestMapping("/pwd_update.do")
-	public String pwd_update(HttpServletRequest request) {
-		return "pwd_update";
-	}
-	
-	@RequestMapping("/updateform.do")
-	public String updateform(HttpServletRequest request) {
-		return "updateform";
-	}
-	
-	
-	@RequestMapping("/update.do")
-	public String update(HttpServletRequest request) {
-		return "update";
-	}
-	
-	@RequestMapping("/product/productlist.do")
-	public String productlist(HttpServletRequest request) {
-		return "product/productlist";
-	}
-
-
-	@RequestMapping("/cart/bucket.do")
-	public String bucket(HttpServletRequest request){
-		return "cart/bucket";
-	}
-
-	@RequestMapping("/product/product_detail.do")
-	public String product_detail(HttpServletRequest request) {
-		return "product/product_detail";
 	}
 }

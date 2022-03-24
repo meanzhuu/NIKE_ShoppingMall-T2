@@ -67,7 +67,7 @@ width:100%;
 	
 	<div id="but">
 		<button class="btn" type="submit" onclick="location.href='${pageContext.request.contextPath }/users/delete.do'">탈퇴</button>
-		<button class="btn" type="submit" onclick="location.href='${pageContext.request.contextPath }/updateform.do'" style="margin-left:20px;">취소</button>
+		<button class="btn" type="submit" onclick="location.href='${pageContext.request.contextPath }/users/updateform.do'" style="margin-left:20px;">취소</button>
 	</div>
 </div>
 <jsp:include page="/include/footer.jsp"></jsp:include>
